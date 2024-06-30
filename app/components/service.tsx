@@ -16,9 +16,9 @@ const Service:React.FC<serviceProps> = ({ title, description, image }) => {
                 <Image
                    src={image}
                    alt='document'
-                   width={150}
-                   height={150}
-                   className='px-2 pt-6'
+                   width={90}
+                   height={90}
+                   className='px-2 pt-2'
                 >
                 </Image>
             </div>

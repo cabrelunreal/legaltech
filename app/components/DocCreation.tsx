@@ -5,27 +5,27 @@ import React from 'react'
 interface docProps{
     title: string;
     description: string;
-    className: string;
+    image: string;
 }
 
-const DocCreation:React.FC<docProps> = ({ title, description, className }) => {
+const DocCreation:React.FC<docProps> = ({ title, description, image }) => {
   return (
     <div>
-        <div>
+        <div className='h-80'>
             <Image
-              src=''
+              src={image}
               alt=''
-              width={200}
-              height={200}
-              className={className}
+              width={300}
+              height={300}
+              className='justify-center m-auto'
             >
             </Image>
         </div>
-        <div>
-            <div>
+        <div className='text-black text-center py-6 px-6'>
+            <div className='font-semibold text-3xl'>
                 <h2>{title}</h2>
             </div>
-            <div>
+            <div className='text-lg pt-6'>
                 <p>{description}</p>
             </div>
         </div>

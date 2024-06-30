@@ -1,0 +1,50 @@
+import React from 'react'
+import Whys from '../components/Whys'
+
+
+const title1 = 'Simple'
+const title2 = 'Rapide'
+const title3 = 'Chaleureux'
+const title4 = 'Economique'
+
+const image1 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/click_qv6jxk.svg'
+const image2 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703619/fast-time_qirkgv.svg'
+const image3 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703634/sun_sqeydq.svg'
+const image4 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/piggy-bank_1_kk4ynp.svg'
+
+const description1 = 'Espace numérique innovant et facile à utiliser'
+const description2 = 'Gagnez du temps dans la rédaction des documents.'
+const description3 = 'Des experts disponibles toujours prèts à vous aider et accompagner dans vos besoins'
+const description4 = 'Des services à coûts réduits pour des utilisateurs résidents partout dans le monde.'
+
+
+const Why = () => {
+  return (
+    <div className='w-7/12 m-auto bg-white py-24'>
+        <div>
+            <div className='text-center text-black uppercase text-4xl font-bold py-2'>
+                <h2>POURQUOI NOUS?</h2>
+            </div>
+            <div className='text-black text-center text-base py-4'>
+                <p>Pourquoi choisir tribune justice pour vos opérations juridiques.</p>
+            </div>
+        </div>
+        <div className='grid grid-cols-4 gap-2 px-9'>
+            <div>
+                <Whys  title={title1} description={description1} image={image1}/>
+            </div>
+            <div>
+                <Whys  title={title2} description={description2} image={image2}/>
+            </div>
+            <div>
+                <Whys  title={title3} description={description3} image={image3}/>
+            </div>
+            <div>
+                <Whys  title={title4} description={description4} image={image4}/>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Why

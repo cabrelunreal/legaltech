@@ -8,7 +8,7 @@ interface docProps{
     image: string;
 }
 
-const DocCreation:React.FC<docProps> = ({ title, description, image }) => {
+const DocCreation:React.FC<docProps> = ({ title, description, image}) => {
   return (
     <div>
         <div className='h-80'>
@@ -17,7 +17,7 @@ const DocCreation:React.FC<docProps> = ({ title, description, image }) => {
               alt=''
               width={300}
               height={300}
-              className='justify-center m-auto'
+              className='justify-center m-auto classname'
             >
             </Image>
         </div>

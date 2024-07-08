@@ -6,9 +6,10 @@ interface traductionProps{
     description: string;
     image: string;
     imagedescription: string;
+    onClick?: () => void;
 }
 
-const Traduction:React.FC<traductionProps> = ({description, image, imagedescription}) => {
+const Traduction:React.FC<traductionProps> = ({description, onClick, image, imagedescription}) => {
   return (
     <div>
         <div>
@@ -20,7 +21,7 @@ const Traduction:React.FC<traductionProps> = ({description, image, imagedescript
                 className=''
             ></Image>
             <p>{description}</p>
-            <Button className='' title='Commencer' />
+            <Button className='' title='Commencer' onClick={onClick}/>
         </div>
     </div>
   )

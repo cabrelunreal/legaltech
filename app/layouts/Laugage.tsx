@@ -6,16 +6,16 @@ const description = 'Visiteurs/jour'
 const title = '+15 000'
 
 const image1 = ''
-const description1 = ''
-const title1 = ''
+const description1 = 'Experts Juridiques'
+const title1 = '+250'
 
 const image2 = ''
-const description2 = ''
-const title2 = ''
+const description2 = 'Travaux réalisés'
+const title2 = '+12M'
 
 const image3 = ''
-const description3 = ''
-const title3 = ''
+const description3 = 'Travaux réalisés'
+const title3 = '+3150'
 const Laugage = () => {
   return (
     <div>

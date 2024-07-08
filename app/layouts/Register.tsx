@@ -7,7 +7,7 @@ const Register = () => {
     <div>
         <div>
             <Image
-                src={}
+                src=''
                 alt='signUp'
                 width={180}
                 height={180}

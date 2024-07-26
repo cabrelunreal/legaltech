@@ -4,38 +4,35 @@ import Image from 'next/image'
 
 const Traductions = () => {
 
-    function handleOnclick (){
-        console.log('error')
-    }
   return (
-    <div>
+    <div className='w-9/12 m-auto py-12 my-8 text-white'>
         <div>
-            <div>
-                <h2>traduction des documents</h2>
-                <p>Protéger juridiquement vos produits</p>
+            <div className='w-full text-center'>
+                <h2 className='uppercase text-3xl pb-2 text-semibold'>traduction des documents</h2>
+                <p className='text-lg'>Protéger juridiquement vos produits</p>
             </div>
-            <div>
+            <div className='w-8/12 m-auto my-8 grid grid-cols-2'>
                 <div>
                     <Image 
-                        src=''
+                        src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703622/Groupe_198_pzwjwp.png'
                         alt='documents'
-                        width={300}
+                        width={500}
                         height={300}
                         className=''
                     ></Image>
                 </div>
-                <div>
-                    <div>
-                        <Traduction image='' description='Contrats d&apos;affaires' imagedescription='' onClick={handleOnclick} />
+                <div className='w-full grid grid-cols-2 gap-2'>
+                    <div className='bg-gray-50 rounded-md'>
+                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg' description='Contrats d&apos;affaires' imagedescription='contrats' />
                     </div>
-                    <div>
-                        <Traduction image='' description='Contrats' imagedescription='' onClick={handleOnclick} />
+                    <div className='bg-gray-50 rounded-md'>
+                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg' description='Contrats' imagedescription='contrats'  />
                     </div>
-                    <div>
-                        <Traduction image='' description='Documents OHADA' imagedescription='' onClick={handleOnclick} />
+                    <div className='bg-gray-50 rounded-md'>
+                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/document_3_bwe9g3.svg' description='Documents OHADA' imagedescription='OHADA' />
                     </div>
-                    <div>
-                        <Traduction image='' description='Autre documents' imagedescription='' onClick={handleOnclick} />
+                    <div className='bg-gray-50 rounded-md'>
+                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/paper_1_t8npck.svg' description='Autre documents' imagedescription='docs' />
                     </div>
                 </div>
             </div>

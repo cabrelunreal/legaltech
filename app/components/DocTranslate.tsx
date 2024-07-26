@@ -11,7 +11,7 @@ interface translateProps{
 
 const DocTranslate:React.FC<translateProps> = ({ image, title, buttonClass, buttonTitle}) => {
   return (
-    <div>
+    <div className='bg-gray-100'>
         <div>
             <Image
                src={image}
@@ -22,11 +22,13 @@ const DocTranslate:React.FC<translateProps> = ({ image, title, buttonClass, butt
             >
             </Image>
         </div>
-        <div>
-            {title}
-        </div>
-        <div>
-            <Button className={buttonClass} title={buttonTitle}></Button>
+        <div className='w-full'>
+            <div>
+                {title}
+            </div>
+            <div>
+                <Button className={buttonClass} title={buttonTitle}></Button>
+            </div>
         </div>
     </div>
   )

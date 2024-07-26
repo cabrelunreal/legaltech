@@ -4,17 +4,17 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div>
+    <div className='w-8/12 m-auto text-xl flex py-3'>
         <div>
             <Image
                src=''
                alt='LOGO'
-               width={200}
-               height={200}
+               width={10}
+               height={10}
             >
             </Image>
         </div>
-        <div>
+        <div className='w-full flex justify-evenly'>
             <div>
                 <Link href=''>Services</Link>
             </div>
@@ -25,8 +25,8 @@ const Header = () => {
                 <Link href=''>Blog</Link>
             </div>
         </div>
-        <div>
-            <input type="search" name="search" id="search" />
+        <div className='w-4/12'>
+            <input type="search" className='border rounded-sm w-full focus:outline-none px-2 text-lg  text-black' placeholder='Recherchez quelque chose' name="search" id="search" />
         </div>
     </div>
   )

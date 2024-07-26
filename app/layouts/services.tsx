@@ -24,7 +24,7 @@ const image6 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/br
 
 const Services = () => {
   return (
-    <div className='w-7/12 m-auto bg-white py-24'>
+    <div className='w-7/12 m-auto py-24'>
         <div>
             <div className='text-center text-black uppercase text-4xl font-bold py-2'>
                 <h2>Nos service juridiques</h2>

@@ -6,23 +6,27 @@ interface traductionProps{
     description: string;
     image: string;
     imagedescription: string;
-    onClick?: () => void;
+    onclick?: () => void;
 }
 
-const Traduction:React.FC<traductionProps> = ({description, onClick, image, imagedescription}) => {
+const Traduction:React.FC<traductionProps> = ({description, onclick, image, imagedescription}) => {
   return (
-    <div>
-        <div>
+    <div className='w-full text-black text-center rounded-md'>
+        <div className='py-6 px-6'>
+          <div className='h-24'>
             <Image 
                 src={image}
                 alt={imagedescription}
-                width={180}
-                height={180}
-                className=''
+                width={80}
+                height={50}
+                className='m-auto'
             ></Image>
-            <p>{description}</p>
-            <Button className='' title='Commencer' onClick={onClick}/>
-        </div>
+          </div>
+          <div>
+            <p className='text-lg'>{description}</p>
+            <Button className='py-3 bg-red-600 hover:bg--red-700 text-white rounded-md px-6 mt-3' title='Commencer' onClick={onclick}/>
+          </div>
+            </div>
     </div>
   )
 }

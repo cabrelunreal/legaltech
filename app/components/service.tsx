@@ -9,9 +9,9 @@ interface serviceProps{
 
 const Service:React.FC<serviceProps> = ({ title, description, image }) => {
   return (
-    <div className='flex h-40'>
-        <div className='px-1 rounded-sm bg-black mx-1'></div>
-        <div className='bg-black flex py-4'>
+    <div className='flex h-40 hover:scale-110'>
+        <div className='px-1 rounded-sm mx-1 bg-gray-100'></div>
+        <div className='flex py-4 bg-gray-100'>
             <div>
                 <Image
                    src={image}

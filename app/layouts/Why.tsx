@@ -17,16 +17,20 @@ const description2 = 'Gagnez du temps dans la rédaction des documents.'
 const description3 = 'Des experts disponibles toujours prèts à vous aider et accompagner dans vos besoins'
 const description4 = 'Des services à coûts réduits pour des utilisateurs résidents partout dans le monde.'
 
+interface whysprops{
+    title: string;
+    description?: string;
+}
 
-const Why = () => {
+const Why:React.FC<whysprops> = ({title, description}) => {
   return (
-    <div className='w-7/12 m-auto bg-white py-24'>
-        <div>
-            <div className='text-center text-black uppercase text-4xl font-bold py-2'>
-                <h2>POURQUOI NOUS?</h2>
+    <div className='w-7/12 m-auto'>
+        <div className='pb-6'>
+            <div className='text-center uppercase text-4xl font-bold py-2'>
+                <h2>{title}</h2>
             </div>
             <div className='text-black text-center text-base py-4'>
-                <p>Pourquoi choisir tribune justice pour vos opérations juridiques.</p>
+                <p>{description}</p>
             </div>
         </div>
         <div className='grid grid-cols-4 gap-2 px-9'>

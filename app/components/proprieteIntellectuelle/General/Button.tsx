@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ButtonProps{
     action?: () => void;
-    title: string;
+    title?: string;
     structure: string;
 }
 

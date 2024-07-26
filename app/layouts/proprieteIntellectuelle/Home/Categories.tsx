@@ -58,7 +58,9 @@ const Categories = () => {
                 </Link>
             </div>
             <div>
-                <Category title={catTitle6} description={catdescription6} image={catImage6} />
+                <Link href='../../../pages/Commercial'>
+                    <Category title={catTitle6} description={catdescription6} image={catImage6} />
+                </Link>
             </div>
         </div>
     </div>

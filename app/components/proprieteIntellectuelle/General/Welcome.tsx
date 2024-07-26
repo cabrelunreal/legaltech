@@ -5,7 +5,7 @@ interface WelcomeProps{
     beforeT?: string;
     title: string;
     description: string;
-    buttonTitle: string;
+    buttonTitle?: string;
     image: string;
     custom?: string;
 }

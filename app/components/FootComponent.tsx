@@ -1,27 +1,28 @@
 import React from 'react'
 import Link from 'next/link'
 
-interface footProps{
-    link1: string, link2: string, link3: string; link4: string, link5: string;
+interface FootProps {
+    link1: string, link2: string, link3: string, link4: string, link5: string;
     title: string;
 }
-const FootComponent:React.FC<footProps> = ({title, link1, link2, link3, link4, link5}) => {
-  return (
-    <div>
-        <div className='text-xl font-semibold'>
-            <h2>{title}</h2>
+
+const FootComponent: React.FC<FootProps> = ({ title, link1, link2, link3, link4, link5 }) => {
+    return (
+        <div className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto p-4'>
+            <div className='text-lg md:text-xl font-semibold mb-4'>
+                <h2>{title}</h2>
+            </div>
+            <div className='text-base md:text-lg'>
+                <ul className='list-disc pl-4'>
+                    <li className='mb-2 hover:underline'><Link href=''>{link1}</Link></li>
+                    <li className='mb-2 hover:underline'><Link href=''>{link2}</Link></li>
+                    <li className='mb-2 hover:underline'><Link href=''>{link3}</Link></li>
+                    <li className='mb-2 hover:underline'><Link href=''>{link4}</Link></li>
+                    <li className='mb-2 hover:underline'><Link href=''>{link5}</Link></li>
+                </ul>
+            </div>
         </div>
-        <div className='text-lg py-3'>
-            <ul>
-                <li className=' hover:underline'><Link href=''>{link1}</Link></li>
-                <li className=' hover:underline'><Link href=''>{link2}</Link></li>
-                <li className=' hover:underline'><Link href=''>{link3}</Link></li>
-                <li className=' hover:underline'><Link href=''>{link4}</Link></li>
-                <li className=' hover:underline'><Link href=''>{link5}</Link></li>
-            </ul>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default FootComponent

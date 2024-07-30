@@ -1,36 +1,29 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
-interface CategoryProps{
-    title?: string;
-    image: string;
-    description: string;
+interface CategoryProps {
+  title?: string;
+  image: string;
+  description: string;
 }
 
-const Category:React.FC<CategoryProps> = ({title, image, description}) => {
+const Category: React.FC<CategoryProps> = ({ title, image, description }) => {
   return (
-    <div>
-        <div className='flex'>
-            <div className='px-1 rounded-md bg-gray-200'>
-
-            </div>
-            <div className='flex mx-2 h-40 py-6 bg-gray-100 w-full'>
-                <div>
-                    <Image
-                        src={image}
-                        alt={description}
-                        width={100}
-                        height={100}
-                        className=''
-                    ></Image>
-                </div>
-                <div>
-                    <h2 className='text-2xl px-4 pt-6 font-bold'>{title}</h2>
-                </div>
-            </div>
-        </div>
+    <div className='flex flex-col md:flex-row items-center md:items-start bg-gray-100 p-4 rounded-md shadow-sm'>
+      <div className='flex-shrink-0'>
+        <Image
+          src={image}
+          alt={description}
+          width={100}
+          height={100}
+          className='object-contain'
+        />
+      </div>
+      <div className='md:ml-4 mt-4 md:mt-0 text-center md:text-left'>
+        <h2 className='text-xl md:text-2xl font-bold'>{title}</h2>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;

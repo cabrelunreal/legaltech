@@ -41,7 +41,7 @@ const Welcome = () => {
         <div className='bg-green-700'>
             <Laugage />
         </div>
-        <div className='bg-green-700 text-white py-16'>
+        <div className='bg-green-700 text-white py-4'>
             <Footer />
         </div>
     </div>

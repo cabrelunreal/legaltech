@@ -23,7 +23,7 @@ const page = () => {
         <div>
             <WelcomeContainer 
                 beforeT='Recherche d’Antériorité'
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start px-12 lg:pl-56 lg:pr-96'
                 title='Protégez votre marque à l’OAPI'
                 description='Un brevet d’invention confère à son inventeur le droit exclusif d’empêcher d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer son invention protégée.'
                 buttonTitle='Commencer'

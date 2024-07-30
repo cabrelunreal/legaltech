@@ -23,7 +23,7 @@ const page = () => {
         <div>
             <WelcomeContainer 
                 beforeT='Propriété Litteraires et Artistiques'
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start px-12 lg:pl-56 lg:pr-96'
                 title='Protégez votre création'
                 description='Empêchez les autres d’utiliser et de tirer profit de votre livre, article, chanson, photo, œuvre d’art, etc.'
                 buttonTitle='Commencer'

@@ -18,7 +18,7 @@ const Formulaires = () => {
 
         <div>
             <WelcomeContainer 
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start px-12 lg:pl-56 lg:pr-96'
                 title='PROPRIÉTÉ INTELLECTUELLE'
                 description='FORMULAIRE DE DEMANDE DE BREVET'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721963620/Screen_Shot_2024-06-29_at_14.51.43_1_1_lqqrla.png'

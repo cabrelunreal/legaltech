@@ -16,7 +16,7 @@ const description3 = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 
 const Intellectual = () => {
   return (
-    <div className='w-7/12 m-auto bg-white py-24'>
+    <div className='w-full md:w-9/12 m-auto bg-white py-12'>
         <div>
             <div className='text-center text-black uppercase text-4xl font-bold py-2'>
                 <h2>PROPRIÉTÉ INTELLECTUELLE</h2>
@@ -25,7 +25,7 @@ const Intellectual = () => {
                 <p>Protéger juridiquement vos produits</p>
             </div>
         </div>
-        <div className='grid grid-cols-2 gap-4 w-full py-6'>
+        <div className='grid md:grid-cols-2 gap-4 w-full py-6'>
             <div>
                 <Image
                   src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703621/Groupe_156_eyxrb3.svg'
@@ -36,7 +36,7 @@ const Intellectual = () => {
                 >
                 </Image>
             </div>
-            <div className='grid grid-rows-3 gap-3 w-full px-6'>
+            <div className='grid md:grid-rows-3 gap-3 w-full px-6'>
                 <div>
                     <Service image={image1} title={title1} description={description1}/>
                 </div>

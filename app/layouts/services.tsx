@@ -24,7 +24,7 @@ const image6 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/br
 
 const Services = () => {
   return (
-    <div className='w-7/12 m-auto py-24'>
+    <div className='w-full md:w-9/12 m-auto py-24'>
         <div>
             <div className='text-center text-black uppercase text-4xl font-bold py-2'>
                 <h2>Nos service juridiques</h2>
@@ -34,7 +34,7 @@ const Services = () => {
             </div>
         </div>
         <div className='w-full px-6'>
-            <div className='grid grid-cols-3 gap-2'>
+            <div className='grid md:grid-cols-3 gap-2'>
                 <div>
                     <Service title={first_service}
                         image={image1} 
@@ -54,7 +54,7 @@ const Services = () => {
                     />
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-2 pt-12'>
+            <div className='grid md:grid-cols-3 gap-2 pt-12'>
                 <div>
                     <Service title={fth_service}
                         image={image4} 

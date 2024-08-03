@@ -5,14 +5,14 @@ import Image from 'next/image'
 const Traductions = () => {
 
   return (
-    <div className='w-9/12 m-auto py-12 my-8 text-white'>
+    <div className='w-9/12 m-auto py-12 text-white'>
         <div>
             <div className='w-full text-center'>
                 <h2 className='uppercase text-3xl pb-2 text-semibold'>traduction des documents</h2>
                 <p className='text-lg'>Protéger juridiquement vos produits</p>
             </div>
-            <div className='w-8/12 m-auto my-8 grid grid-cols-2'>
-                <div>
+            <div className='md:w-10/12 m-auto my-8 grid md:grid-cols-2'>
+                <div className='md:block hidden'>
                     <Image 
                         src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703622/Groupe_198_pzwjwp.png'
                         alt='documents'
@@ -21,7 +21,7 @@ const Traductions = () => {
                         className=''
                     ></Image>
                 </div>
-                <div className='w-full grid grid-cols-2 gap-2'>
+                <div className='w-full grid md:grid-cols-2 gap-2'>
                     <div className='bg-gray-50 rounded-md'>
                         <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg' description='Contrats d&apos;affaires' imagedescription='contrats' />
                     </div>

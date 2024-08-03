@@ -22,7 +22,7 @@ const Whys:React.FC<whyProps> = ({title, description, image}) => {
             </Image>
         </div>
         <div className='text-black text-center py-6 px-2'>
-            <div className='font-semibold text-xl'>
+            <div className='font-semibold text-2lg md:text-xl'>
                 <h2>{title}</h2>
             </div>
             <div className='text-sm pt-1'>

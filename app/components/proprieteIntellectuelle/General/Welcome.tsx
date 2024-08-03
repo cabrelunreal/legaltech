@@ -24,8 +24,8 @@ const WelcomeContainer:React.FC<WelcomeProps> = ({title, image, beforeT, descrip
       <div className={`absolute bg-black bg-opacity-30 inset-0 flex items-center ${custom}`}>
         <div className="bg-opacity-50 text-white tex-center p-4 rounded">
           <p>{beforeT}</p>
-          <h1 className="text-4xl py-4 font-bold">{title}</h1>
-          <p className='py-4 text-xl'>{description}</p>
+          <h1 className="text-2xl lg:text-4xl py-4 font-bold">{title}</h1>
+          <p className='py-4 text-2lg lg:text-xl'>{description}</p>
           <Button title={buttonTitle} structure='px-6 hover:bg-green-800 rounded-md capitalize text-xl font-bold py-3 text-white bg-green-700' />
         </div>
       </div>

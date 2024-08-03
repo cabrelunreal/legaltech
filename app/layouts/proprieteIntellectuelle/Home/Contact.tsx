@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <div className='px-4 md:px-0'>
       <div className='pt-8'>
-        <div>
+        <div className='py-8'>
           <Heads title={Title} description={Description} structure='text-center' />
         </div>
         <div className='bg-gray-100 py-8'>

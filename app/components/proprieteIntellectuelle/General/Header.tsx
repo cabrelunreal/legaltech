@@ -12,35 +12,29 @@ const Header: React.FC = () => {
     <div className='bg-white shadow-sm'>
       <div className='w-9/12 m-auto flex justify-between py-3'>
         <div>
-          <Image
-            src='https://res.cloudinary.com/dedakscgk/image/upload/v1721945934/logo_1_tvf3xq.png'
-            alt='LOGO'
-            width={120}
-            height={40}
-          />
+          <Link href='../../../pages/Home'>
+            <Image
+              src='https://res.cloudinary.com/dedakscgk/image/upload/v1721945934/logo_1_tvf3xq.png'
+              alt='LOGO'
+              width={120}
+              height={40}
+            />
+          </Link>
         </div>
         <div className='text-center pt-3 relative hidden md:flex'>
           <ul className='flex justify-between text-lg font-bold'>
             <NavItem title="Services">
               <Dropdown>
-                <DropdownItem href="/service1">Service 1</DropdownItem>
-                <DropdownItem href="/service2">Service 2</DropdownItem>
-                <DropdownItem href="/service3">Service 3</DropdownItem>
+                <DropdownItem href="../../../pages/createDocuments">Creez vos documents</DropdownItem>
+                <DropdownItem href="../../../pages/HomePropriete">Propriete Intellectuelle</DropdownItem>
+                <DropdownItem href="../../../pages/contactTeams">Consultez nos experts</DropdownItem>
+                <DropdownItem href="../../../pages/createSarl">Creez votre entreprise</DropdownItem>
+                <DropdownItem href="../../../pages/DocumentTranslate">Traduction De Documents</DropdownItem>
               </Dropdown>
             </NavItem>
-            <NavItem title="Pourquoi nous">
-              <Dropdown>
-                <DropdownItem href="/why-us1">Reason 1</DropdownItem>
-                <DropdownItem href="/why-us2">Reason 2</DropdownItem>
-                <DropdownItem href="/why-us3">Reason 3</DropdownItem>
-              </Dropdown>
+            <NavItem title="Pourquoi nous" children={undefined}>
             </NavItem>
-            <NavItem title="Blog">
-              <Dropdown>
-                <DropdownItem href="/blog1">Blog 1</DropdownItem>
-                <DropdownItem href="/blog2">Blog 2</DropdownItem>
-                <DropdownItem href="/blog3">Blog 3</DropdownItem>
-              </Dropdown>
+            <NavItem title="Blog" children={undefined}>
             </NavItem>
           </ul>
         </div>
@@ -66,17 +60,14 @@ const Header: React.FC = () => {
           <ul className='text-lg font-bold'>
             <NavItem title="Services">
               <Dropdown>
-                <DropdownItem href="/service1">Service 1</DropdownItem>
-                <DropdownItem href="/service2">Service 2</DropdownItem>
-                <DropdownItem href="/service3">Service 3</DropdownItem>
+                <DropdownItem href="../../../pages/createDocuments">Creez vos documents</DropdownItem>
+                <DropdownItem href="../../../pages/HomePropriete">Propriete Intellectuelle</DropdownItem>
+                <DropdownItem href="../../../pages/contactTeams">Consultez nos experts</DropdownItem>
+                <DropdownItem href="../../../pages/createSarl">Creez votre entreprise</DropdownItem>
+                <DropdownItem href="../../../pages/DocumentTranslate">Traduction De Documents</DropdownItem>
               </Dropdown>
             </NavItem>
-            <NavItem title="Pourquoi nous">
-              <Dropdown>
-                <DropdownItem href="/why-us1">Reason 1</DropdownItem>
-                <DropdownItem href="/why-us2">Reason 2</DropdownItem>
-                <DropdownItem href="/why-us3">Reason 3</DropdownItem>
-              </Dropdown>
+            <NavItem title="Pourquoi nous" children={undefined}>
             </NavItem>
             <NavItem title="Blog" children={undefined}>
             </NavItem>
@@ -120,7 +111,7 @@ interface DropdownProps {
 
 const Dropdown: React.FC<DropdownProps> = ({ children }) => {
   return (
-    <div className='absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50'>
+    <div className='absolute left-0 mt-2 w-96 grid bg-white border border-gray-200 rounded-md shadow-lg z-50'>
       <ul className='py-1'>{children}</ul>
     </div>
   );

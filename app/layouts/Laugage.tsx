@@ -18,7 +18,7 @@ const description3 = 'Travaux réalisés'
 const title3 = '+3150'
 const Laugage = () => {
   return (
-    <div className='w-8/12 m-auto flex justify-around text-white py-16 my-32'>
+    <div className='w-9/12 m-auto grid md:flex justify-around text-white py-16 my-32'>
         <div>
             <Laugages image={image} description={description} title={title} />
         </div>

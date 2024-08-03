@@ -1,0 +1,50 @@
+import Button from '@/app/components/proprieteIntellectuelle/General/Button';
+import Image from 'next/image'; // Adjust the path to your image file
+
+interface WelcomeProps {
+    title: string;
+    description: string;
+    buttonTitle?: string;
+    image: string;
+    custom?: string;
+}
+
+const WelcomeContainer: React.FC<WelcomeProps> = ({ title, image, description, buttonTitle, custom }) => {
+    return (
+        <div className="relative w-full h-[400px] md:h-[620px]">
+            <Image
+                src={image}
+                alt="Sample Image"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="w-full h-full"
+            />
+            <div className={`absolute bg-black bg-opacity-30 inset-0 flex items-center justify-center ${custom}`}>
+                <div className="bg-black bg-opacity-50 text-white text-center p-4 md:p-6 lg:p-8 rounded mx-4 md:mx-8">
+                    <h1 className="text-xl md:text-2xl lg:text-4xl py-2 md:py-4 font-bold">{title}</h1>
+                    <p className="text-base md:text-lg lg:text-xl py-2 md:py-4">{description}</p>
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 py-3 pb-12">
+                        <select name="country" id="country" className="py-3 px-2 md:py-4 md:px-3 text-black rounded-md focus:outline-none">
+                            <option value="Cameroon">Sélectionnez votre pays</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Cote Ivoire">Côte d&apos;Ivoire</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tchad">Tchad</option>
+                        </select>
+                        <select name="status" id="status" className="py-3 px-2 md:py-4 md:px-3 text-black rounded-md focus:outline-none">
+                            <option value="Selectionnez un statut">Sélectionnez un statut</option>
+                            <option value="Sarl">Sarl</option>
+                            <option value="SarlU">SarlU</option>
+                            <option value="Entreprise Individuelle">Entreprise Individuelle</option>
+                        </select>
+                    </div>
+                    <Button title={buttonTitle} structure='px-4 md:px-6 hover:bg-green-800 rounded-md capitalize text-base md:text-lg font-bold py-2 md:py-3 text-white bg-green-700' />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default WelcomeContainer;

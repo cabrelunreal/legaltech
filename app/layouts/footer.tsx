@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import FootComponent from '../components/FootComponent'
 import Button from '../components/Button'
 import Image from 'next/image'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import { ChevronDownSVG, ChevronUpSVG } from './icon'
 
 const Footer = () => {
   // State for each dropdown
@@ -31,7 +31,7 @@ const Footer = () => {
                         className='w-full text-white bg-green-800 px-4 py-2 rounded flex items-center justify-between mb-2'
                     >
                         <span>Info</span>
-                        {isInfoOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
+                        {isInfoOpen ? <ChevronUpSVG /> : <ChevronDownSVG />}
                     </button>
                     {isInfoOpen && (
                         <div className='bg-green-900 p-4 rounded mb-4'>
@@ -53,7 +53,7 @@ const Footer = () => {
                         className='w-full text-white bg-green-800 px-4 py-2 rounded flex items-center justify-between mb-2'
                     >
                         <span>Contacts</span>
-                        {isContactsOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
+                        {isContactsOpen ? <ChevronUpSVG /> : <ChevronDownSVG />}
                     </button>
                     {isContactsOpen && (
                         <div className='bg-green-900 p-4 rounded mb-4'>
@@ -73,7 +73,7 @@ const Footer = () => {
                         className='w-full text-white bg-green-800 px-4 py-2 rounded flex items-center justify-between mb-2'
                     >
                         <span>Menu</span>
-                        {isMenuOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
+                        {isMenuOpen ? <ChevronUpSVG /> : <ChevronDownSVG />}
                     </button>
                     {isMenuOpen && (
                         <div className='bg-green-900 p-4 rounded mb-4'>
@@ -93,7 +93,7 @@ const Footer = () => {
                         className='w-full text-white bg-green-800 px-4 py-2 rounded flex items-center justify-between mb-2'
                     >
                         <span>Newsletter</span>
-                        {isNewsletterOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
+                        {isNewsletterOpen ? <ChevronUpSVG /> : <ChevronDownSVG />}
                     </button>
                     {isNewsletterOpen && (
                         <div className='bg-green-900 p-4 rounded'>

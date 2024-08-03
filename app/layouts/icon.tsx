@@ -13,3 +13,8 @@ export const ChevronUpSVG: React.FC = () => (
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
   </svg>
 );
+
+
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {ChevronDownSVG, ChevronUpSVG}

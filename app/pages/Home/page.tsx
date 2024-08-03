@@ -1,6 +1,5 @@
 import DocTranslate from '@/app/components/DocTranslate'
 import Experts from '@/app/layouts/Experts'
-import Intellectual from '@/app/layouts/Intellectual'
 import Laugage from '@/app/layouts/Laugage'
 import Services from '@/app/layouts/services'
 import Traductions from '@/app/layouts/Traduction'

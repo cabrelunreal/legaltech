@@ -40,9 +40,7 @@ const Welcome = () => {
         <div>
             <DocCreate />
         </div>
-        <div>
-            <Intellectual />
-        </div>
+        
         <div>
             <Experts />
         </div>

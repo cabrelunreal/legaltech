@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import FootComponent from '../components/FootComponent'
 import Button from '../components/Button'
 import Image from 'next/image'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import ChevronDownIcon from '@heroicons/react/24/outline/ChevronDownIcon'
+import ChevronUpIcon from '@heroicons/react/24/outline/ChevronUpIcon'
+
 
 const Footer = () => {
   // State for each dropdown

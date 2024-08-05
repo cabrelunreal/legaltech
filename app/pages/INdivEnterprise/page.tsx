@@ -19,7 +19,7 @@ const CreatePersonal = () => {
     <div>
         <WelcomeContainer 
             title='ENTREPRISE INDIVIDUELLE'
-            image=''
+            image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703629/individual_enterprise_background_ngpuye.png'
             description='Services de création de la SARL simples, abordables...'
             buttonTitle1='precedent'
             buttontitle2='suivant'

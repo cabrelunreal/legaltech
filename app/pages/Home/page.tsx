@@ -41,9 +41,6 @@ const Welcome = () => {
             <DocCreate />
         </div>
         <div>
-            <Intellectual />
-        </div>
-        <div>
             <Experts />
         </div>
         <div  className='bg-green-700 my-16'>

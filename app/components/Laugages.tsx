@@ -11,21 +11,21 @@ interface docProps{
 const Laugages:React.FC<docProps> = ({ title, description, image}) => {
   return (
     <div>
-        <div className='h-24 my-6'>
+        <div className='h-22 md:h-24 my-2'>
             <Image
               src={image}
               alt=''
-              width={100}
+              width={80}
               height={100}
               className='justify-center m-auto classname'
             >
             </Image>
         </div>
         <div className='text-center py-1 px-6'>
-            <div className='font-semibold text-2xl'>
+            <div className='font-semibold text-xl md:text-2xl'>
                 <h2>{title}</h2>
             </div>
-            <div className='text-lg pt-1'>
+            <div className='text-sm md:text-lg pt-1'>
                 <p>{description}</p>
             </div>
         </div>

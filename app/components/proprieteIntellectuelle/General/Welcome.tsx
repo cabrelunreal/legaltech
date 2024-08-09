@@ -12,21 +12,21 @@ interface WelcomeProps{
 
 const WelcomeContainer:React.FC<WelcomeProps> = ({title, image, beforeT, description, buttonTitle, custom}) => {
   return (
-    <div className="relative w-full h-[620px]">
+    <div className="relative w-full h-[430px] md:h-[620px]">
       <Image
         src={image}
         alt="Sample Image"
         layout="fill"
         objectFit="cover"
         objectPosition='center'
-        className="w-full h-full bg-opacity-50"
+        className="w-full h-full bg-opacity-90"
       />
       <div className={`absolute bg-black bg-opacity-30 inset-0 flex items-center ${custom}`}>
         <div className="bg-opacity-50 text-white tex-center p-4 rounded">
           <p>{beforeT}</p>
-          <h1 className="text-2xl lg:text-4xl py-4 font-bold">{title}</h1>
-          <p className='py-4 text-2lg lg:text-xl'>{description}</p>
-          <Button title={buttonTitle} structure='px-6 hover:bg-green-800 rounded-md capitalize text-xl font-bold py-3 text-white bg-green-700' />
+          <h1 className="text-4xl md:text-5xl md:py-4 font-semibold">{title}</h1>
+          <p className='py-4 text-lg md:text-2xl'>{description}</p>
+          <Button title={buttonTitle} structure='px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white bg-green-700' />
         </div>
       </div>
     </div>

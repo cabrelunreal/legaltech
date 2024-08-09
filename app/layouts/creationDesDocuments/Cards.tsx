@@ -1,7 +1,15 @@
+'use client'
 import Card from '@/app/components/creationDesDocuments/Card'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 const Cards = () => {
+    const router = useRouter();
+
+    const onclickEnterprise = (path: string) => {
+        router.push(path);
+    };
+
   return (
     <div>
         <div className='w-11/12 sm:w-10/12 lg:w-9/12 m-auto py-12 lg:py-24'>
@@ -15,13 +23,15 @@ const Cards = () => {
                         title="Les contrats"
                         content="Vos contrats mise à votre disposition facilement"
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg" 
+                        onclick={() => onclickEnterprise('../../pages/createDocuments')}
                     />
                 </div>
                 <div className="flex justify-center items-center">
                     <Card
                         title="Création d'entreprise"
                         content="Vos contrats mise à votre disposition facilement"
-                        image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/office-building-red_s0l7wt.svg" 
+                        image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/office-building-red_s0l7wt.svg"
+                        onclick={() => onclickEnterprise('../../pages/createSarl')}
                     />
                 </div>
                 <div className="flex justify-center items-center">
@@ -29,6 +39,7 @@ const Cards = () => {
                         title="Gestion d'entreprise"
                         content="Gérer vos entreprise depuis votre domicile."
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703633/skyline_agut0e.svg" 
+                        onclick={() => onclickEnterprise}
                     />
                 </div>
             </div>

@@ -8,31 +8,25 @@ const Traductions = () => {
     <div className='w-9/12 m-auto py-12 text-white'>
         <div>
             <div className='w-full text-center'>
-                <h2 className='uppercase text-3xl pb-2 text-semibold'>traduction des documents</h2>
-                <p className='text-lg'>Protéger juridiquement vos produits</p>
+                <h2 className='uppercase text-xl md:text-3xl text-semibold'>traduction des documents</h2>
+                <p className='text-sm md:text-lg'>Protégez juridiquement vos produits</p>
             </div>
-            <div className='md:w-10/12 m-auto my-8 grid md:grid-cols-2'>
-                <div className='md:block hidden'>
+            <div className='md:w-10/12 m-auto my-8 grid md:grid-cols-2 gap-2'>
+                <div className=''>
                     <Image 
                         src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703622/Groupe_198_pzwjwp.png'
                         alt='documents'
-                        width={500}
-                        height={300}
+                        width={470}
+                        height={200}
                         className=''
                     ></Image>
                 </div>
-                <div className='w-full grid md:grid-cols-2 gap-2'>
+                <div className='w-full'>
                     <div className='bg-gray-50 rounded-md'>
-                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg' description='Contrats d&apos;affaires' imagedescription='contrats' />
-                    </div>
-                    <div className='bg-gray-50 rounded-md'>
-                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg' description='Contrats' imagedescription='contrats'  />
-                    </div>
-                    <div className='bg-gray-50 rounded-md'>
-                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/document_3_bwe9g3.svg' description='Documents OHADA' imagedescription='OHADA' />
-                    </div>
-                    <div className='bg-gray-50 rounded-md'>
-                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/paper_1_t8npck.svg' description='Autre documents' imagedescription='docs' />
+                        <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/paper_1_t8npck.svg' 
+                            description='Traduction de documents juridiques, administratifs et autres documents techniques' 
+                            imagedescription='docs' 
+                        />
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ interface HeadsProps {
 const Heads: React.FC<HeadsProps> = ({ title, description, cust, headcust, structure }) => {
   return (
     <div className={structure}>
-      <h2 className={`py-2 font-bold text-2xl md:text-3xl ${headcust}`}>
+      <h2 className={`py-2 font-semibold text-2xl md:text-3xl ${headcust}`}>
         {title}
       </h2>
       {description && (

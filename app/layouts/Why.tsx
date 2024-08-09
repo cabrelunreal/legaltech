@@ -24,12 +24,12 @@ interface whysprops{
 
 const Why:React.FC<whysprops> = ({title, description}) => {
   return (
-    <div className='w-9/12 m-auto'>
-        <div className='pb-6'>
-            <div className='text-center uppercase text-4xl font-bold py-2'>
+    <div className='w-9/12 m-auto pt-8'>
+        <div className='pb-4'>
+            <div className='text-center uppercase text-xl md:text-4xl font-semibold'>
                 <h2>{title}</h2>
             </div>
-            <div className='text-black text-center text-base py-4'>
+            <div className='text-black text-center md:text-lg py-2'>
                 <p>{description}</p>
             </div>
         </div>

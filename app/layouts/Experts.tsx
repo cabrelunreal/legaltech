@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 const Experts = () => {
   return (
-    <div className='w-full md:w-9/12 px-4 md:px-24 m-auto text-center'>
+    <div className='w-full md:w-9/12 px-4 md:px-24 m-auto text-center pb-14'>
         <div>
-            <h2 className='text-4xl uppercase font-semibold py-2'>Nos experts</h2>
-            <p className='text-lg'>Parce que vos angagements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
+            <h2 className='md:text-3xl uppercase text-xl font-semibold py-2'>Nos experts</h2>
+            <p className='text-sm md:text-lg md:px-24'>Parce que vos angagements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
         </div>
         <div className='grid md:grid-cols-2 w-full pt-6'>
             <div>

@@ -15,12 +15,12 @@ const description3 = 'Dans le grand soucis de vous facilité la conception de vo
 
 const DocCreate = () => {
   return (
-    <div className='w-full sm:w-11/12 md:w-10/12 lg:w-9/12 mx-auto bg-white py-12 md:py-24'>
-        <div>
-            <div className='text-center text-black uppercase text-2xl md:text-4xl font-bold py-4 md:py-6'>
+    <div className='w-full sm:w-11/12 md:w-10/12 lg:w-9/12 mx-auto py-12 md:py-14'>
+        <div className='py-3 px-8'>
+            <div className='text-center text-black uppercase text-lg md:text-3xl font-semibold py-0 md:py-2'>
                 <h2>creation de document</h2>
             </div>
-            <div className='text-black text-center text-sm md:text-base py-2 md:py-4'>
+            <div className='text-black text-center text-sm md:text-xl py-2 md:py-2'>
                 <p>Nous vous presentons comment creer vos document juridique ici.</p>
             </div>
         </div>

@@ -11,21 +11,21 @@ interface docProps{
 const DocCreation:React.FC<docProps> = ({ title, description, image}) => {
   return (
     <div>
-        <div className='h-80'>
+        <div className='h-72 md:h-80'>
             <Image
               src={image}
               alt=''
-              width={300}
+              width={260}
               height={300}
               className='justify-center m-auto classname'
             >
             </Image>
         </div>
-        <div className='text-black text-center py-6 px-6'>
-            <div className='font-semibold text-3xl'>
+        <div className='text-black text-center md:py-2 px-8 md:px-6'>
+            <div className='font-semibold text-lg md:text-2xl'>
                 <h2>{title}</h2>
             </div>
-            <div className='text-lg pt-6'>
+            <div className='md:text-lg text-sm py-2 md:pt-3'>
                 <p>{description}</p>
             </div>
         </div>

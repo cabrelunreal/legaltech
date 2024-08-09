@@ -50,14 +50,6 @@ const Header: React.FC = () => {
             <NavItem title="Blog" />
           </ul>
         </div>
-        <div className='py-2 border-green-300 hidden md:flex rounded-full px-4 border'>
-        <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>
-          <input
-            type='text'
-            className='focus:outline-none w-80 px-3'
-            placeholder='trouver quelque chose...'
-          />
-        </div>
         <div className='md:hidden flex items-center'>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (

@@ -1,18 +1,19 @@
 import React from 'react'
 import Button from './Button'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Consult = () => {
   return (
     <div className='border py-6 m-auto rounded-md'>
         <div className='text-center w-full'>
-            <h2 className='text-semibold md:text-xl text-semibold uppercase'>Consulter un expert juridique</h2>
-            <p className='pb-1 text-sm md:text-lg'>N&apos;a jamais été aussi facile</p>
+            <h2 className='text-semibold md:text-xl px-20 py-2 text-semibold uppercase'>Consulter un expert juridique n&apos;a jamais été aussi facile</h2>
             <div className='w-fit flex md:flex-row flex-col text-sm md:text-lg m-auto'>
                 <div className='mx-4'>
-                    <p className='underline hover:cursor-pointer text-blue-500'>contact@legaltech.com</p>
+                    <p className='underline hover:cursor-pointer text-blue-500'><i className="fa-solid fa-envelope"></i>contact@legaltech.com</p>
                 </div>
                 <div className='mx-4'>
-                    <p className='hover:underline hover:cursor-pointer text-blue-500'> +237 672 442 800</p>
+                    <p className='hover:underline hover:cursor-pointer text-blue-500'><i className="fa-solid fa-phone"></i> +237 672 442 800</p>
                 </div>
             </div>
         </div>

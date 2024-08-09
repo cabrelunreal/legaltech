@@ -22,9 +22,9 @@ const Service:React.FC<serviceProps> = ({ title, description, image }) => {
                 >
                 </Image>
             </div>
-            <div className='px-2 w-9/12 py-2 md:px-6'>
-                <h2 className='text-sm font-semibold md:text-2xl'>{title}</h2>
-                <p className='md:py-2 py-0 text-sm md:text-xl'>{description}</p>
+            <div className='px-2 w-9/12 py-2 md:px-4'>
+                <h2 className='text-sm font-semibold md:text-xl'>{title}</h2>
+                <p className='md:py-2 py-0 text-sm md:text-lg'>{description}</p>
             </div>
         </div>
     </div>

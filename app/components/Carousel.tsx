@@ -22,8 +22,9 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 3, // Adjust based on your design
     slidesToScroll: 1,
+    centerPadding: '4',
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -32,26 +33,27 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
     <div className="carousel-container">
       <Slider {...settings}>
         {items.map((item, index) => (
-          <div key={index} className="carousel-item">
+          <div key={index} className="carousel-item relative mx-12 w-full h-48">
             <Image
               src={item.src}
               alt={item.alt}
-              width={120}
-              height={100}
-              layout="flex justify-center items-center"
+              layout='fill'
+              objectFit='contain'
+              className='rounded'
             />
           </div>
         ))}
       </Slider>
       <style jsx>{`
         .carousel-container {
-          justify-items: center;
-          align-items: center;
           width: 100%;
+          max-width: 1200px;
+          margin-left: 24px; 
           margin: auto;
         }
         .carousel-item {
-          padding: 0 10px;
+          position: relative; /* Ensure Image can fill the div */
+          overflow: hidden; /* Optional, to hide any overflow */
         }
       `}</style>
     </div>

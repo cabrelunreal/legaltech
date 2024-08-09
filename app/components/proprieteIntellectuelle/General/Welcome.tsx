@@ -26,7 +26,7 @@ const WelcomeContainer:React.FC<WelcomeProps> = ({title, image, beforeT, descrip
           <p>{beforeT}</p>
           <h1 className="text-4xl md:text-5xl md:py-4 font-semibold">{title}</h1>
           <p className='py-4 text-lg md:text-2xl'>{description}</p>
-          <Button title={buttonTitle} structure='px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white bg-green-700' />
+          <Button title={buttonTitle} structure='px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white' />
         </div>
       </div>
     </div>

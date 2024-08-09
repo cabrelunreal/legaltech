@@ -9,7 +9,6 @@ const Traductions = () => {
         <div>
             <div className='w-full text-center'>
                 <h2 className='uppercase text-xl md:text-3xl text-semibold'>traduction des documents</h2>
-                <p className='text-sm md:text-lg'>Protégez juridiquement vos produits</p>
             </div>
             <div className='md:w-10/12 m-auto my-8 grid md:grid-cols-2 gap-2'>
                 <div className=''>

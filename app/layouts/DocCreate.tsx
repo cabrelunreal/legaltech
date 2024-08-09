@@ -9,9 +9,9 @@ const image1 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/ch
 const image2 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703632/remplir_le_document_xklo0a.svg'
 const image3 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/advocats_en_option_gkeapb.svg'
 
-const description1 = 'Dans le grand soucis de vous facilité la conception de votre document nous vous proposons des modelés de document. Choisissez votre modèle.'
-const description2 = 'Vous devez uniquement remplir les informations. Des questions simples et claires vous seront posées pour que vous sachiez quelles informations sont demandées dans chaque champ.'
-const description3 = 'Dans le grand soucis de vous facilité la conception de votre document nous vous proposons des modelés de document. Choisissez votre modèle.'
+const description1 = 'Dans le grand souci de vous faciliter la conception de vos documents, nous vous proposons des modèles. Choisissez votre modèle.'
+const description2 = 'Vous devez uniquement remplir les informations. Des questions simples et claires vous seront posées pour que vous sachez quelles informations sont demandées dans chaque champ.'
+const description3 = 'Vous pouvez vous faire assister d&apos;un expert pour la relecture de vos documents.'
 
 const DocCreate = () => {
   return (
@@ -21,7 +21,7 @@ const DocCreate = () => {
                 <h2>creation de document</h2>
             </div>
             <div className='text-black text-center text-sm md:text-xl py-2 md:py-2'>
-                <p>Nous vous presentons comment creer vos document juridique ici.</p>
+                <p>Nous vous présentons comment créer vos documents juridiques ici.</p>
             </div>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8'>

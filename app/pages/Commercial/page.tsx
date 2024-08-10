@@ -21,10 +21,11 @@ const MarquesLogo = () => {
         <div>
             <WelcomeContainer 
                 beforeT='Nom Commercial'
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre nom commercial à l’OAPI'
                 description='Le nom commercial est la dénomination sous laquelle une personne physique ou morale désigne l’entreprise ou le fonds de commerce qu’elle exploite pour l’identifier dans ses rapports avec la clientèle. Il peut consister en un nom patronymique..'
                 buttonTitle='Commencer'
+                customButton='bg-green-700 text-sm md:text-2lg font-semibold'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721961801/woman-8499928_1280_1_5_m8ufqv.png'
             />
         </div>

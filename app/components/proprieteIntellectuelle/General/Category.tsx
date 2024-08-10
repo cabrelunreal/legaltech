@@ -19,8 +19,8 @@ const Category: React.FC<CategoryProps> = ({ title, image, description }) => {
           className='object-contain'
         />
       </div>
-      <div className='md:ml-4 mt-4 md:mt-0 text-center md:text-left'>
-        <h2 className='text-xl md:text-2xl font-bold'>{title}</h2>
+      <div className='md:ml-4 mt-4 md:mt-0 w-full grid place-items-center h-24 md:text-left'>
+        <h2 className='text-xl md:text-2xl text-center font-bold'>{title}</h2>
       </div>
     </div>
   );

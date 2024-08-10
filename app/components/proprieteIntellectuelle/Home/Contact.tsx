@@ -4,9 +4,9 @@ import Button from '../General/Button';
 const Contacts: React.FC = () => {
   return (
     <div className='w-full py-8'>
-      <div className='w-11/12 lg:w-9/12 mx-auto'>
+      <div className='w-11/12 md:w-9/12 mx-auto'>
         <form className='w-full lg:w-8/12 mx-auto'>
-          <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16'>
+          <div className='w-full grid grid-cols-1 lg:grid-cols-2 md:gap-4'>
             <div className='w-full'>
               <input 
                 type='text' 

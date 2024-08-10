@@ -21,10 +21,11 @@ const MarquesLogo = () => {
         <div>
             <WelcomeContainer 
                 beforeT='Marques & Logos'
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre marque à l’OAPI'
                 description='La marque est un signe visible utilisé par une personne physique ou morale pour distinguer ses produits ou services de ceux de ses concurrents.'
                 buttonTitle='Commencer'
+                customButton='bg-green-700 text-sm font-semibold md:text-lg'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721955860/woman-8499928_1280_1_1_bqbqjb.png'
             />
         </div>

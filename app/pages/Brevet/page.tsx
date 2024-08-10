@@ -21,10 +21,11 @@ const Brevet = () => {
         <div>
             <WelcomeContainer 
                 beforeT='Le Brevet'
-                custom='justify-start pl-56 pr-96'
+                custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre invention à l’OAPI'
                 description='Un brevet d’invention confère à son inventeur le droit exclusif d’empêcher d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer son invention protégée.'
                 buttonTitle='Commencer'
+                customButton='bg-green-700 text-sm font-semibold md:text-lg'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721949479/woman-8499928_1280_1_qqyqii.png'
             />
         </div>

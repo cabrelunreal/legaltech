@@ -11,11 +11,11 @@ interface HeadsProps {
 const Heads: React.FC<HeadsProps> = ({ title, description, cust, headcust, structure }) => {
   return (
     <div className={structure}>
-      <h2 className={`py-2 font-semibold text-2xl md:text-3xl ${headcust}`}>
+      <h2 className={`py-1 font-semibold text-lg md:text-xl ${headcust}`}>
         {title}
       </h2>
       {description && (
-        <p className={`pb-4 text-base md:text-lg ${cust}`}>
+        <p className={`pb-1 text-sm md:text-sm ${cust}`}>
           {description}
         </p>
       )}

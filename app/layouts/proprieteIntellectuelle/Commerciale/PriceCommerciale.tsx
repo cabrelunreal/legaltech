@@ -5,8 +5,8 @@ import React from 'react';
 const PriceLogo = () => {
   return (
     <div className='py-6 bg-gray-50'>
-      <div className='w-full max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+      <div className='w-full md:w-7/12 px-4 sm:px-6 lg:px-8 mx-auto'>
+        <div className='grid grid-cols-1 h-[1110px] md:h-[700px] sm:grid-cols-2 gap-8'>
           <div className='relative text-center border-4 border-green-700 rounded-md px-4 sm:px-6 py-6 sm:py-8'>
             <Heads title='Enregistrement de marque' headcust='text-lg' cust='hidden' structure='' />
             <Heads title='A partir de' headcust='text-lg' cust='hidden' structure='py-2' />
@@ -45,7 +45,7 @@ const PriceLogo = () => {
             />
             <Button 
               title='commencer' 
-              structure='capitalize px-6 py-3 bg-green-700 rounded-sm my-4 absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white font-bold text-xl' 
+              structure='capitalize px-6 py-3 bg-green-700 rounded-sm my-4 absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white font-bold md:text-lg text-sm' 
             />
           </div>
 

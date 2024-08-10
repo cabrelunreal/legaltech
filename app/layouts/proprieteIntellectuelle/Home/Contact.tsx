@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         <div className='py-8'>
           <Heads title={Title} description={Description} structure='text-center' />
         </div>
-        <div className='bg-gray-100 py-8'>
+        <div className='bg-gray-100 py-8 w-11/12'>
           <Contacts />
         </div>
       </div>

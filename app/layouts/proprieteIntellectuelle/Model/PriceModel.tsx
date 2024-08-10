@@ -5,8 +5,8 @@ import React from 'react';
 const PriceLogo = () => {
   return (
     <div className='py-6 bg-gray-50'>
-      <div className='w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='relative text-center border-4 border-green-700 rounded-md px-4 py-6 sm:px-6 lg:px-8'>
+      <div className='w-full md:w-4/12 mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='relative text-center h-[660px] border-4 border-green-700 rounded-md px-4 py-6 sm:px-6 lg:px-8'>
           <Heads title='Enregistrement' headcust='text-lg' cust='hidden' structure='' />
           <Heads title='Frais officiels à partir de' headcust='text-lg' cust='hidden' structure='py-2' />
           <Heads title='XXX $ | 95.000 FCFA' headcust='text-xl text-green-700 font-bold' cust='hidden' structure='' />
@@ -42,7 +42,7 @@ const PriceLogo = () => {
           />
           <Button 
             title='commencer' 
-            structure='capitalize px-6 py-3 bg-green-700 rounded-sm my-4 text-white font-bold text-xl absolute bottom-0 left-1/2 transform -translate-x-1/2'
+            structure='capitalize px-6 py-3 bg-green-700 rounded-sm my-4 text-white font-bold text-sm md:text-lg absolute bottom-0 left-1/2 transform -translate-x-1/2'
           />
         </div>
       </div>

@@ -8,6 +8,7 @@ const Welcome = () => {
         <WelcomeContainer title='PROPRIÉTÉ INTELLECTUELLE' 
         description='Service de protection de creation' 
         buttonTitle='Commencer'
+        customButton='bg-green-700'
         custom='justify-center text-center'
         image='https://res.cloudinary.com/dedakscgk/image/upload/v1721945472/Screen_Shot_2024-06-29_at_14.51.43_1_in5kq6.png'
         />

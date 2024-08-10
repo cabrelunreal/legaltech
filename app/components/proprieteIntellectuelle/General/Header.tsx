@@ -75,13 +75,13 @@ const Header: React.FC = () => {
                   <FaChevronDown className='h-5 w-5 ml-2 text-gray-700' />
                 </button>
                 {servicesModalOpen && (
-                  <Dropdown>
-                    <DropdownItem href='/createDocuments'>Creez vos documents</DropdownItem>
-                    <DropdownItem href='/homePropriete'>Propriete Intellectuelle</DropdownItem>
-                    <DropdownItem href='/contactTeams'>Consultez nos experts</DropdownItem>
-                    <DropdownItem href='/createSarl'>Creez votre entreprise</DropdownItem>
-                    <DropdownItem href='/documentTranslate'>Traduction De Documents</DropdownItem>
-                  </Dropdown>
+                <Dropdown>
+                  <DropdownItem href='../../../pages/createDocuments'>Creez vos documents</DropdownItem>
+                  <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
+                  <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
+                  <DropdownItem href='../../../pages/createSarl'>Creez votre entreprise</DropdownItem>
+                  <DropdownItem href='../../../pages/documentTranslate'>Traduction De Documents</DropdownItem>
+                </Dropdown>
                 )}
               </li>
               <NavItem title="Pourquoi nous"/>

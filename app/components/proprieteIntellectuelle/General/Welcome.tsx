@@ -22,9 +22,9 @@ const WelcomeContainer:React.FC<WelcomeProps> = ({title, image, beforeT, descrip
         objectPosition='center'
         className="w-full h-full bg-opacity-90"
       />
-      <div className={`absolute bg-black bg-opacity-30 inset-0 flex items-center ${custom}`}>
+      <div className={`absolute inset-0 flex items-center ${custom}`}>
         <div className="bg-opacity-50 text-white tex-center p-4 rounded">
-          <p>{beforeT}</p>
+          <p className='py-4 text-lg md:text-2xl'>{beforeT}</p>
           <h1 className="text-4xl md:text-5xl md:py-4 font-semibold">{title}</h1>
           <p className='py-4 text-lg md:text-2xl'>{description}</p>
           <Button title={buttonTitle} structure={`px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white ${customButton}`} />

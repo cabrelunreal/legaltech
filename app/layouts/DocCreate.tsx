@@ -18,7 +18,7 @@ const DocCreate = () => {
     <div className='w-full sm:w-11/12 md:w-10/12 lg:w-9/12 mx-auto py-12 md:py-14'>
         <div className='py-3 px-8'>
             <div className='text-center text-black uppercase text-lg md:text-3xl font-semibold py-0 md:py-2'>
-                <h2>creation de document</h2>
+                <h2>COMMENT CREER DES DOCUMENTS</h2>
             </div>
             <div className='text-black text-center text-sm md:text-xl py-2 md:py-2'>
                 <p>Nous vous présentons comment créer vos documents juridiques ici.</p>

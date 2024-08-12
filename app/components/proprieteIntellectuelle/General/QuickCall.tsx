@@ -11,7 +11,7 @@ const QuickCall = () => {
           <Heads 
             title='Demandez à un professionnel du droit'
             headcust='text-lg md:text-xl'
-            description='Obtenez les bons conseils avec un avocat à vos côtés'
+            description='Obtenez les bons conseils avec un expert à vos côtés'
             structure='text-center md:text-left'
             cust='py-1 text-sm md:text-lg'
           />

@@ -23,10 +23,10 @@ const page = () => {
 
         <div>
             <WelcomeContainer 
-                beforeT='Dessins et Modèle Industriel'
+                beforeT='Dessins et Modèle Industriels'
                 custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre invention à l’OAPI'
-                description='Un brevet d’invention confère à son inventeur le droit exclusif d’empêcher d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer son invention protégée.'
+                description='Les dessins et modèles industriels confèrent à son auteur également le droit exclusif de priver d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer la création protégée...'
                 buttonTitle='Commencer'
                 customButton='bg-green-700'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721958001/woman-8499928_1280_1_2_q8fge8.png'

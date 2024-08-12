@@ -25,7 +25,7 @@ const page = () => {
                 beforeT='Recherche d’Antériorité'
                 custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre marque à l’OAPI'
-                description='Un brevet d’invention confère à son inventeur le droit exclusif d’empêcher d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer son invention protégée.'
+                description='Assure a son utilisateur la disponibilité de l&apos;actif qu&apos;il tend a proteger'
                 buttonTitle='Commencer'
                 customButton='bg-green-700'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721958920/woman-8499928_1280_1_3_vpinqe.png'
@@ -41,7 +41,7 @@ const page = () => {
         </div>
 
         <div>
-            <Heads title='Déposez votre brevet avec notre processus simple en deux étapes' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Heads title='En 48h vous obtenez un résultat avec notre processus simple en deux étapes' structure='font-bold text-center py-8' headcust='text-2xl' />
         </div>
 
         <div>

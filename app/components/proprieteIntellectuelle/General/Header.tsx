@@ -38,10 +38,9 @@ const Header: React.FC = () => {
               </button>
               {servicesModalOpen && (
                 <Dropdown>
-                  <DropdownItem href='../../../pages/createDocuments'>Creez vos documents</DropdownItem>
+                  <DropdownItem href='../../../pages/createDocuments'>Creez vos documents d&apos;entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
-                  <DropdownItem href='../../../pages/createSarl'>Creez votre entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/documentTranslate'>Traduction De Documents</DropdownItem>
                 </Dropdown>
               )}
@@ -76,10 +75,9 @@ const Header: React.FC = () => {
                 </button>
                 {servicesModalOpen && (
                 <Dropdown>
-                  <DropdownItem href='../../../pages/createDocuments'>Creez vos documents</DropdownItem>
+                  <DropdownItem href='../../../pages/createDocuments'>Creez vos documents d&apos;entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
-                  <DropdownItem href='../../../pages/createSarl'>Creez votre entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/documentTranslate'>Traduction De Documents</DropdownItem>
                 </Dropdown>
                 )}

@@ -14,13 +14,13 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ title, content, image, onclick }) => {
   return (
     <div className="relative flex flex-col items-center p-4">
-        <div className='relative w-8/12 flex bg-green-700 justify-center'>
+        <div className='relative w-8/12 flex bg-green-700 justify-center px-24'>
             <Image 
                 src={image} 
                 alt={title}
                 width={72}
                 height={72}
-                style={{ objectFit: 'fill', objectPosition: 'center' }}
+                style={{ objectPosition: 'center' }}
                 className="h-48 w-48 rounded-full bg-green-700 absolute top-[-24px]" 
             ></Image>
         </div>

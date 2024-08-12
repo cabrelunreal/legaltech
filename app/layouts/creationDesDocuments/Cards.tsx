@@ -12,15 +12,15 @@ const Cards = () => {
 
   return (
     <div>
-        <div className='w-11/12 sm:w-10/12 lg:w-9/12 m-auto py-12 lg:py-24'>
+        <div className='w-11/12 md:w-8/12 px-24 m-auto py-12'>
             <div className='text-center py-8'>
-                <h2 className='text-2xl sm:text-3xl font-semibold'>NOS DOCUMENTS LES PLUS POPULAIRES</h2>
+                <h2 className='text-2xl sm:text-3xl font-semibold'>NOS DOCUMENTS</h2>
                 <p className='text-base sm:text-lg pt-4 pb-6'>Le plus difficile pour vous est de choisir le document à Créer</p>
             </div>
-            <div className='w-full m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='w-full m-auto grid grid-cols-1 md:grid-cols-2 gap-2'>
                 <div className="flex justify-center items-center">
                     <Card
-                        title="Les contrats"
+                        title="Création de SARL"
                         content="Vos contrats mise à votre disposition facilement"
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg" 
                         onclick={() => onclickEnterprise('../../pages/createDocuments')}
@@ -28,18 +28,10 @@ const Cards = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <Card
-                        title="Création d'entreprise"
+                        title="Création de SARLU"
                         content="Vos contrats mise à votre disposition facilement"
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/office-building-red_s0l7wt.svg"
                         onclick={() => onclickEnterprise('../../pages/createSarl')}
-                    />
-                </div>
-                <div className="flex justify-center items-center">
-                    <Card
-                        title="Gestion d'entreprise"
-                        content="Gérer vos entreprise depuis votre domicile."
-                        image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703633/skyline_agut0e.svg" 
-                        onclick={() => onclickEnterprise}
                     />
                 </div>
             </div>

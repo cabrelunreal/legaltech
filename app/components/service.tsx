@@ -9,7 +9,7 @@ interface serviceProps{
 
 const Service:React.FC<serviceProps> = ({ title, description, image }) => {
   return (
-    <div className='flex h-32 md:h-48'>
+    <div className='flex h-36 md:h-48'>
         <div className='px-1 rounded-sm mx-1 bg-gray-100'></div>
         <div className='w-full flex py-2 md:py-6 bg-gray-100'>
             <div className='w-3/12'>

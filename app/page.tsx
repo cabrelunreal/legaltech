@@ -1,10 +1,11 @@
+import Formulaires from "./pages/Formulaires/page";
 import Welcome from "./pages/Home/page";
 
 
 export default function Home() {
   return (
     <div>
-      <Welcome />
+      <Formulaires />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 'use client'
-
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
@@ -12,7 +11,7 @@ import What from '@/app/layouts/proprieteIntellectuelle/Auteur/What'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
   
  const router = useRouter();
   
@@ -74,4 +73,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

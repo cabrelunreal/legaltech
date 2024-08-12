@@ -20,7 +20,7 @@ const Category: React.FC<CategoryProps> = ({ title, image, description }) => {
         />
       </div>
       <div className='md:ml-4 mt-4 md:mt-0 w-full grid place-items-center h-18 md:h-24 md:text-left'>
-        <h2 className='text-xl md:text-2xl text-center font-semibold'>{title}</h2>
+        <h2 className='text-xl md:text-xl text-center'>{title}</h2>
       </div>
     </div>
   );

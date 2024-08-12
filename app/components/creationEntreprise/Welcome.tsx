@@ -7,9 +7,10 @@ interface WelcomeProps {
     buttonTitle?: string;
     image: string;
     custom?: string;
+    onclick?: () => void;
 }
 
-const WelcomeContainer: React.FC<WelcomeProps> = ({ title, image, description, buttonTitle, custom }) => {
+const WelcomeContainer: React.FC<WelcomeProps> = ({ title, onclick, image, description, buttonTitle, custom }) => {
     return (
         <div className="relative w-full h-[400px] md:h-[620px]">
             <Image
@@ -40,7 +41,7 @@ const WelcomeContainer: React.FC<WelcomeProps> = ({ title, image, description, b
                             <option value="Entreprise Individuelle">Entreprise Individuelle</option>
                         </select>
                     </div>
-                    <Button title={buttonTitle} structure='px-4 md:px-6 hover:bg-green-800 rounded-md capitalize text-base md:text-lg font-bold py-2 md:py-3 text-white bg-green-700' />
+                    <Button title={buttonTitle} onClick={onclick}  structure='px-4 md:px-6 hover:bg-green-800 rounded-md capitalize text-base md:text-lg font-bold py-2 md:py-3 text-white bg-green-700' />
                 </div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+'use client'
+
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
@@ -8,8 +10,16 @@ import How from '@/app/layouts/proprieteIntellectuelle/Recherche/How'
 import PriceRecherche from '@/app/layouts/proprieteIntellectuelle/Recherche/PriceRecherche'
 import What from '@/app/layouts/proprieteIntellectuelle/Recherche/What'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+  
+ const router = useRouter();
+  
+    const onclickEnterprise = (path: string) => {
+        router.push(path);
+    };
+
   return (
     <div>
         <div>
@@ -27,6 +37,7 @@ const page = () => {
                 title='Protégez votre marque à l’OAPI'
                 description='Assure a son utilisateur la disponibilité de l&apos;actif qu&apos;il tend a proteger'
                 buttonTitle='Commencer'
+                onclick={() => onclickEnterprise('../../pages/Formulaires')}
                 customButton='bg-green-700'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721958920/woman-8499928_1280_1_3_vpinqe.png'
             />

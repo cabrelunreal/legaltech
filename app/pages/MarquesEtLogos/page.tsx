@@ -1,3 +1,5 @@
+'use client'
+
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
@@ -8,8 +10,16 @@ import How from '@/app/layouts/proprieteIntellectuelle/Logo/How'
 import PriceLogo from '@/app/layouts/proprieteIntellectuelle/Logo/PriceLogo'
 import What from '@/app/layouts/proprieteIntellectuelle/Logo/What'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const MarquesLogo = () => {
+  
+    const router = useRouter();
+  
+    const onclickEnterprise = (path: string) => {
+        router.push(path);
+    };
+  
   return (
     <div>
         <div>
@@ -25,6 +35,7 @@ const MarquesLogo = () => {
                 title='Protégez votre marque à l’OAPI'
                 description='La marque est un signe visible utilisé par une personne physique ou morale pour distinguer ses produits ou services de ceux de ses concurrents.'
                 buttonTitle='Commencer'
+                onclick={() => onclickEnterprise('../../pages/Formulaires')}
                 customButton='bg-green-700 text-sm font-semibold md:text-lg'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721955860/woman-8499928_1280_1_1_bqbqjb.png'
             />

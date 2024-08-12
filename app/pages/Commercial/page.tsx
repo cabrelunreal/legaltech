@@ -1,3 +1,4 @@
+'use client'
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
@@ -8,8 +9,15 @@ import How from '@/app/layouts/proprieteIntellectuelle/Commerciale/How'
 import PriceLogo from '@/app/layouts/proprieteIntellectuelle/Commerciale/PriceCommerciale'
 import What from '@/app/layouts/proprieteIntellectuelle/Commerciale/What'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const MarquesLogo = () => {
+  
+    const router = useRouter();
+  
+    const onclickEnterprise = (path: string) => {
+        router.push(path);
+    };
   return (
     <div>
         <div>
@@ -25,6 +33,7 @@ const MarquesLogo = () => {
                 title='Protégez votre nom commercial à l’OAPI'
                 description='Le nom commercial est la dénomination sous laquelle une personne physique ou morale désigne l’entreprise ou le fonds de commerce qu’elle exploite pour l’identifier dans ses rapports avec la clientèle. Il peut consister en un nom patronymique..'
                 buttonTitle='Commencer'
+                onclick={() => onclickEnterprise('../../pages/Formulaires')}
                 customButton='bg-green-700 text-sm md:text-2lg font-semibold'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721961801/woman-8499928_1280_1_5_m8ufqv.png'
             />

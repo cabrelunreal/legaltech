@@ -1,3 +1,5 @@
+'use client'
+
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
@@ -8,8 +10,16 @@ import How from '@/app/layouts/proprieteIntellectuelle/Auteur/How'
 import Price from '@/app/layouts/proprieteIntellectuelle/Auteur/PriceAuteur'
 import What from '@/app/layouts/proprieteIntellectuelle/Auteur/What'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+  
+ const router = useRouter();
+  
+ const onclickEnterprise = (path: string) => {
+        router.push(path);
+  };
+
   return (
     <div>
         <div>
@@ -27,6 +37,7 @@ const page = () => {
                 title='Protégez votre création'
                 description='Empêchez les autres d’utiliser et de tirer profit de votre livre, article, chanson, photo, œuvre d’art, etc.'
                 buttonTitle='Commencer'
+                onclick={() => onclickEnterprise('../../pages/Formulaires')}
                 customButton='bg-green-700 text-sm font-semibold md:text-2lg'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721959968/woman-8499928_1280_1_4_hrhmm5.png'
             />

@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                   <DropdownItem href='../../../pages/createDocuments'>Creez vos documents d&apos;entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
-                  <DropdownItem href='../../../pages/documentTranslate'>Traduction De Documents</DropdownItem>
+                  <DropdownItem href='../../../pages/DocumentTranslate'>Traduction De Documents</DropdownItem>
                 </Dropdown>
               )}
             </li>
@@ -78,12 +78,12 @@ const Header: React.FC = () => {
                   <DropdownItem href='../../../pages/createDocuments'>Creez vos documents d&apos;entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
-                  <DropdownItem href='../../../pages/documentTranslate'>Traduction De Documents</DropdownItem>
+                  <DropdownItem href='../../../pages/DocumentTranslate'>Traduction De Documents</DropdownItem>
                 </Dropdown>
                 )}
               </li>
               <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
-              <NavItem title="Blog"/>
+              <NavItem title="Blog" />
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>
               <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>

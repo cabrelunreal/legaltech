@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                 </Dropdown>
               )}
             </li>
-            <NavItem title="Pourquoi nous" />
+            <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
             <NavItem title="Blog" />
           </ul>
         </div>
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 </Dropdown>
                 )}
               </li>
-              <NavItem title="Pourquoi nous"/>
+              <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
               <NavItem title="Blog"/>
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>

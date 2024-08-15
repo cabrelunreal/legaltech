@@ -10,6 +10,7 @@ const FormStep1 = () => {
     const onclickEnterprise = (path: string) => {
         router.push(path);
     };
+    
   return (
     <div>
         <div>

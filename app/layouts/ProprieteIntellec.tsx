@@ -41,18 +41,24 @@ const ProprieteIntellect = () => {
                     <Service title={first_service}
                         image={image1} 
                         description={description1} 
+                        custom='pt-8 text-2xl capitalize'
+                        cardcustom='md:h-36'
                     />
                 </div>
                 <div>
                     <Service title={snd_service}
                         image={image2} 
                         description={description2} 
+                        custom='pt-8 text-2xl capitalize'
+                        cardcustom='md:h-36'
                     />
                 </div>
                 <div>
                     <Service title={fth_service}
                         image={image3} 
                         description={description3} 
+                        custom='pt-8 text-2xl capitalize'
+                        cardcustom='md:h-36'
                     />
                 </div>
             </div>

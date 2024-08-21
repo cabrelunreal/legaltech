@@ -24,6 +24,7 @@ const ContactTeams = () => {
                 buttonTitle1='s&apos;inscrire'
                 buttontitle2='se connecter'
                 custom='justify-center text-center'
+                custbutton=''
             />
         </div>
 

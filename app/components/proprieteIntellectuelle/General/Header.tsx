@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className='text-center pt-3 relative hidden md:flex'>
-          <ul className='flex justify-between text-lg font-semibold'>
+          <ul className='flex justify-between text-sm font-semibold'>
             <li className='relative px-6'>
               <button
                 className='flex items-center'
@@ -46,7 +46,10 @@ const Header: React.FC = () => {
               )}
             </li>
             <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
+            <Link href='../../../pages/whyUs'><NavItem title="Contactez-nous" /></Link>
             <NavItem title="Blog" />
+            <Link href='../../../pages/Register'><NavItem title="Inscription |" /></Link>
+            <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
           </ul>
         </div>
         <div className='md:hidden flex items-center'>
@@ -82,8 +85,10 @@ const Header: React.FC = () => {
                 </Dropdown>
                 )}
               </li>
-              <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
-              <NavItem title="Blog" />
+                <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
+                <NavItem title="Blog" />
+                <Link href='../../../pages/Register'><NavItem title="Inscription  |" /></Link>
+                <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>
               <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>

@@ -6,7 +6,7 @@ const Welcomes = () => {
     <div className='w-8/12 m-auto py-64 text-center text-white'>
         <div>
             <div>
-                <h1 className='uppercase text-semibold text-5xl py-3'>le juridique accessible par tous</h1>
+                <h1 className='uppercase text-semibold text-5xl py-3'>le juridique accessible par tous et pour tous</h1>
                 <p className='text-lg capitalize pb-6'>services juridiques simple, abordables a la portee de main.</p>
             </div>
             <div>

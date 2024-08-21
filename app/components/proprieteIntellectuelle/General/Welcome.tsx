@@ -21,10 +21,10 @@ const WelcomeContainer:React.FC<WelcomeProps> = ({title, onclick, image, beforeT
         layout="fill"
         objectFit="cover"
         objectPosition='center'
-        className="w-full h-full bg-opacity-90"
+        className="w-full h-full"
       />
-      <div className={`absolute inset-0 flex items-center ${custom}`}>
-        <div className="bg-opacity-50 text-white tex-center p-4 rounded">
+      <div className={`absolute inset-0 md:w-full flex items-center ${custom}`}>
+        <div className="bg-opacity-70 md:h-full md:pt-[160px] bg-black md:w-full text-white">
           <p className='py-4 text-lg md:text-2xl'>{beforeT}</p>
           <h1 className="text-4xl md:text-5xl md:py-4 font-semibold">{title}</h1>
           <p className='py-4 text-lg md:text-2xl'>{description}</p>

@@ -18,7 +18,7 @@ const Step2 = () => {
 
         <div>
             <WelcomeContainer 
-                custom='justify-center capitalize'
+                custom='text-center capitalize'
                 title='demande de traduction'
                 description='commencer la traduction de votre document en remplissant le formulaire suivant'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721955860/woman-8499928_1280_1_1_bqbqjb.png'

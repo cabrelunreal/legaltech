@@ -23,8 +23,7 @@ const CreateDocs = () => {
                 title='CREATION DE DOCUMENTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703618/create-document_uuqlos.png'
                 description='Services de création de documents simples, abordables à portée de main'
-                buttonTitle1='s&apos;inscrire'
-                buttontitle2='se connecter'
+                custbutton=''
                 custom='justify-center text-center'
             />
         </div>

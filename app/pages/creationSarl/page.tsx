@@ -20,7 +20,6 @@ const CreateSarl = () => {
               title='CREATION DE LA SARL / SARLU'
               description='Nous des personnes comme vous à créer des entreprises légalement reconnues.'
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/enterprise-background_xiwedn.png'
-              buttonTitle='commencer'
               custom='justify-center text-center'
             />
         </div>

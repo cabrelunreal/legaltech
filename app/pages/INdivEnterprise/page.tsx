@@ -1,3 +1,4 @@
+'use client'
 import Why from '@/app/components/createSarl/why'
 import WelcomeContainer from '@/app/components/creationDesDocuments/Welcome'
 import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
@@ -6,8 +7,15 @@ import DocCreate from '@/app/layouts/DocCreate'
 import Footer from '@/app/layouts/footer'
 import Contact from '@/app/layouts/proprieteIntellectuelle/Home/Contact'
 import React from 'react'
+import { useRouter } from 'next/navigation';
 
 const CreatePersonal = () => {
+    const router = useRouter();
+    
+    const onclickEnterprise = (path: string) => {
+      router.push(path);
+     };
+
   return (
     <div>
     <div>
@@ -21,8 +29,9 @@ const CreatePersonal = () => {
             title='ENTREPRISE INDIVIDUELLE'
             image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703629/individual_enterprise_background_ngpuye.png'
             description='Services de création de la SARL simples, abordables...'
-            buttonTitle1='precedent'
-            buttontitle2='suivant'
+            buttonTitle1='Suivant'
+            onclick={() => onclickEnterprise('../../pages/step1ent')}
+            custbutton='bg-green-700 px-8 py-3 text-lg uppercase hover:bg-green-800 rounded-md'
             custom='justify-center text-center'
         />
     </div>

@@ -45,9 +45,8 @@ const DocTranslates = () => {
                 title='TRADUCTION DE DOCUMENTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703638/translate-documents_grl9qr.png'
                 description='Traduction de documents juridiques, administratifs et autres documents techniques.'
-                buttonTitle1='s&apos;inscrire'
-                buttontitle2='se connecter'
-                custom='justify-center text-center'
+                custbutton=''
+                custom='text-center'
             />
         </div>
 

@@ -45,10 +45,8 @@ const Header: React.FC = () => {
                 </Dropdown>
               )}
             </li>
-            <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
-            <Link href='../../../pages/whyUs'><NavItem title="Contactez-nous" /></Link>
             <NavItem title="Blog" />
-            <Link href='../../../pages/Register'><NavItem title="Inscription |" /></Link>
+            <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
             <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
           </ul>
         </div>
@@ -85,9 +83,8 @@ const Header: React.FC = () => {
                 </Dropdown>
                 )}
               </li>
-                <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
                 <NavItem title="Blog" />
-                <Link href='../../../pages/Register'><NavItem title="Inscription  |" /></Link>
+                <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
                 <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>

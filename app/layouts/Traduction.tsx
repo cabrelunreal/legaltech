@@ -1,8 +1,15 @@
+'use client'
 import React from 'react'
 import Traduction from '../components/Traduction'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const Traductions = () => {
+    const router = useRouter();
+    
+    const onclickEnterprise = (path: string) => {
+      router.push(path);
+     };
 
   return (
     <div className='w-9/12 m-auto py-12 text-white'>
@@ -24,7 +31,8 @@ const Traductions = () => {
                     <div className='bg-gray-50 rounded-md'>
                         <Traduction image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/paper_1_t8npck.svg' 
                             description='Traduction de documents juridiques, administratifs et autres documents techniques' 
-                            imagedescription='docs' 
+                            imagedescription='docs'
+                            onclick={() => onclickEnterprise('../pages/DocumentTranslate')} 
                         />
                     </div>
                 </div>

@@ -15,7 +15,7 @@ const TranslateSuccess = () => {
             </div>
             <div className='py-12'>
                 <Heads 
-                    title='Félicitation'
+                    title='Félicitations'
                     headcust='uppercase md:text-3xl'
                     structure='text-center'
                 />

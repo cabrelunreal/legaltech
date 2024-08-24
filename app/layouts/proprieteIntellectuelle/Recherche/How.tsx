@@ -9,28 +9,16 @@ const How = () => {
         <div className='mb-8'>
           <Heads 
             title='COMMENT ÇA MARCHE'
-            description='Avec notre service en deux étapes, vous obtenez : '
+            description='Avec notre service, vous obtenez : '
             structure='text-center'
           />
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='flex w-4/12 m-auto'>
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/operateur_x5ha9m.png'
-              description='Consultation juridique avec un mandataire ou un conseil en propriété intellectuelle'
+              description='Une Consultation juridique avec un mandataire ou un conseil en propriété intellectuelle'
             />   
-          </div>
-          <div>
-            <Calls
-              image='https://res.cloudinary.com/dedakscgk/image/upload/v1721958545/concept_fi5v7r.png'
-              description='Dessins techniques de votre invention par un expert.'
-            />
-          </div>
-          <div>
-            <Calls
-              image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/fichier-et-dossier_tonkmi.png'
-              description='Préparation et dépôt de votre demande de brevet complétée par un mandataire ou un expert agréé.'
-            />
           </div>
         </div>
       </div>

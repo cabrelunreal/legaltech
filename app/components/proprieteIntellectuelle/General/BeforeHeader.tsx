@@ -8,6 +8,13 @@ const BeforeHeader = () => {
     <div className='bg-green-700'>
       <div className='md:w-9/12 w-full px-8 md:py-1 m-auto flex justify-between'>
           <div>
+            <ul className='text-white flex font-semibold'>
+              <li>(+237) 672 442 800</li>
+              <li className='px-4'>contact@tribunejustice.com</li>
+            </ul>
+          </div>
+
+          <div className='text-center px-3 justify-end text-white'>    
             <ul className='text-white flex'>
                 <li className='px-2'>
                   <Link href=''><i className="fab fa-facebook"></i></Link>
@@ -21,11 +28,10 @@ const BeforeHeader = () => {
                 <li className='px-2'>
                     <Link href=''><i className="fab fa-linkedin"></i></Link>
                 </li>
+                <li className='px-2'>
+                  <i className="fa-solid fa-flag"></i>
+                </li>
             </ul>
-          </div>
-
-          <div className='text-center px-3 justify-end text-white'>
-              <h2><i className="fa-solid fa-flag"></i></h2>
           </div>
         </div>
     </div>

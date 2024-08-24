@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className='md:p-4 rounded md:mb-4'>
                             <FootComponent 
                                 link1='+237 672 442 800' 
-                                link2='Contact@legaltech.com' 
+                                link2='contact@tribunejustice.com' 
                                 link3='Yaoundé quartier' 
                                 link4='bastos non loin des' 
                                 link5='résidences Mossi' 
@@ -141,7 +141,7 @@ const Footer = () => {
                     <FootComponent 
                         title='Contacts' 
                         link1='+237 672 442 800' 
-                        link2='Contact@legaltech.com' 
+                        link2='contact@tribunejustice.com' 
                         link3='Yaoundé quartier' 
                         link4='bastos non loin des' 
                         link5='résidences Mossi' 

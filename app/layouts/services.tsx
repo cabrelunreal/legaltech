@@ -1,7 +1,8 @@
 import React from 'react'
 import Service from '../components/service'
+import Link from 'next/link'
 
-const first_service = 'Créer vos documents dentreprise'
+const first_service = 'Créer vos documents d&quot;entreprise'
 const snd_service = 'Protection de la propriété intellectuelle'
 const fth_service = 'Traduction des documents'
 const fith_service = 'Contactez nos experts'
@@ -27,30 +28,38 @@ const Services = () => {
         <div className='w-full pt-6 px-6 grid md:grid-rows-2 md:gap-8'>
             <div className='grid md:grid-cols-2 gap-2'>
                 <div>
+                    <Link href="../pages/createDocuments">
                     <Service title={first_service}
                         image={image1} 
                         description={description1} 
                     />
+                    </Link>
                 </div>
                 <div>
+                    <Link href="../pages/HomePropriete">
                     <Service title={snd_service}
                         image={image2} 
                         description={description2} 
                     />
+                    </Link>
                 </div>
             </div>
             <div className='grid md:grid-cols-2 gap-2 pt-2'>
                 <div>
+                    <Link href="../pages/DocumentTranslate">
                     <Service title={fth_service}
                         image={image4} 
                         description={description4} 
                     />
+                    </Link>
                 </div>
                 <div>
+                    <Link href="../pages/contactTeams">
                     <Service title={fith_service}
                         image={image5} 
                         description={description5} 
                     />
+                    </Link>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ const Calls: React.FC<CallsProps> = ({ image, description }) => {
           className='m-auto'
         />
       </div>
-      <div className='px-4 md:px-6'>
+      <div className='px-4 md:px-6 text-justify'>
         <p className='text-base md:text-lg'>{description}</p>
       </div>
     </div>

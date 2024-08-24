@@ -32,10 +32,10 @@ const Page = () => {
 
         <div>
             <WelcomeContainer 
-                beforeT='Recherche d’Antériorité'
+                beforeT='La Recherche d’Antériorité'
                 custom='justify-start md:pl-56 md:pr-96'
-                title='Protégez votre marque à l’OAPI'
-                description='Assure a son utilisateur la disponibilité de l&apos;actif qu&apos;il tend a proteger'
+                title='Assure à son utilisateur la disponibilité de l&apos;actif qu&apos;il tend à protéger'
+                description=''
                 buttonTitle='Commencer'
                 onclick={() => onclickEnterprise('../../pages/Formulaires')}
                 customButton='bg-green-700'
@@ -52,7 +52,7 @@ const Page = () => {
         </div>
 
         <div>
-            <Heads title='En 48h vous obtenez un résultat avec notre processus simple en deux étapes' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Heads title='En 48h vous obtenez un résultat avec notre processus simple' structure='font-bold text-center py-8' headcust='text-2xl' />
         </div>
 
         <div>

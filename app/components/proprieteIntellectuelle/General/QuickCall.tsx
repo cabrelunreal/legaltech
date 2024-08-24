@@ -6,6 +6,7 @@ import Image from 'next/image';
 const QuickCall = () => {
   return (
     <div className='bg-gray-50 py-8 px-4'>
+      <h2 className='text-center text-lg md:text-2xl py-4 font-semibold '>Des Questions?</h2>
       <div className='w-full md:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div className='flex flex-col items-center md:items-start'>
           <Heads 

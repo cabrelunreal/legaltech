@@ -2,6 +2,7 @@ import React from 'react'
 import Heads from '../components/proprieteIntellectuelle/General/Heads'
 import Service from '../components/service'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 
@@ -22,7 +23,7 @@ const ProprieteIntellect = () => {
   return (
     <div className='md:w-9/12 m-auto px-8 md:px-0'>
         <div className='text-center'>
-            <Heads title='PROPRIÉTÉ INTELLECTUELLE' description='Protéger juridiquement vos produits' structure='' />
+            <Heads title='PROPRIÉTÉ INTELLECTUELLE' description='Protéger juridiquement vos produits et services' structure='' />
         </div>
 
         <div className=' grid md:grid-cols-2 gap-4'>
@@ -38,28 +39,34 @@ const ProprieteIntellect = () => {
 
             <div className='grid md:grid-rows-3 gap-2 pt-2'>
                 <div>
+                    <Link href="../pages/MarquesEtLogos">
                     <Service title={first_service}
                         image={image1} 
                         description={description1} 
                         custom='pt-8 text-2xl capitalize'
                         cardcustom='md:h-36'
                     />
+                    </Link>
                 </div>
                 <div>
+                    <Link href="../pages/Brevet">
                     <Service title={snd_service}
                         image={image2} 
                         description={description2} 
                         custom='pt-8 text-2xl capitalize'
                         cardcustom='md:h-36'
                     />
+                    </Link>
                 </div>
                 <div>
+                    <Link href="../pages/HomePropriete">
                     <Service title={fth_service}
                         image={image3} 
                         description={description3} 
                         custom='pt-8 text-2xl capitalize'
                         cardcustom='md:h-36'
                     />
+                    </Link>
                 </div>
             </div>
         </div>

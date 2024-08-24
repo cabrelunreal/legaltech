@@ -22,7 +22,7 @@ const items = [
       alt: 'Slide 3'
     },
     {
-      src: 'https://res.cloudinary.com/dedakscgk/image/upload/v1723168651/logo1_fwsh8y.jpg',
+      src: 'https://res.cloudinary.com/dedakscgk/image/upload/v1724497106/logo_ssahd5.jpg',
       alt: 'Slide 3'
     },
     {

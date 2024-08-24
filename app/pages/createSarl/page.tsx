@@ -31,7 +31,7 @@ const CreatingSarl = () => {
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/enterprise-background_xiwedn.png'
                 description='Services de création de la SARL simples, abordables...'
                 buttonTitle1='commencer'
-                onclick={() => onclickEnterprise('../../pages/INdivEnterprise')}
+                onclick={() => onclickEnterprise('../../pages/step1Sarl')}
                 custbutton='bg-green-700 px-8 py-3 text-lg uppercase hover:bg-green-800 rounded-md'
                 custom='justify-center text-center'
             />

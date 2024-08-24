@@ -21,12 +21,12 @@ const Header: React.FC = () => {
             <Image
               src='https://res.cloudinary.com/dedakscgk/image/upload/v1721945934/logo_1_tvf3xq.png'
               alt='LOGO'
-              width={120}
+              width={140}
               height={40}
             />
           </Link>
         </div>
-        <div className='text-center pt-3 relative hidden md:flex'>
+        <div className='text-center pt-6 relative hidden md:flex'>
           <ul className='flex justify-between text-sm font-semibold'>
             <li className='relative px-6'>
               <button

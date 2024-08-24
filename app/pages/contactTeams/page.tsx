@@ -18,11 +18,9 @@ const ContactTeams = () => {
 
         <div>
             <WelcomeContainer 
-                title='CONTACTEZ NOS EQUIPES'
+                title='CONTACTEZ NOS EXPERTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/contact_us_kyp8pp.jpg'
-                description='Pour une collaboration plus grande et plus fluide avec vous nous offrons la possibilité d&apos;adresser un message à nos équipes.'
-                buttonTitle1='s&apos;inscrire'
-                buttontitle2='se connecter'
+                description='Pour une collaboration plus grande et plus fluide avec vous nous offrons la possibilité d&apos;adresser un message à nos experts.'
                 custom='justify-center text-center'
                 custbutton=''
             />

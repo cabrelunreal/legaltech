@@ -21,7 +21,7 @@ const Services = () => {
     <div className='w-full md:w-9/12 m-auto pt-8 pb-2'>
         <div className='px-8 md:px-32'>
             <div className='text-center text-black uppercase text-lg md:text-4xl font-semibold py-2'>
-                <h2>Nos service juridiques</h2>
+                <h2>Nos services juridiques</h2>
             </div>
         </div>
         <div className='w-full pt-6 px-6 grid md:grid-rows-2 md:gap-8'>

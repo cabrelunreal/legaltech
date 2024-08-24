@@ -20,18 +20,18 @@ const Cards = () => {
             <div className='w-full m-auto grid grid-cols-1 md:grid-cols-2 gap-2'>
                 <div className="flex justify-center items-center">
                     <Card
-                        title="Création de SARL"
-                        content="Vos contrats mise à votre disposition facilement"
+                        title="Création des Statuts de SARL"
+                        content="Votre statut prérempli mis à votre disposition."
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg" 
-                        onclick={() => onclickEnterprise('../../pages/createDocuments')}
+                        onclick={() => onclickEnterprise('../../pages/createSarl')}
                     />
                 </div>
                 <div className="flex justify-center items-center">
                     <Card
-                        title="Création de SARLU"
-                        content="Vos contrats mise à votre disposition facilement"
+                        title="Création de l&apos;entreprise Individuelle"
+                        content="Remplissez notre formulaire pour la création de votre établissement."
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703630/office-building-red_s0l7wt.svg"
-                        onclick={() => onclickEnterprise('../../pages/createSarl')}
+                        onclick={() => onclickEnterprise('../../pages/INdivEnterprise')}
                     />
                 </div>
             </div>

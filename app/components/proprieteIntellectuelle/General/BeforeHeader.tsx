@@ -8,9 +8,9 @@ const BeforeHeader = () => {
     <div className='bg-green-700'>
       <div className='md:w-9/12 w-full px-8 md:py-1 m-auto flex justify-between'>
           <div>
-            <ul className='text-white flex font-semibold'>
+            <ul className='text-white md:text-lg text-sm grid md:flex md:font-semibold'>
               <li>(+237) 672 442 800</li>
-              <li className='px-4'>contact@tribunejustice.com</li>
+              <li className='px-0 md:px-4'>contact@tribunejustice.com</li>
             </ul>
           </div>
 

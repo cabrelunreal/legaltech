@@ -2,7 +2,7 @@ import React from 'react'
 import Service from '../components/service'
 import Link from 'next/link'
 
-const first_service = 'Créer vos documents d&quot;entreprise'
+const first_service = "Créer vos documents d'entreprise";
 const snd_service = 'Protection de la propriété intellectuelle'
 const fth_service = 'Traduction des documents'
 const fith_service = 'Contactez nos experts'

@@ -61,7 +61,7 @@ const ContactTeams = () => {
             <WelcomeContainer 
                 title='CONTACTEZ NOS EXPERTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1724583056/WhatsApp_Image_2024-08-21_at_14.36.08_d09a79c7_a1mrnk.jpg'
-                description='Pour une collaboration plus grande et plus fluide avec vous nous offrons la possibilité d&apos;adresser un message à nos experts.'
+                description='Une fois le besoin de l&apos;utilisateur identifié, tribunejustice offre la possibilité d une mise en relation avec des experts .'
                 custom='justify-center text-center'
                 custbutton=''
             />
@@ -72,15 +72,15 @@ const ContactTeams = () => {
                 <div className='md:p-12 p-6 bg-gray-100 rounded-sm'>
                     <h2 className='py-2 md:text-2xl font-semibold'>Service Client</h2>
                     <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
-                    <p className='py-1 md:text-lg'>Lun-Ven: 8h – 19h PT</p>
-                    <p className='py-1 md:text-lg'>Weekends: 8h – 13h PT</p>
+                    <p className='py-1 md:text-lg'>Lun-Ven: 8h – 19h GMT+1</p>
+                    <p className='py-1 md:text-lg'>Weekends: 8h – 13h GMT+1</p>
                     <Button title='chat with us' structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
                 </div>
                 <div className='md:p-12 p-6 bg-gray-100 rounded-sm'>
                     <h2 className='py-2 md:text-2xl font-semibold'>Ventes</h2>
                     <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
-                    <p className='py-1 md:text-lg'>Lun-Ven: 8h – 19h PT</p>
-                    <p className='py-1 md:text-lg'>Weekends: 8h – 13h PT</p>
+                    <p className='py-1 md:text-lg'>Lun-Ven: 8h – 19h GMT+1</p>
+                    <p className='py-1 md:text-lg'>Weekends: 8h – 13h GMT+1</p>
                     <Button title='chat with us' structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
                 </div>
             </div>

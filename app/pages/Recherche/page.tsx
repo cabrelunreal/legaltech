@@ -11,6 +11,7 @@ import PriceRecherche from '@/app/layouts/proprieteIntellectuelle/Recherche/Pric
 import What from '@/app/layouts/proprieteIntellectuelle/Recherche/What'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Categories from './Categories'
 
 const Page = () => {
   
@@ -60,7 +61,7 @@ const Page = () => {
         </div>
 
         <div>
-            <Heads title='Des questions?' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Categories />
         </div>
 
         <div>

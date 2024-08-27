@@ -11,6 +11,7 @@ import PriceLogo from '@/app/layouts/proprieteIntellectuelle/Logo/PriceLogo'
 import What from '@/app/layouts/proprieteIntellectuelle/Logo/What'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Categories from './Categories'
 
 const MarquesLogo = () => {
   
@@ -56,7 +57,7 @@ const MarquesLogo = () => {
         </div>
 
         <div>
-            <Heads title='Des questions?' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Categories />
         </div>
 
         <div>

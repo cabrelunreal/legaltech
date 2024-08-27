@@ -10,6 +10,7 @@ import Price from '@/app/layouts/proprieteIntellectuelle/Auteur/PriceAuteur'
 import What from '@/app/layouts/proprieteIntellectuelle/Auteur/What'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Categories from './Categories'
 
 const Page = () => {
   
@@ -51,7 +52,7 @@ const Page = () => {
         </div>
         
         <div>
-            <Heads title='Protégez vos oeuvres littéraires et artistiques facilement' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Categories />
         </div>
 
         <div>

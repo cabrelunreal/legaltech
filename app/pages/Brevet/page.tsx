@@ -11,6 +11,7 @@ import Price from '@/app/layouts/proprieteIntellectuelle/Brevet/Price'
 import What from '@/app/layouts/proprieteIntellectuelle/Brevet/What'
 import React from 'react'
 import { useRouter } from 'next/navigation';
+import Categories from './Categories'
 
 const Brevet = () => {
   const router = useRouter();
@@ -57,7 +58,9 @@ const Brevet = () => {
         </div>
 
         <div>
-            <Heads title='Des questions?' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <div>
+                <Categories />
+            </div>
         </div>
 
         <div>

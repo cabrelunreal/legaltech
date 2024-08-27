@@ -10,7 +10,6 @@ const DownloadSuccess = () => {
     <div>
         <div>
             <div>
-                <BeforeHeader />
                 <Header />
             </div>
             <div className='py-12'>

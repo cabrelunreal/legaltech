@@ -22,9 +22,6 @@ const MarquesLogo = () => {
   return (
     <div>
         <div>
-            <BeforeHeader />
-        </div>
-        <div>
             <Header />
         </div>
         <div>

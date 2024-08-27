@@ -18,13 +18,9 @@ const Welcome = () => {
   return (
     <div>
         <div>
-            <BeforeHeader />
-        </div>
-        <div>
             <Header />
         </div>
         
-
         <div>
             <WelcomeContainer 
                 custom='justify-center text-center'

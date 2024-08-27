@@ -6,15 +6,15 @@ import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FaChevronDown } from 'react-icons/fa';
-
-
+import BeforeHeader from './BeforeHeader';
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesModalOpen, setServicesModalOpen] = useState(false);
 
   return (
-    <div className='bg-white shadow-sm'>
+    <div className='bg-white shadow-sm fixed top-0 w-full z-50'>
+      <BeforeHeader />
       <div className='md:w-9/12 px-8 md:px-8 m-auto flex justify-between py-3'>
         <div>
           <Link href='../../../pages/Home'>

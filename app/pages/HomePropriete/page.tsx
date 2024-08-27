@@ -32,9 +32,6 @@ const HomePropriete = () => {
   return (
     <div className=''>
         <div>
-            <BeforeHeader />
-        </div>
-        <div>
             <Header />
         </div>
         <div>

@@ -8,10 +8,6 @@ const Step3 = () => {
   return (
     <div>
         <div>
-            <BeforeHeader />
-        </div>
-
-        <div>
             <Header />
         </div>
 

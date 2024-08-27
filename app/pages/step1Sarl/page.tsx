@@ -16,9 +16,6 @@ const Step1Sarl = () => {
   return (
     <div>
         <div>
-            <BeforeHeader />
-        </div>
-        <div>
             <Header />
         </div>
         <div>

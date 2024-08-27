@@ -19,9 +19,6 @@ const CreatePersonal = () => {
   return (
     <div>
     <div>
-        <BeforeHeader />
-    </div>
-    <div>
         <Header />
     </div>
     <div>

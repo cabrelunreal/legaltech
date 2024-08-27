@@ -45,9 +45,9 @@ const Header: React.FC = () => {
                 </Dropdown>
               )}
             </li>
-            <NavItem title="Blog" />
-            <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
-            <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
+            <NavItem title="Blog" href='' />
+            <NavItem title="Pourquoi nous" href='../../../pages/whyUs' />
+            <NavItem title="Connexion" href='../../../pages/Register' />
           </ul>
         </div>
         <div className='md:hidden flex items-center'>
@@ -83,9 +83,9 @@ const Header: React.FC = () => {
                 </Dropdown>
                 )}
               </li>
-                <NavItem title="Blog" />
-                <Link href='../../../pages/whyUs'><NavItem title="Pourquoi nous" /></Link>
-                <Link href='../../../pages/Register'><NavItem title="Connexion" /></Link>
+                <NavItem title="Blog" href='' />
+                <NavItem title="Pourquoi nous" href='../../../pages/whyUs' />
+                <NavItem title="Connexion" href='../../../pages/Register' />
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>
               <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>
@@ -107,10 +107,11 @@ const Header: React.FC = () => {
 
 interface NavItemProps {
   title: string;
+  href: string;
   children?: ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ title, children }) => {
+const NavItem: React.FC<NavItemProps> = ({ title, href, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -119,7 +120,9 @@ const NavItem: React.FC<NavItemProps> = ({ title, children }) => {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <Link href=''>{title}</Link>
+      <Link href={href} className="block">
+        {title}
+      </Link>
       {children && isOpen && children}
     </li>
   );

@@ -11,7 +11,7 @@ import PriceLogo from '@/app/layouts/proprieteIntellectuelle/Model/PriceModel'
 import What from '@/app/layouts/proprieteIntellectuelle/Model/What'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import Categories from './CAtegories'
+import Categories from './Categories'
 
 
 const Page = () => {

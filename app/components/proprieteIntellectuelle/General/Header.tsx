@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             </li>
             <NavItem title="Blog" href='' />
             <NavItem title="Pourquoi nous" href='../../../pages/whyUs' />
-            <NavItem title="Connexion" href='../../../pages/Register' />
+            <NavItem title="Inscription" href='../../../pages/Register' />
           </ul>
         </div>
         <div className='md:hidden flex items-center'>
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
               </li>
                 <NavItem title="Blog" href='' />
                 <NavItem title="Pourquoi nous" href='../../../pages/whyUs' />
-                <NavItem title="Connexion" href='../../../pages/Register' />
+                <NavItem title="Inscription" href='../../../pages/Register' />
             </ul>
             <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>
               <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>

@@ -4,10 +4,10 @@ import React from 'react'
 const Members = () => {
   return (
     <div>
-        <div className='py-8 text-3xl md:w-9/12 m-auto font-semibold text-center'>
+        <div className='py-8 text-3xl w-full px-8 md:px-0 md:w-9/12 m-auto font-semibold text-center'>
             <h2>NOS LEADERS VISIONNAIRES</h2>
         </div>
-        <div className='md:w-8/12 m-auto gap-4 grid md:grid-cols-3 md:grid-rows-2'>
+        <div className='md:w-8/12 w-full justify-center md:px-0 m-auto gap-4 grid md:grid-cols-3 md:grid-rows-2'>
             <div>    
             <Member 
                 image="https://res.cloudinary.com/dedakscgk/image/upload/v1724924286/WhatsApp_Image_2024-08-27_at_19.48.25_1_d3nmfc.png"

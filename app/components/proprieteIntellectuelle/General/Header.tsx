@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const [servicesModalOpen, setServicesModalOpen] = useState(false);
 
   return (
-    <div className='bg-white shadow-sm fixed top-0 w-full z-50'>
+    <div className='bg-white shadow-sm md:fixed top-0 w-full z-50'>
       <BeforeHeader />
       <div className='md:w-9/12 px-8 md:px-8 m-auto flex justify-between py-3'>
         <div>

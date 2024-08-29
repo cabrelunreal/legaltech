@@ -21,7 +21,7 @@ const WhyUS = () => {
                 custom='justify-start md:pl-64 md:pt-24'
                 title='POURQUOI NOUS ?'
                 description='Tribunejustice vous accompagne dans le choix des experts les plus compétents.'
-                image='https://res.cloudinary.com/dedakscgk/image/upload/v1724924292/Screen_Shot_2024-06-29_at_14.51.43_1_rcmabn.png'
+                image='https://res.cloudinary.com/dedakscgk/image/upload/v1724943963/Screen_Shot_2024-06-29_at_14.51.43_1_zelxgc.png'
             />
         </div>
 

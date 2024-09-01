@@ -49,7 +49,7 @@ const Price = () => {
       </div>
 
       <div className='relative w-full lg:w-3/12 mt-14 mb-6 m-auto text-center border-4 h-[330px] md:h-[320px] px-6 border-green-700 rounded-md'>
-        <Heads title='Les demandes PCT ou autres' headcust='text-lg' cust='' structure='' />
+        <Heads title='Les demandes PCT' headcust='text-lg' cust='' structure='' />
         <p>A partir de </p>
         <Heads title='1500€ | 993 000 FCFA' headcust='text-xl text-green-700 font-bold' cust='text-2lg' structure='' />
         <p className='text-lg'>+ frais professionnels</p>

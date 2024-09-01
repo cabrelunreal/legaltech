@@ -23,8 +23,8 @@ const Welcome = () => {
         
         <div>
             <WelcomeContainer 
-                custom='justify-center text-center'
-                title='LE JURIDIQUE ACCESSIBLE PAR TOUS'
+                custom=''
+                title='LE JURIDIQUE ACCESSIBLE A TOUS'
                 description='Services juridiques simples, abordables à portée de main'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/landing_background_2_l5ttky.jpg'
             />

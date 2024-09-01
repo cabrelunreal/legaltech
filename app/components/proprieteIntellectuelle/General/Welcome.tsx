@@ -24,12 +24,12 @@ const WelcomeContainer:React.FC<WelcomeProps> = ({title, onclick, image, beforeT
         className="w-full h-full"
       />
       <div className={`absolute inset-0 md:w-full flex items-center ${custom}`}>
-        <div className="bg-opacity-30 md:h-full text-center md:text-start pt-[60px] h-full md:pt-[160px] bg-black md:w-full text-white">
-          <p className='py-4 text-lg md:text-2xl'>{beforeT}</p>
-          <h1 className="text-2xl md:text-5xl md:py-4 font-semibold">{title}</h1>
-          <p className='py-4 text-sm md:px-0 px-6 md:text-2xl'>{description}</p>
-          <Button title={buttonTitle} onClick={onclick} structure={`px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white ${customButton}`} />
-        </div>
+        <div className="bg-opacity-30 md:h-full text-center pt-[60px] h-full md:pt-[240px] bg-black md:w-full text-white">
+            <p className='py-4 text-lg md:text-2xl'>{beforeT}</p>
+            <h1 className="text-2xl md:text-5xl md:py-4 font-semibold">{title}</h1>
+            <p className='py-4 text-sm md:px-0 px-6 md:text-2xl'>{description}</p>
+            <Button title={buttonTitle} onClick={onclick} structure={`px-6 hover:bg-green-800 rounded-md capitalize text-2lg md:text-xl font-bold py-2 md:py-3 text-white ${customButton}`} />
+          </div>
       </div>
     </div>
   );

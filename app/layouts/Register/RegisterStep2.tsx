@@ -1,61 +1,40 @@
+'use client'
 import Button from '@/app/components/proprieteIntellectuelle/General/Button'
-import Heads from '@/app/components/proprieteIntellectuelle/General/Heads'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 import React from 'react'
-import Image from 'next/image'
 
-const RegisterStep2 = () => {
+
+const RegisterStep1 = () => {
+    const router = useRouter();
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        router.push('../../pages/dashboard')
+    }
   return (
-    <div>
-        <div>
+    <div className='md:px-16 md:py-24'>
+        <div className='border border-gray-100 px-6 py-8 rounded-md'>
             <div>
-                <div className='flex justify-center py-3'>
-                    <Image
-                        src='https://res.cloudinary.com/dedakscgk/image/upload/v1721945934/logo_1_tvf3xq.png'
-                        alt='LOGO'
-                        width={100}
-                        height={100}
-                        className=''
-                    ></Image>
-                </div>
-                <div>
-                    <Heads title='Détails du profil' 
-                        description='saisir les détails de votre compte pour commencer votre inscription.'
-                        cust='md:text-2lg capitalize'
-                        structure='text-center'
-                    />
+                <div className='text-center font-semibold md:text-xl'>
+                    <h2>Details du compte</h2>
                 </div>
             </div>
-            <div>
-                <form action="">
+            <div className=''>
+                <form action="" onSubmit={handleSubmit}>
                     <div className='py-2'>
-                        <label htmlFor="">Nom du profile a afficher *</label><br />
-                        <input type="text" name="name" className='border w-full py-2 px-3 rounded-md' id="name" placeholder='nom du profile' />
-                    </div>
-                    <div>
-                        <div className='py-2'>
-                            <label htmlFor="">Genre *</label><br />
-                            <select name="sex" id="sex" className='border w-full py-2 px-3 rounded-md'>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                        </div>
-                        <div className='py-2'>
-                            <label htmlFor="">Pays/Region *</label><br />
-                            <select name="country" id="country" className='border w-full py-2 px-3 rounded-md'>
-                                <option value="Cameroon">Cameroon</option>
-                                <option value="Benin">Benin</option>
-                                <option value="Togo">Togo</option>
-                                <option value="Cote d&apos;Ivoire">Cote d&apos;Ivoire</option>
-                            </select>
-                        </div>
+                        <label htmlFor="">Adresse email *</label><br />
+                        <input type="email" name="email" className='border w-full py-3 px-3 rounded-md' id="email" placeholder='entrez votre adresse email' />
                     </div>
                     <div className='py-2'>
-                        <label htmlFor="">Photo de profile *</label><br />
-                        <input type="file" name="pic" id="pic" className='border w-full py-2 px-3 rounded-md' placeholder='Photo de profil' />
+                        <label htmlFor="">Mot de Passe *</label><br />
+                        <input type="password" name="password" className='border w-full py-3 px-3 rounded-md' id="password" placeholder='entrez votre mot de passe' />
                     </div>
                     <div className='flex justify-center py-6'>
-                        <Button title='retour'  structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
-                        <Button title='suivant'  structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
+                        <Button title='connexion' structure='py-3 mx-4 px-8 rounded-sm text-white lowercase bg-green-700' />
+                    </div>
+                    <div className=' text-center'>
+                        <p>Pas de compte? <Link href="../../pages/Register" className='text-sky-600'>inscrivez-vous</Link></p>
                     </div>
                 </form>
             </div>
@@ -64,4 +43,4 @@ const RegisterStep2 = () => {
   )
 }
 
-export default RegisterStep2
+export default RegisterStep1

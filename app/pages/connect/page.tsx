@@ -18,7 +18,7 @@ const Register = () => {
                 <div className='items-center'>
                     <div className='flex justify-center'>
                         <Image
-                            src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703633/Sign-up_ayz42w.png'
+                            src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703627/login_icon_v6ilwi.png'
                             alt='form'
                             width={700}
                             height={100}
@@ -27,7 +27,7 @@ const Register = () => {
                     </div>
                 </div>
                 <div className='layout form'>
-                    <RegisterStep1 />
+                    <RegisterStep2 />
                 </div>
             </div>
         </div>

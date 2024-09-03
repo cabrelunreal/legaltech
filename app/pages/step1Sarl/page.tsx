@@ -5,6 +5,7 @@ import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import WelcomeContainer from '@/app/components/proprieteIntellectuelle/General/Welcome'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import MultiStepForm from '@/app/components/createSarl/sarlForm'
 
 const Step1Sarl = () => {
     const router = useRouter();
@@ -32,7 +33,9 @@ const Step1Sarl = () => {
                 <p>Etape 1 - Etape2</p>
                 <h2 className='capitalize text-2xl font-semibold'>renseignements relatifs à l&apos;entrepreneur</h2>
             </div>
-            <Step1 onclick1={() => onclickEnterprise('../../pages/INdivEnterprise')} onclick2={() => onclickEnterprise('../../pages/step2ent')} />
+            <div>
+                <MultiStepForm />
+            </div>
         </div>
     </div>
   )

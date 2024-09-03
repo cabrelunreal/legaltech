@@ -1,7 +1,10 @@
-import { useFonts } from '@next/font/google';
+// // fonts.ts
+// import { Noto_Sans_JP } from '@next/font/google';
 
-export const notoSansJp = useFonts({
-  family: 'Noto Sans Japanese',
-  variable: ['wght', 'ital', 'opsz'],
-  subsets: ['latin', 'japanese'],
-});
+// // Importing Noto Sans Japanese with specific settings
+// const notoSansJP = Noto_Sans_JP({
+//   subsets: ['latin'],
+//   weight: ['400', '700'], // Customize weights as needed
+// });
+
+// export default notoSansJP;

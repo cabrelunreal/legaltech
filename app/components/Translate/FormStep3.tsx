@@ -48,40 +48,46 @@ const FormStep3 = () => {
         <div>
             <div className='py-8'>
                 <div className='grid w-8/12 m-auto'>
-                    <div className='py-4'>
-                        <h2 className='text-lg font-semibold'>Résumé de votre demande</h2>
-                        <div>
-                            <h3 className='text-md font-semibold py-2'>Informations sur le projet:</h3>
-                            <p><strong>Exigences:</strong> {summaryData.exigences || 'Non fourni'}</p>
-                            <p><strong>Type de document:</strong> {summaryData.doctype || 'Non fourni'}</p>
-                            <p><strong>Nombre de pages:</strong> {summaryData.pageCount || 'Non fourni'}</p>
-                            <p><strong>Spécialisation:</strong> {summaryData.specialization || 'Non fourni'}</p>
-                            <p><strong>Langue source:</strong> {summaryData.sourceLanguage || 'Non fourni'}</p>
-                            <p><strong>Langue cible:</strong> {summaryData.targetLanguage || 'Non fourni'}</p>
-                        </div>
-                        <div>
-                            <h3 className='text-md font-semibold py-2'>Informations personnelles:</h3>
-                            <p><strong>Nom:</strong> {summaryData.nom || 'Non fourni'}</p>
-                            <p><strong>Prénom:</strong> {summaryData.prenom || 'Non fourni'}</p>
-                            <p><strong>Société:</strong> {summaryData.societe || 'Non fourni'}</p>
-                            <p><strong>Téléphone:</strong> {summaryData.tel || 'Non fourni'}</p>
-                            <p><strong>Email:</strong> {summaryData.email || 'Non fourni'}</p>
+                <div className='py-8 bg-gray-50 rounded-sm'>
+                        <h2 className='text-2xl font-bold mb-6 text-center text-gray-800'>Résumé de votre demande</h2>
+                        <div className='grid md:grid-cols-2 gap-8 px-6'>
+                            <div className='bg-white p-6 rounded-sm shadow-sm'>
+                                <h3 className='text-xl font-semibold mb-4 text-gray-700 border-b pb-2'>Informations sur le projet</h3>
+                                <div className='space-y-2'>
+                                    <p><span className='font-medium text-gray-600'>Exigences:</span> {summaryData.exigences || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Type de document:</span> {summaryData.doctype || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Nombre de pages:</span> {summaryData.pageCount || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Spécialisation:</span> {summaryData.specialization || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Langue source:</span> {summaryData.sourceLanguage || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Langue cible:</span> {summaryData.targetLanguage || 'Non fourni'}</p>
+                                </div>
+                            </div>
+                            <div className='bg-white p-6 rounded-sm shadow-sm'>
+                                <h3 className='text-xl font-semibold mb-4 text-gray-700 border-b pb-2'>Informations personnelles</h3>
+                                <div className='space-y-2'>
+                                    <p><span className='font-medium text-gray-600'>Nom:</span> {summaryData.nom || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Prénom:</span> {summaryData.prenom || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Société:</span> {summaryData.societe || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Téléphone:</span> {summaryData.tel || 'Non fourni'}</p>
+                                    <p><span className='font-medium text-gray-600'>Email:</span> {summaryData.email || 'Non fourni'}</p>
+                                </div>
+                            </div>
                         </div>
                         {totalCost !== null && (
-                            <div className='py-4'>
-                                <p className='text-lg font-semibold'>
-                                    Votre document sera traduit pour un total de {totalCost} €.
-                                    Veuillez confirmer votre paiement.
+                            <div className='mt-8 bg-white p-6 rounded-sm shadow-sm mx-6'>
+                                <p className='text-xl font-semibold text-gray-800 mb-4'>
+                                    Votre document sera traduit pour un total de <span className='text-green-600'>{totalCost} €</span>.
                                 </p>
-                                <div className='flex py-4'>
+                                <p className='text-lg text-gray-700 mb-4'>Veuillez confirmer votre paiement.</p>
+                                <div className='flex items-center py-2'>
                                     <input 
                                         type="checkbox" 
                                         id="agreeToPay" 
-                                        className='mr-2' 
+                                        className='mr-3 h-5 w-5 text-green-600' 
                                         checked={agreeToPay} 
                                         onChange={handleAgreeChange} 
                                     />
-                                    <label htmlFor="agreeToPay" className='text-lg'>
+                                    <label htmlFor="agreeToPay" className='text-lg text-gray-700'>
                                         J&apos;accepte de payer ce montant.
                                     </label>
                                 </div>

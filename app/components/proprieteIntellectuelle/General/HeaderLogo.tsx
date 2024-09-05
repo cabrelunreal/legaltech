@@ -7,7 +7,7 @@ import BeforeHeader from './BeforeHeader';
 const Header: React.FC = () => {
 
   return (
-    <div className='bg-white shadow-sm border-b border-gray-600 md:fixed top-0 w-full z-50'>
+    <div className='bg-white shadow-sm border-b border-gray-200 md:fixed top-0 w-full z-50'>
       <div className='md:w-9/12 px-8 md:px-8 m-auto flex justify-between py-3'>
         <div>
           <Link href='../../../pages/Home'>

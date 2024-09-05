@@ -1,9 +1,6 @@
 'use client'
-import Button from '@/app/components/proprieteIntellectuelle/General/Button'
 import Header from '@/app/components/proprieteIntellectuelle/General/Header';
-import RegisterStep1 from '@/app/layouts/Register/RegisterStep1';
 import RegisterStep2 from '@/app/layouts/Register/RegisterStep2';
-import RegisterStep3 from '@/app/layouts/Register/RegisterStep3';
 import Image from 'next/image'
 import React, { useState } from 'react'
 

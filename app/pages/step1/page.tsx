@@ -1,6 +1,5 @@
-import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
-import Header from '@/app/components/proprieteIntellectuelle/General/Header'
-import WelcomeContainer from '@/app/components/proprieteIntellectuelle/General/Welcome'
+
+import HeaderLogo from '@/app/components/proprieteIntellectuelle/General/HeaderLogo'
 import FormStep1 from '@/app/components/Translate/FormStep1'
 import React from 'react'
 
@@ -8,21 +7,12 @@ const Step1 = () => {
   return (
     <div>
         <div>
-            <Header />
+            <HeaderLogo />
         </div>
 
-        <div>
-            <WelcomeContainer 
-                custom='text-center capitalize'
-                title='demande de traduction'
-                description='commencer la traduction de votre document en remplissant le formulaire suivant'
-                image='https://res.cloudinary.com/dedakscgk/image/upload/v1721955860/woman-8499928_1280_1_1_bqbqjb.png'
-            />
-        </div>
-
-        <div className='py-4 pt-12'>
+        <div className='my-[120px] pt-[12px] md:px-6 px-2 m-auto md:w-5/12 border border-gray-200 shadow-sm rounded-md'>
             <p className='text-center text-lg'>Etape 1 - Etape 2 - Etape 3</p>
-            <h2 className='text-center py-2 uppercase text-2xl'>completez ces informations</h2>
+            <h2 className='text-center uppercase text-2xl'>completez ces informations</h2>
             <div>
                 <FormStep1 />
             </div>

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Button from '../proprieteIntellectuelle/General/Button';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'
 
 const FormStep3 = () => {
     const router = useRouter();
@@ -79,6 +80,26 @@ const FormStep3 = () => {
                                     Votre document sera traduit pour un total de <span className='text-green-600'>{totalCost} €</span>.
                                 </p>
                                 <p className='text-lg text-gray-700 mb-4'>Veuillez confirmer votre paiement.</p>
+                                <div className='flex'>
+                                    <div>
+                                        <Image
+                                            src="https://res.cloudinary.com/dedakscgk/image/upload/v1725544509/mtn_aqdukh.png"
+                                            alt=""
+                                            width={200}
+                                            height={100}
+                                            className=""
+                                        ></Image>
+                                    </div>
+                                    <div>
+                                        <Image
+                                            src="https://res.cloudinary.com/dedakscgk/image/upload/v1725544509/orange_f25h5t.png"
+                                            alt=""
+                                            width={200}
+                                            height={100}
+                                            className=""
+                                        ></Image>
+                                    </div>
+                                </div>
                                 <div className='flex items-center py-2'>
                                     <input 
                                         type="checkbox" 
@@ -97,14 +118,14 @@ const FormStep3 = () => {
                             <div>
                                 <Button 
                                     title='Modifier' 
-                                    structure='border w-full py-3 border-green-700 hover:bg-green-700 hover:text-white font-semibold uppercase' 
+                                    structure='border rounded-md w-full py-3 border-green-700 hover:bg-green-700 hover:text-white font-semibold uppercase' 
                                     onClick={() => router.push('/step1')} 
                                 />
                             </div>
                             <div>
                                 <Button 
                                     title='Confirmer et payer' 
-                                    structure='border w-full py-3 border-green-700 bg-green-700 text-white hover:bg-green-900 font-semibold uppercase' 
+                                    structure='border rounded-md w-full py-3 border-green-700 bg-green-700 text-white hover:bg-green-900 font-semibold uppercase' 
                                     onClick={handlePayment} 
                                 />
                             </div>

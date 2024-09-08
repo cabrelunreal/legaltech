@@ -11,7 +11,7 @@ const Why:React.FC<whyProps> = ({description, title, moreDescription, custom}) =
   return (
     <div className='py-8'>
         <div className='w-8/12 m-auto text-center'>
-            <div className='text-xl md:text-3xl font-semibold py-4'>
+            <div className='text-lg md:text-3xl font-semibold py-4'>
                 <h2>{title}</h2>
             </div>
             <div className='text-center py-3 text-black md:text-2lg md:text-lg'>

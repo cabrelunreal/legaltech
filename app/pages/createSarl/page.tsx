@@ -68,7 +68,8 @@ const CreatingSarl = () => {
             />
         </div>
 
-        <div className='w-full md:w-5/12 m-auto'>
+        <div className='px-4'>
+        <div className='w-full md:w-5/12 m-auto border p-4 rounded-md shadow-sm border-gray-300'>
             <h2 className='text-xl text-bold'>Liste d&apos;information nécessaires pour la rédaction des statuts</h2>
             <ul className='list-disc py-3 px-8'>
                 <li>Dénomination de la société</li>
@@ -81,6 +82,7 @@ const CreatingSarl = () => {
                 <li>Répartition du capital</li>
                 <li>Nom du Gérant</li>
             </ul>
+        </div>
         </div>
 
         <div>
@@ -97,8 +99,10 @@ const CreatingSarl = () => {
             />
         </div>
 
-        <div className='w-4/12 m-auto bg-gray-50 px-50 py-48'>
-            <h2 className='text-center text-4xl uppercase'>Pricing <br /> 4 X 4</h2>
+        <div className='px-4'>
+            <div className='md:w-4/12 w-full m-auto bg-gray-50 px-50 py-48'>
+                <h2 className='text-center text-4xl uppercase'>Pricing <br /> 4 X 4</h2>
+            </div>
         </div>
 
         <div>

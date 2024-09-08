@@ -112,10 +112,6 @@ const DocTranslates = () => {
             <Button title='traduction de document' 
                 onClick={() => onclickEnterprise('../../pages/step1')}  structure='px-6 py-3 bg-green-700 rounded-md text-white my-4 uppercase' />
         </div>
-        
-        <div>
-            <Why title='POURQUOI NOUS?' description='Pourquoi choisir tribune justice pour vos opérations juridiques.' />
-        </div>
 
         <div className="flex bg-gray-100">
             <FAQ questionsAnswers={faqData} />

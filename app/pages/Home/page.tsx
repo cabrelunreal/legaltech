@@ -16,7 +16,9 @@ import Image from 'next/image'
 const Welcome = () => {
   const images = [ // Added an array of images
     'https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/landing_background_2_l5ttky.jpg',
-    'https://res.cloudinary.com/dedakscgk/image/upload/v1719703626/another_image.jpg', // Add more images as needed
+    'https://res.cloudinary.com/dedakscgk/image/upload/v1721945472/Screen_Shot_2024-06-29_at_14.51.43_1_in5kq6.png',
+    'https://res.cloudinary.com/dedakscgk/image/upload/v1719703639/why-us-background_ulifu7.png',
+    'https://res.cloudinary.com/dedakscgk/image/upload/v1719703638/translate-documents_grl9qr.png' // Add more images as needed
   ];
   
   const [currentImage, setCurrentImage] = useState(0); // Added state for current image

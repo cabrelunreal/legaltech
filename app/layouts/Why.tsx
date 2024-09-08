@@ -24,7 +24,7 @@ interface whysprops{
 
 const Why:React.FC<whysprops> = ({title, description}) => {
   return (
-    <div className='w-9/12 m-auto pt-8'>
+    <div className='w-full md:w-9/12 m-auto pt-8'>
         <div className='pb-4'>
             <div className='text-center uppercase text-xl md:text-4xl font-semibold'>
                 <h2>{title}</h2>
@@ -33,7 +33,7 @@ const Why:React.FC<whysprops> = ({title, description}) => {
                 <p>{description}</p>
             </div>
         </div>
-        <div className='grid md:grid-cols-4 gap-2 px-9'>
+        <div className='grid md:grid-cols-4 grid-cols-2 gap-2 px-4 md:px-9'>
             <div>
                 <Whys  title={title1} description={description1} image={image1}/>
             </div>

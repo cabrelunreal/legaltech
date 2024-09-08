@@ -9,7 +9,7 @@ const Step3 = () => {
             <HeaderLogo />
         </div>
 
-        <div className='py-4 my-[90px] pt-12'>
+        <div className='py-4 my-[12px] md:my-[90px] pt-12'>
             <div>
                 <FormStep3 />
             </div>

@@ -65,7 +65,7 @@ const Header: React.FC = () => {
       {menuOpen && (
         <div className='fixed inset-0 bg-white bg-opacity-95 z-50'>
           <div className='p-2 max-w-full h-full mx-auto mt-10'>
-            <ul className='text-lg font-light'>
+            <ul className='md:text-lg text-xl font-light'>
               <li className='relative px-6'>
                 <button
                   className='flex items-center w-full hover:font-semibold'
@@ -87,14 +87,6 @@ const Header: React.FC = () => {
                 <NavItem title="Pourquoi nous" href='../../../pages/whyUs' />
                 <NavItem title="Se connecter" href='../../../pages/connect' />
             </ul>
-            <div className='py-2 border-green-300 flex mx-4 rounded-full my-3 px-4 border'>
-              <p className='text-green-600'><i className="fa-solid fa-search text-lg"></i></p>
-              <input
-                type='text'
-                className='focus:outline-none bg-transparent w-80 px-3'
-                placeholder='trouver quelque chose...'
-              />
-            </div>
             <button onClick={() => setMenuOpen(false)} className='absolute top-2 right-2'>
               <XMarkIcon className='h-8 w-8 text-gray-700' />
             </button>

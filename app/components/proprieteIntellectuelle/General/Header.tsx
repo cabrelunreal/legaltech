@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   return (
     <div className='bg-white shadow-sm md:fixed top-0 w-full z-50'>
       <BeforeHeader />
-      <div className='md:w-9/12 px-8 md:px-8 m-auto flex justify-between py-3'>
+      <div className='md:w-9/12 w-full px-2 px-8 md:px-8 m-auto flex justify-between py-3'>
         <div>
           <Link href='../../../pages/Home'>
             <Image

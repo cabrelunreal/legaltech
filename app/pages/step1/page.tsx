@@ -1,5 +1,5 @@
 
-import HeaderLogo from '@/app/components/proprieteIntellectuelle/General/HeaderLogo'
+import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import FormStep1 from '@/app/components/Translate/FormStep1'
 import React from 'react'
 
@@ -7,15 +7,15 @@ const Step1 = () => {
   return (
     <div>
         <div>
-            <HeaderLogo />
+          <Header />
         </div>
-
-        <div className='my-[120px] pt-[12px] md:px-6 px-2 m-auto md:w-5/12 border border-gray-200 shadow-sm rounded-md'>
-            <p className='text-center text-lg'><span className='text-green-700 font-semibold'>Etape 1</span>- Etape 2 - Etape 3</p>
-            <h2 className='text-center uppercase text-2xl'>completez ces informations</h2>
-            <div>
-                <FormStep1 />
-            </div>
+        <div className='px-4 w-full'>
+          <div className='md:my-[140px] w-full my-12 md:pt-[12px] md:px-6 px-2 md:m-auto md:w-5/12 border border-gray-200 shadow-sm rounded-md'>
+              <h2 className='text-center uppercase text-xl pt-4 md:text-2xl'>completez ces informations</h2>
+              <div>
+                  <FormStep1 />
+              </div>
+          </div>
         </div>
     </div>
   )

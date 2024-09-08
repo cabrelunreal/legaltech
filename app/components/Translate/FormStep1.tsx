@@ -62,14 +62,14 @@ const FormStep1 = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit} className='grid md:w-full m-auto py-8'>
+        <div className='w-full'>
+            <form onSubmit={handleSubmit} className='grid w-full md:w-full m-auto py-4'>
                 <div className='grid md:grid-cols-2 gap-2 py-2'>
                     <div>
-                        <label htmlFor="doctype" className='text-lg py-2'>Type de document? </label><br />
+                        <label htmlFor="doctype" className='text-sm font-semibold md:text-lg py-4'>Type de document </label><br />
                         <input 
                             type="text" 
-                            className='py-3 px-2 rounded-sm border w-full focus:outline-none focus:border-green-500' 
+                            className='py-2 md:py-3 px-2 pt-1 rounded-sm border placeholder:text-sm w-full focus:outline-none focus:border-green-500' 
                             name="doctype" 
                             id="doctype" 
                             placeholder='(document administratif etc)' 
@@ -78,10 +78,10 @@ const FormStep1 = () => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="pageCount" className='text-lg py-2'>Nombres de pages? *</label><br />
+                        <label htmlFor="pageCount" className='text-sm font-semibold md:text-lg py-4'>Nombres de pages *</label><br />
                         <input 
                             type="number" 
-                            className='py-3 px-2 rounded-sm border w-full focus:outline-none focus:border-green-500' 
+                            className='py-2 md:py-3 px-2 pt-1 rounded-sm border w-full placeholder:text-sm focus:outline-none focus:border-green-500' 
                             name="pageCount" 
                             id="pageCount" 
                             placeholder='0 - 50' 
@@ -93,12 +93,12 @@ const FormStep1 = () => {
                         />
                     </div>
                 </div>
-                <div className='grid md:grid-cols-2 gap-2 py-3'>
+                <div className='grid grid-cols-2 gap-2 py-3'>
                     <div>
-                        <label htmlFor="sourceLanguage" className='text-lg py-2'>Langue source *</label><br />
+                        <label htmlFor="sourceLanguage" className='text-sm font-semibold md:text-lg py-4'>Langue source *</label><br />
                         <select 
                             name="sourceLanguage" 
-                            className='py-3 px-2 w-full rounded-sm border focus:outline-none focus:border-green-500' 
+                            className='py-2 md:py-3 px-2 pt-1 w-full placeholder:text-sm text-sm rounded-sm border focus:outline-none focus:border-green-500' 
                             id="sourceLanguage" 
                             value={sourceLanguage} 
                             onChange={handleSourceLanguageChange} 
@@ -112,10 +112,10 @@ const FormStep1 = () => {
                         </select>
                     </div>
                     <div>
-                        <label htmlFor="targetLanguage" className='text-lg py-2'>Langue cible *</label><br />
+                        <label htmlFor="targetLanguage" className='text-sm font-semibold md:text-lg py-4'>Langue cible *</label><br />
                         <select 
                             name="targetLanguage" 
-                            className='py-3 px-2 w-full rounded-sm border focus:outline-none focus:border-green-500' 
+                            className='py-2 md:py-3 px-2 pt-1 w-full rounded-sm border placeholder:text-sm text-sm focus:outline-none focus:border-green-500' 
                             id="targetLanguage" 
                             value={targetLanguage} 
                             onChange={(e) => setTargetLanguage(e.target.value)} 
@@ -130,10 +130,10 @@ const FormStep1 = () => {
                     </div>
                 </div>
                 <div className='py-2'>
-                    <label htmlFor="file" className='text-lg py-2'>Téléversez vos fichiers *</label><br />
+                    <label htmlFor="file" className='text-sm font-semibold md:text-lg py-4'>Téléversez vos fichiers *</label><br />
                     <input 
                         type="file" 
-                        className='py-3 px-2 rounded-sm w-full border focus:outline-none focus:border-green-500' 
+                        className='py-2 md:py-3 px-2 pt-1 rounded-sm w-full border focus:outline-none focus:border-green-500' 
                         name="file" 
                         id="file" 
                         onChange={handleFileChange} 
@@ -143,7 +143,7 @@ const FormStep1 = () => {
                 </div>
                 {files.length > 0 && (
                     <div className='py-2'>
-                        <h3 className='text-lg py-2'>Fichiers téléchargés:</h3>
+                        <h3 className='text-sm font-semibold md:text-lg py-4'>Fichiers téléchargés:</h3>
                         <ul>
                             {files.map((file, index) => (
                                 <li key={index} className='flex justify-between items-center'>
@@ -160,9 +160,9 @@ const FormStep1 = () => {
                     </div>
                 )}
                 <div className='py-2'>
-                    <label htmlFor="specialization" className='text-lg py-2'>Commentaires</label><br />
+                    <label htmlFor="specialization" className='text-sm font-semibold md:text-lg py-4'>Commentaires</label><br />
                     <textarea 
-                        className='py-3 px-2 rounded-sm w-full border focus:outline-none focus:border-green-500' 
+                        className='py-3 px-2 pt-1 rounded-sm w-full placeholder:text-sm border focus:outline-none focus:border-green-500' 
                         name="specialization" 
                         id="specialization" 
                         placeholder='Laissez des specifications par rapport a votre besoin' 
@@ -171,17 +171,17 @@ const FormStep1 = () => {
                         required 
                     ></textarea>
                 </div>
-                <div className='md:w-5/12 mx-auto grid md:grid-cols-2 gap-4'>
+                <div className='md:w-5/12 w-9/12 mx-auto grid grid-cols-2 gap-4'>
                     <div>
                         <Button 
                             title='annuler' 
-                            structure='border w-full hover:border-none py-3 px-2 border-green-500 rounded-sm hover:bg-green-700 hover:text-white font-semibold uppercase' 
+                            structure='border w-full hover:border-none py-3 px-2 border-green-500 rounded-md hover:bg-green-700 hover:text-white font-semibold uppercase' 
                         />
                     </div>
                     <div>
                         <Button 
                             title='continuer'  
-                            structure='border w-full px-2 py-3 border-green-700 rounded-sm  bg-green-700 text-white hover:bg-green-900 uppercase' 
+                            structure='border w-full px-2 py-3 border-green-700 rounded-md  bg-green-700 text-white hover:bg-green-900 uppercase' 
                         />
                     </div>
                 </div>

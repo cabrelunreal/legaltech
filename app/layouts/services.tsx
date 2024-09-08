@@ -1,4 +1,7 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react' // Added useEffect
+import AOS from 'aos' // Import AOS
+import 'aos/dist/aos.css' // Import AOS styles
 import Service from '../components/service'
 import Link from 'next/link'
 
@@ -18,16 +21,20 @@ const image4 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703634/tr
 const image5 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1723207870/operateur_dkeoxc.svg'
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <div className='w-full md:w-9/12 m-auto pt-8 pb-2'>
         <div className='px-8 md:px-32'>
             <div className='text-center text-black uppercase text-lg md:text-4xl font-semibold py-2'>
-                <h2>Nos services juridiques</h2>
+                <h2 data-aos="fade-up">Nos services juridiques</h2> {/* AOS effect */}
             </div>
         </div>
         <div className='w-full pt-6 px-6 grid md:grid-rows-2 md:gap-8'>
             <div className='grid md:grid-cols-2 gap-2'>
-                <div>
+                <div data-aos="fade-right"> {/* AOS effect */}
                     <Link href="../pages/createDocuments">
                     <Service title={first_service}
                         image={image1} 
@@ -35,7 +42,7 @@ const Services = () => {
                     />
                     </Link>
                 </div>
-                <div>
+                <div data-aos="fade-left"> {/* AOS effect */}
                     <Link href="../pages/HomePropriete">
                     <Service title={snd_service}
                         image={image2} 
@@ -45,7 +52,7 @@ const Services = () => {
                 </div>
             </div>
             <div className='grid md:grid-cols-2 gap-2 pt-2'>
-                <div>
+                <div data-aos="fade-right"> {/* AOS effect */}
                     <Link href="../pages/DocumentTranslate">
                     <Service title={fth_service}
                         image={image4} 
@@ -53,7 +60,7 @@ const Services = () => {
                     />
                     </Link>
                 </div>
-                <div>
+                <div data-aos="fade-left"> {/* AOS effect */}
                     <Link href="../pages/contactTeams">
                     <Service title={fith_service}
                         image={image5} 

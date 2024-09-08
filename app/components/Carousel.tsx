@@ -1,9 +1,11 @@
 // components/Carousel.tsx
-import React from 'react';
+import React, { useEffect } from 'react'; // Added useEffect
 import Slider from 'react-slick';
 import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 
 // Define the interface for the carousel item
 interface CarouselItem {
@@ -17,6 +19,11 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   // Slider settings
   const settings = {
     dots: true,
@@ -33,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
     <div className="carousel-container">
       <Slider {...settings}>
         {items.map((item, index) => (
-          <div key={index} className="carousel-item relative mx-12 w-full h-48">
+          <div key={index} className="carousel-item relative mx-12 w-full h-48" data-aos="fade-up"> {/* Added AOS attribute */}
             <Image
               src={item.src}
               alt={item.alt}

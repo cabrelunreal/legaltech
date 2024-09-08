@@ -1,6 +1,8 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react' // Added useEffect for AOS
 import Whys from '../components/Whys'
-
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const title1 = 'Simple'
 const title2 = 'Rapide'
@@ -23,9 +25,13 @@ interface whysprops{
 }
 
 const Why:React.FC<whysprops> = ({title, description}) => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <div className='w-full md:w-9/12 m-auto pt-8'>
-        <div className='pb-4'>
+        <div className='pb-4' data-aos="fade-up"> {/* Added AOS animation */}
             <div className='text-center uppercase text-xl md:text-4xl font-semibold'>
                 <h2>{title}</h2>
             </div>
@@ -34,16 +40,16 @@ const Why:React.FC<whysprops> = ({title, description}) => {
             </div>
         </div>
         <div className='grid md:grid-cols-4 grid-cols-2 gap-2 px-4 md:px-9'>
-            <div>
+            <div data-aos="fade-up"> {/* Added AOS animation */}
                 <Whys  title={title1} description={description1} image={image1}/>
             </div>
-            <div>
+            <div data-aos="fade-up"> {/* Added AOS animation */}
                 <Whys  title={title2} description={description2} image={image2}/>
             </div>
-            <div>
+            <div data-aos="fade-up"> {/* Added AOS animation */}
                 <Whys  title={title3} description={description3} image={image3}/>
             </div>
-            <div>
+            <div data-aos="fade-up"> {/* Added AOS animation */}
                 <Whys  title={title4} description={description4} image={image4}/>
             </div>
         </div>

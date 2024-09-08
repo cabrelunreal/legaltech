@@ -1,11 +1,10 @@
-import DocTranslate from '@/app/components/DocTranslate'
+'use client'
 import Experts from '@/app/layouts/Experts'
 import Laugage from '@/app/layouts/Laugage'
 import Services from '@/app/layouts/services'
 import Traductions from '@/app/layouts/Traduction'
 import Why from '@/app/layouts/Why'
-import React from 'react'
-import BeforeHeader from '@/app/components/proprieteIntellectuelle/General/BeforeHeader'
+import React, { useEffect, useState } from 'react'; // Added useEffect and useState
 import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import WelcomeContainer from '@/app/components/proprieteIntellectuelle/General/Welcome'
 import Footer from '@/app/layouts/footer'
@@ -15,6 +14,20 @@ import Partners from '@/app/layouts/Partners'
 import Image from 'next/image'
 
 const Welcome = () => {
+  const images = [ // Added an array of images
+    'https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/landing_background_2_l5ttky.jpg',
+    'https://res.cloudinary.com/dedakscgk/image/upload/v1719703626/another_image.jpg', // Add more images as needed
+  ];
+  
+  const [currentImage, setCurrentImage] = useState(0); // Added state for current image
+
+  useEffect(() => { // Added effect to change images
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div>
         <div>
@@ -26,7 +39,7 @@ const Welcome = () => {
                 custom=''
                 title='LE JURIDIQUE ACCESSIBLE A TOUS'
                 description='Services juridiques simples, abordables à portée de main'
-                image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/landing_background_2_l5ttky.jpg'
+                image={images[currentImage]} // Updated to use current image
             />
         </div>
 

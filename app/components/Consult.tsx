@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Button from './Button'
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -10,10 +11,10 @@ const Consult = () => {
             <h2 className='text-semibold md:text-xl px-20 py-2 text-semibold uppercase'>Consulter un expert juridique n&apos;a jamais été aussi facile</h2>
             <div className='w-fit flex md:flex-row flex-col text-sm md:text-lg m-auto'>
                 <div className='mx-4'>
-                    <p className='underline hover:cursor-pointer text-blue-500'><i className="fa-solid fa-envelope"></i>contact@tribunejustice.com</p>
+                    <p className='underline hover:cursor-pointer text-blue-500' onClick={() => window.open('mailto:contact@tribunejustice.com')}><i className="fa-solid fa-envelope"></i>contact@tribunejustice.com</p>
                 </div>
                 <div className='mx-4'>
-                    <p className='hover:underline hover:cursor-pointer text-blue-500'><i className="fa-solid fa-phone"></i> +237 672 442 800</p>
+                    <p className='hover:underline hover:cursor-pointer text-blue-500' onClick={() => window.open('https://wa.me/237672442800')}><i className="fa-solid fa-phone"></i> +237 672 442 800</p>
                 </div>
             </div>
         </div>

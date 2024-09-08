@@ -1,7 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react' // Added useEffect and useState
 import Laugages from '../components/Laugages'
-
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const image = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703634/user_eherio.svg'
 const description = 'Visiteurs/jour'
@@ -62,18 +63,22 @@ const Laugage = () => {
     };
   }, [count1, count2, count3, count4]); // Dependencies to re-run effect
 
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []); // Run once on mount
+
   return (
     <div className='px-8 md:w-9/12 m-auto grid md:flex gap-4 justify-center md:justify-between text-white pt-8 pb-16 mt-24'>
-        <div>
+        <div data-aos="fade-up"> {/* Add AOS animation to each div */}
             <Laugages image={image} description={description} title={count1.toString()} /> {/* Convert to string */}
         </div>
-        <div>
+        <div data-aos="fade-up"> {/* Add AOS animation to each div */}
             <Laugages image={image1} description={description1} title={count2.toString()} /> {/* Convert to string */}
         </div>
-        <div>
+        <div data-aos="fade-up"> {/* Add AOS animation to each div */}
             <Laugages image={image2} description={description2} title={count3.toString()} /> {/* Convert to string */}
         </div>
-        <div>
+        <div data-aos="fade-up"> {/* Add AOS animation to each div */}
             <Laugages image={image3} description={description3} title={count4.toString()} /> {/* Convert to string */}
         </div>
     </div>

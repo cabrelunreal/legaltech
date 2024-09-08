@@ -1,4 +1,5 @@
 import Card from '@/app/components/whyUs/card'
+import Card1 from '@/app/components/whyUs/card1'
 import React from 'react'
 
 const Cards = () => {
@@ -11,7 +12,7 @@ const Cards = () => {
             <div className='w-full bg-gray-50 py-12'>
                 <div className='md:w-9/12 w-full justify-center m-auto grid md:grid-cols-3 gap-4'>
                     <div>
-                        <Card
+                        <Card1
                             image='https://res.cloudinary.com/dedakscgk/image/upload/v1724924287/WhatsApp_Image_2024-08-28_at_17.00.13_1_wty0hx.png'
                             imagedescription='entreprises'
                             Name='Entreprises'

@@ -7,7 +7,7 @@ interface Props{
     Name: string;
 }
 
-const Card:React.FC<Props> = ({ image, imagedescription, Name }) => {
+const Card1:React.FC<Props> = ({ image, imagedescription, Name }) => {
   return (
     <div>
         <div className='w-fit'>
@@ -17,7 +17,7 @@ const Card:React.FC<Props> = ({ image, imagedescription, Name }) => {
                     alt={imagedescription}
                     width={300}
                     height={200}
-                    className='gray filter grayscale' // Added filter and grayscale classes
+                    className='' // Added filter and grayscale classes
                 ></Image>
             </div>
             <div className='text-center py-2'>
@@ -28,4 +28,4 @@ const Card:React.FC<Props> = ({ image, imagedescription, Name }) => {
   )
 }
 
-export default Card
+export default Card1

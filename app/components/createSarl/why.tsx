@@ -9,8 +9,8 @@ interface whyProps{
 
 const Why:React.FC<whyProps> = ({description, title, moreDescription, custom}) => {
   return (
-    <div className='py-8'>
-        <div className='w-8/12 m-auto text-center'>
+    <div className='py-2'>
+        <div className='w-full px-4 m-auto text-center'>
             <div className='text-lg md:text-3xl font-semibold py-4'>
                 <h2>{title}</h2>
             </div>

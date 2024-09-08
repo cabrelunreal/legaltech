@@ -67,18 +67,19 @@ const CreatePersonal = () => {
             <Why 
                 title='Quels sont Les Inconvénients ?'
                 description='Mais en contrepartie, il est aussi seul responsable sur l&apos;ensemble de ses biens personnels. En cas de dettes son patrimoine peut être engagé.'
-                 custom='hidden'
+                custom='hidden'
             />
     </div>
 
-    <div>
+    <div className='w-full px-4'>
+        <div className='border border-gray-300 shadow-sm rounded-md px-8'>
             <Why 
                 title='Quel est le régime fiscal appliqué ?'
                 description='Les bénéfices de l&apos;entreprise sont soumis à l&apos;impôt sur le revenu de l&apos;entrepreneur ou de l&apos;exploitant.'
                  custom='hidden'
             />
-            <div className='w-5/12 m-auto'>
-                <ul className='list-disc text-lg py-4'>
+            <div className='md:w-5/12 w-full m-auto'>
+                <ul className='list-disc text-sm md:text-lg py-4'>
                     <li>Nom et prénom de l&apos;entrepreneur</li>
                     <li>Date et lieu de naissance</li>
                     <li>Nationalité</li>
@@ -90,6 +91,7 @@ const CreatePersonal = () => {
                     <li>Adresse physique et Boîte postale</li>
                 </ul>
             </div>
+        </div>
     </div>
 
     <div>
@@ -105,9 +107,10 @@ const CreatePersonal = () => {
             />
     </div>
 
-    
-    <div className='w-4/12 m-auto bg-gray-50 px-50 py-48'>
-        <h2 className='text-center text-4xl uppercase'>Pricing <br /> 4 X 4</h2>
+    <div className='px-4 w-full'>
+        <div className='md:w-4/12 w-full m-auto bg-gray-50 rounded-md px-50 py-48'>
+            <h2 className='text-center text-4xl uppercase'>Pricing <br /> 4 X 4</h2>
+        </div>
     </div>
 
     <div>

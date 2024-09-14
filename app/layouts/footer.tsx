@@ -91,9 +91,7 @@ const Footer = () => {
                             <FootComponent 
                                 link1='+237 672 442 800' 
                                 link2='contact@tribunejustice.com' 
-                                link3='Yaoundé quartier' 
-                                link4='bastos non loin des' 
-                                link5='résidences Mossi' 
+                                link3='Cameroun'
                             />
                         </motion.div>
                     )}
@@ -177,9 +175,7 @@ const Footer = () => {
                         title='Contacts' 
                         link1='+237 672 442 800' 
                         link2='contact@tribunejustice.com' 
-                        link3='Yaoundé quartier' 
-                        link4='bastos non loin des' 
-                        link5='résidences Mossi' 
+                        link3='Cameroun' 
                     />
                 </div>
                 <div className='hidden md:flex lg:mx-2'>

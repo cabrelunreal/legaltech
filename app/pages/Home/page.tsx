@@ -75,7 +75,7 @@ const Welcome = () => {
         </div>
 
         <div className='pb-24'>
-            <Why title='POURQUOI NOUS?' description='Pourquoi choisir tribune justice pour vos opérations juridiques.' />
+            <Why title='POURQUOI NOUS?' description='Pourquoi choisir tribunejustice pour vos opérations juridiques.' />
         </div>
 
         <div className='relative w-full h-[900px] md:h-[450px]'>  

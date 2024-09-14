@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 interface FootProps {
-    link1: string, link2: string, link3: string, link4: string, link5: string;
+    link1?: string, link2?: string, link3?: string, link4?: string, link5?: string;
     title?: string;
 }
 

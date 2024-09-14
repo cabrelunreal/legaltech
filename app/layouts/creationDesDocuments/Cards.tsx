@@ -27,7 +27,7 @@ const Cards = () => {
                 <div className="flex justify-center items-center" data-aos="fade-up"> {/* Added AOS attribute */}
                     <Card
                         title="Création des Statuts de SARL"
-                        content="Votre statut prérempli mis à votre disposition."
+                        content="Votre statut prérempli mis à votre disposition par nos équipes."
                         image="https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg" 
                         onclick={() => onclickEnterprise('../../pages/createSarl')}
                     />

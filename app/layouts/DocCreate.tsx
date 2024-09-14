@@ -14,7 +14,7 @@ const image3 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/ad
 
 const description1 = 'Dans le grand souci de vous faciliter la conception de vos documents, nous vous proposons des modèles. Choisissez votre modèle.'
 const description2 = 'Vous devez uniquement remplir les informations. Des questions simples et claires vous seront posées pour que vous sachez quelles informations sont demandées dans chaque champ.'
-const description3 = 'Vous pouvez vous faire assister d&apos;un expert pour la relecture de vos documents.'
+const description3 = "Vous pouvez vous faire assister d'un expert pour la relecture de vos documents."
 
 const DocCreate = () => {
   useEffect(() => {

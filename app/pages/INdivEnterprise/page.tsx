@@ -8,6 +8,7 @@ import Footer from '@/app/layouts/footer'
 import Contact from '@/app/layouts/proprieteIntellectuelle/Home/Contact'
 import React from 'react'
 import { useRouter } from 'next/navigation';
+import Button from '@/app/components/proprieteIntellectuelle/General/Button'
 
 const CreatePersonal = () => {
     const router = useRouter();
@@ -97,21 +98,63 @@ const CreatePersonal = () => {
     <div>
         <DocCreate />
     </div>
+    <div className='pb-8'>
+            <div className='text-center'>
+                <div>
+                    <h2 className='font-semibold text-xl'>Nos Tarifs </h2>
+                    <p className='py-1 text-2lg'>Les tarifs varient en fonction du capital social</p>
+                </div>
 
-    <div>
-            <Why 
-                title='Nos tarifs'
-                description='Ci-dessous un exemple de tarifs des entreprises dont nous allons nous occuper de leur formalité de création. Pour le cas de l&apos;Entreprise Individuelle, 
-                les lignes et les montants sont presque exacts. Nous allons juste éliminer la ligne Frais de publication Cameroon Tribune.'
-                moreDescription='Je vous prie de trouver ci-après les coûts et les documents nécessaires pour la création des sociétés suivantes:'
-            />
-    </div>
-
-    <div className='px-4 w-full'>
-        <div className='md:w-4/12 w-full m-auto bg-gray-50 rounded-md px-50 py-48'>
-            <h2 className='text-center text-4xl uppercase'>Pricing <br /> 4 X 4</h2>
+                <div>
+                    <p className='text-2lg py-1'>Suivez notre processus simple en deux phases</p>
+                </div>
+            </div>
+            <div className='py-4 my-2'>
+                <div>
+                    <div className='grid md:grid-cols-2 md:w-5/12 gap-4 m-auto'>
+                        <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                            <div>
+                                <p className='p-1 font-semibold'>Phase 1 </p>
+                                <p className='p-1 font-semibold'>Formalités auprès du CFCE</p>
+                                <p className='p-1'>A partir de</p>
+                                <p className='p-1 font-semibold text-xl'>93 $ | 55000 FCFA</p>
+                                <p className='p-1 font-semibold'>+ frais professionnels</p>
+                                <p className='p-1 font-semibold'>Vous obtenez: </p>
+                                <p className='p-1 font-semibold'>RCCM + NUI</p>
+                                <p className='p-1'>le registre du commerce et du crédit
+                                mobilier</p>
+                                <p className='p-1'>en plus du numero d&apos;identification
+                                unique.</p>
+                            </div>
+                            <div>
+                                <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
+                            </div>
+                        </div>
+                        <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                            <div>
+                                <p className='p-1 font-semibold'>Phase 2 </p>
+                                <p className='p-1 font-semibold'>Formalités auprès du
+                                centre d&apos;impôt</p>
+                                <p className='p-1'>A partir de</p>
+                                <p className='p-1 font-semibold'>169 $ | 100000 FCFA</p>
+                                <p className='p-1'>+ frais professionnels</p>
+                                <p className='p-1 font-semibold'>Vous obtenez: </p>
+                                <p className='p-1 font-semibold'>ANR</p>
+                                <p className='p-1'>l&apos;attestation de Non-Redevance. </p>
+                                <p className='p-1 font-semibold'>CNPS / ANUPS</p>
+                                <p className='p-1'>
+                                    l&apos;immatriculation CNPS ou 
+                                    l&apos;Attestation de Non Utilisation
+                                    du Personnel Salarié.</p>
+                            </div>
+                            <div>
+                                <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
     <div>
         <Contact />

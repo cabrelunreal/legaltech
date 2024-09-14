@@ -9,6 +9,7 @@ import Contact from '@/app/layouts/proprieteIntellectuelle/Home/Contact'
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import Button from '@/app/components/proprieteIntellectuelle/General/Button'
+import QuickCall from '@/app/components/proprieteIntellectuelle/General/QuickCall'
 
 const CreatePersonal = () => {
     const router = useRouter();
@@ -157,7 +158,7 @@ const CreatePersonal = () => {
         </div>
 
     <div>
-        <Contact />
+        <QuickCall />
     </div>
 
     <div>

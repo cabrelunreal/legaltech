@@ -109,7 +109,7 @@ const CreatePersonal = () => {
                     <p className='text-2lg py-1'>Suivez notre processus simple en deux phases</p>
                 </div>
             </div>
-            <div className='py-4 my-2'>
+            <div className='py-4 my-2 md:px-0 px-6'>
                 <div>
                     <div className='grid md:grid-cols-2 md:w-5/12 gap-4 m-auto'>
                         <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>

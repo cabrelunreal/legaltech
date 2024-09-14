@@ -102,7 +102,7 @@ const CreatingSarl = () => {
                     <p className='text-2lg py-1'>Suivez notre processus simple en deux phases</p>
                 </div>
             </div>
-            <div className='py-4 my-2'>
+            <div className='py-4 my-2 md:px-0 px-6'>
                 <div>
                     <div className='text-center text-2xl font-semibold py-4'>
                         <p>Avec un Capital {'>'}100 000 et {'≤'}1 000 000</p>

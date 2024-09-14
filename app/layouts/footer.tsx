@@ -17,16 +17,19 @@ const Footer = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(false);
 
   return (
-    <div className="relative w-full h-[640px] text-white">
-        <Image
-            src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703633/high-angle-shot-of-gavel-and-scale-on-wooden-surface_busgu3.png'
-            alt="Sample Image"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
-        />
-        <div className='w-full absolute inset-0 bg-green-700 bg-opacity-90'>
-            <div className='py-6 pt-24 px-14 md:px-1 md:w-5/12 m-auto'>
+    <div className="relative w-full text-white"> 
+        <div className="absolute inset-0">
+            <Image
+                src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703633/high-angle-shot-of-gavel-and-scale-on-wooden-surface_busgu3.png'
+                alt="Sample Image"
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full opacity-20" // Adjusted opacity for visibility
+            />
+            <div className='w-full h-full bg-green-700 bg-opacity-90' /> {/* Green background with opacity */}
+        </div>
+        <div className='relative z-10'> {/* Ensure content is above the background */}
+            <div className='py-4 pt-24 px-4 md:px-1 md:w-5/12 m-auto'>
                 <h2 className='text-center text-2lg md:text-xl capitalize py-4'>Souscrivez a notre newsletter pour ne rien manquer.</h2>
                 <div className='border-b rounded flex'>
                     <input type="email" placeholder='exemple@gmail.com' className='w-full bg-transparent text-lg px-3 focus:outline-none py-2' />
@@ -34,7 +37,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='md:w-9/12 py-8 px-12 m-auto grid md:grid-cols-4 gap-4'>
+            <div className='md:w-9/12 py-4 px-4 md:px-12 m-auto grid md:grid-cols-4 gap-4'>
                 {/* Mobile Dropdowns */}
                 <div className='md:hidden w-full'>
                     <button 
@@ -54,7 +57,7 @@ const Footer = () => {
                                     width={50}
                                     className='mb-4'
                                 />
-                                <p className='text-start text-sm md:text-lg'>Parce que vos angagements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
+                                <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
                             </div>
                         </div>
                     )}
@@ -125,7 +128,7 @@ const Footer = () => {
                 </div>
 
                 {/* Desktop View */}
-                <div className='hidden lg:flex md:mx-2 md:py-6'>
+                <div className='hidden lg:flex md:mx-2 md:py-3'>
                     <div className='w-full'>
                         <Image
                             src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703627/Logo-legaltech_kb5pm6.svg'
@@ -134,7 +137,6 @@ const Footer = () => {
                             width={50}
                             className='mb-4'
                         />
-                        <p>Parce que vos angagements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
                     </div>
                 </div>
                 <div className='hidden lg:flex lg:mx-2'>
@@ -178,8 +180,12 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='border-t-2 text-sm py-8 text-center md:text-start md:w-9/12 m-auto'>
+            <div className='border-t-2 text-sm py-2 flex justify-between text-center md:text-start md:w-9/12 m-auto'>
                 <p>&copy;LegalTech, All rights reserved.</p>
+                <div className='flex flex-end font-semibold'>
+                    <p className='pr-6'>Mentions Legales</p>
+                    <p>Condition Générale d&apos;utilisation</p>
+                </div>
             </div>
         </div>
     </div>

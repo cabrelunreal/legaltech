@@ -17,19 +17,19 @@ const How = () => {
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/operateur_x5ha9m.png'
-              description='Consultation juridique avec un mandataire en PI ou un conseil en propriété industrielle'
+              description='Une consultation juridique avec un mandataire OAPI ou un conseil en propriété industrielle'
             />   
           </div>
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721957660/conception_1_loqk2w.png'
-              description='Dessins techniques de votre invention par un expert.'
+              description='La conception et/ou la validation par un expert des dessins techniques de votre invention.'
             />  
           </div>
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/fichier-et-dossier_tonkmi.png'
-              description='Préparation et dépôt de votre demande de brevet complétée par un mandataire ou un expert agréé.'
+              description='La préparation et dépôt de votre demande de brevet complétée par un mandataire ou un expert agréé.'
             />  
           </div>
         </div>

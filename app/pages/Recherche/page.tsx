@@ -29,7 +29,7 @@ const Page = () => {
 
         <div>
             <WelcomeContainer 
-                beforeT='La Recherche d’Antériorité'
+                beforeT="La Recherche d’Antériorité"
                 custom='justify-start md:pl-56 md:pr-96'
                 title='Assure à son utilisateur la disponibilité de l&apos;actif qu&apos;il tend à protéger'
                 description=''

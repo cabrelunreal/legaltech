@@ -23,7 +23,7 @@ const How = () => {
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/fichier-et-dossier_tonkmi.png'
-              description='Préparation et dépôt de votre demande de protection complétée par un expert.'
+              description='La préparation et dépôt de votre demande de protection complétée par un expert.'
             />  
           </div>
         </div>

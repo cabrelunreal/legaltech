@@ -17,7 +17,7 @@ const How = () => {
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/operateur_x5ha9m.png'
-              description='Consultation juridique avec un mandataire en PI ou un conseil en propriété industrielle'
+              description='Une consultation juridique avec un mandataire OAPI ou un conseil en propriété industrielle'
             />   
           </div>
           <div>
@@ -29,7 +29,7 @@ const How = () => {
           <div>
             <Calls
               image='https://res.cloudinary.com/dedakscgk/image/upload/v1721950778/fichier-et-dossier_tonkmi.png'
-              description='Préparation et dépôt de votre demande de protection complétée par un expert.'
+              description='La préparation et dépôt de votre demande de protection complétée par un expert.'
             />  
           </div>
         </div>

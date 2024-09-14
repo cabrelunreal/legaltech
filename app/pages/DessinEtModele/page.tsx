@@ -34,7 +34,7 @@ const Page = () => {
                 title='Protégez votre invention à l’OAPI'
                 description='Les dessins et modèles industriels confèrent à son auteur également le droit exclusif de priver d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer la création protégée...'
                 buttonTitle='Commencer'
-                onclick={() => onclickEnterprise('../../pages/Formulaires')}
+                onclick={() => onclickEnterprise('../../pages/FormDessins')}
                 customButton='bg-green-700'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1721958001/woman-8499928_1280_1_2_q8fge8.png'
             />

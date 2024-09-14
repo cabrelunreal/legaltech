@@ -2,7 +2,12 @@ import Contacts from '@/app/components/proprieteIntellectuelle/Formulaire/Contac
 import Heads from '@/app/components/proprieteIntellectuelle/General/Heads';
 import React from 'react';
 
-const Formulaire = () => {
+interface props{
+  type1: string;
+  type2: string;
+}
+
+const Formulaire:React.FC<props> = ({type1, type2}) => {
   const Title = 'COMMENCER VOTRE DEMANDE';
   const Description = 'Les champs avec astérix (*) sont obligatoires';
   
@@ -17,7 +22,7 @@ const Formulaire = () => {
       </div>
       <div className='bg-gray-100'>
         <div className='py-8'>
-          <Contacts />
+          <Contacts type1={type1} type2={type2} />
         </div>
       </div>
     </div>

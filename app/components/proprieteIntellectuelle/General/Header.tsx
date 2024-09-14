@@ -39,7 +39,7 @@ const Header: React.FC = () => {
               {servicesModalOpen && (
                 <Dropdown>
                   <DropdownItem href='../../../pages/createDocuments'>Creez vos documents d&apos;entreprise</DropdownItem>
-                  <DropdownItem href='../../../pages/HomePropriete'>Propriete Intellectuelle</DropdownItem>
+                  <DropdownItem href='../../../pages/HomePropriete'>Propriéte Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
                   <DropdownItem href='../../../pages/DocumentTranslate'>Traduction De Documents</DropdownItem>
                 </Dropdown>

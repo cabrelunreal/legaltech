@@ -1,7 +1,11 @@
 import React from 'react';
 import Button from '../General/Button';
+interface typeprops{
+  type1: string;
+  type2: string;
+}
 
-const Contacts = () => {
+const Contacts:React.FC<typeprops> = ({type1, type2}) => {
   return (
     <div className='w-full py-8'>
       <div className='w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 m-auto'>
@@ -9,11 +13,10 @@ const Contacts = () => {
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
             <div className='w-full'>
               <label className='block font-bold mb-1'>Type * :</label>
-              <select name="Deposant" id="deposant" className='w-full rounded-sm bg-white text-gray-400 py-3 px-4 focus:outline-none'>
+              <select name="Deposant" id="deposant" className='w-full rounded-sm bg-white text-black py-3 px-4 focus:outline-none'>
                 <option value="">Sélectionner le type de votre demande</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">{type1}</option>
+                <option value="">{type2}</option>
               </select>
 
               <label className='block font-bold mt-4 mb-1'>Dénomination / Nom complet * :</label>
@@ -25,19 +28,19 @@ const Contacts = () => {
 
             <div>
               <label className='block font-bold mb-1'>Déposant * :</label>
-              <select name="Deposant" id="deposant" className='w-full rounded-sm text-gray-400 bg-white py-3 px-4 focus:outline-none'>
+              <select name="Deposant" id="deposant" className='w-full rounded-sm text-black bg-white py-3 px-4 focus:outline-none'>
                 <option value="">Sélectionner votre type de déposant</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">Personne physique</option>
+                <option value="">Personne morale</option>
+                <option value="">En co-propriete</option>
               </select>
 
               <label className='block font-bold mt-4 mb-1'>Nationalité:</label>
-              <select name="Nationalite" id="nationalite" className='w-full text-gray-400 rounded-sm bg-white py-3 px-4 focus:outline-none'>
+              <select name="Nationalite" id="nationalite" className='w-full text-black rounded-sm bg-white py-3 px-4 focus:outline-none'>
                 <option value="">Sélectionner votre pays</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">Benin</option>
+                <option value="">Cameroon</option>
+                <option value="">Congo</option>
               </select>
 
               <label className='block font-bold mt-4 mb-1'>Adresse électronique* :</label>

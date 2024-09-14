@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 import FootComponent from '../components/FootComponent'
 import Button from '../components/Button'
 import Image from 'next/image'
@@ -40,15 +41,23 @@ const Footer = () => {
             <div className='md:w-9/12 py-4 px-4 md:px-12 m-auto grid md:grid-cols-4 gap-4'>
                 {/* Mobile Dropdowns */}
                 <div className='md:hidden w-full'>
-                    <button 
+                    <motion.button // Wrap button with motion.button
                         onClick={() => setIsInfoOpen(prev => !prev)} 
                         className='w-full text-white border-b bg-none px-4 py-2 rounded flex items-center justify-between mb-2'
+                        initial={{ opacity: 0 }} // Initial state
+                        animate={{ opacity: 1 }} // Animate to this state
+                        transition={{ duration: 0.5 }} // Transition duration
                     >
                         <span>Legaltech</span>
                         {isInfoOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
-                    </button>
+                    </motion.button>
                     {isInfoOpen && (
-                        <div className='p-3 md:p-4 rounded md:mb-4'>
+                        <motion.div // Wrap div with motion.div
+                            className='p-3 md:p-4 rounded md:mb-4'
+                            initial={{ height: 0 }} // Initial height
+                            animate={{ height: 'auto' }} // Animate to auto height
+                            transition={{ duration: 0.5 }} // Transition duration
+                        >
                             <div className='flex flex-col items-start'>
                                 <Image
                                     src='https://res.cloudinary.com/dedakscgk/image/upload/v1719703627/Logo-legaltech_kb5pm6.svg'
@@ -59,18 +68,26 @@ const Footer = () => {
                                 />
                                 <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
                             </div>
-                        </div>
+                        </motion.div>
                     )}
 
-                    <button 
+                    <motion.button // Wrap button with motion.button
                         onClick={() => setIsContactsOpen(prev => !prev)} 
                         className='w-full text-white border-b px-4 py-2 rounded flex items-center justify-between md:mb-2'
+                        initial={{ opacity: 0 }} // Initial state
+                        animate={{ opacity: 1 }} // Animate to this state
+                        transition={{ duration: 0.5 }} // Transition duration
                     >
                         <span>Contacts</span>
                         {isContactsOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
-                    </button>
+                    </motion.button>
                     {isContactsOpen && (
-                        <div className='md:p-4 rounded md:mb-4'>
+                        <motion.div // Wrap div with motion.div
+                            className='md:p-4 rounded md:mb-4'
+                            initial={{ height: 0 }} // Initial height
+                            animate={{ height: 'auto' }} // Animate to auto height
+                            transition={{ duration: 0.5 }} // Transition duration
+                        >
                             <FootComponent 
                                 link1='+237 672 442 800' 
                                 link2='contact@tribunejustice.com' 
@@ -78,37 +95,53 @@ const Footer = () => {
                                 link4='bastos non loin des' 
                                 link5='résidences Mossi' 
                             />
-                        </div>
+                        </motion.div>
                     )}
 
-                    <button 
+                    <motion.button // Wrap button with motion.button
                         onClick={() => setIsMenuOpen(prev => !prev)} 
                         className='w-full text-white border-b px-4 py-2 rounded flex items-center justify-between md:mb-2'
+                        initial={{ opacity: 0 }} // Initial state
+                        animate={{ opacity: 1 }} // Animate to this state
+                        transition={{ duration: 0.5 }} // Transition duration
                     >
-                        <span>Menu</span>
+                        <span>Lien Utiles</span>
                         {isMenuOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
-                    </button>
+                    </motion.button>
                     {isMenuOpen && (
-                        <div className='md:p-4 rounded md:mb-4'>
+                        <motion.div // Wrap div with motion.div
+                            className='md:p-4 rounded md:mb-4'
+                            initial={{ height: 0 }} // Initial height
+                            animate={{ height: 'auto' }} // Animate to auto height
+                            transition={{ duration: 0.5 }} // Transition duration
+                        >
                             <FootComponent 
-                                link1='Accueil' 
-                                link2='Documents' 
-                                link3='Nos Experts' 
-                                link4='Traduction' 
-                                link5='Qui sommes nous' 
+                                link1='Accueil'
+                                link2='Services' 
+                                link3='Pourquoi-nous' 
+                                link4='Blog' 
+                                link5='Se Connecter' 
                             />
-                        </div>
+                        </motion.div>
                     )}
                     
-                    <button 
+                    <motion.button // Wrap button with motion.button
                         onClick={() => setIsNewsletterOpen(prev => !prev)} 
                         className='w-full text-white border-b px-4 py-2 rounded flex items-center justify-between mb-2'
+                        initial={{ opacity: 0 }} // Initial state
+                        animate={{ opacity: 1 }} // Animate to this state
+                        transition={{ duration: 0.5 }} // Transition duration
                     >
                         <span>Nos Reseaux</span>
                         {isNewsletterOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
-                    </button>
+                    </motion.button>
                     {isNewsletterOpen && (
-                        <div className='md:p-4 rounded px-4'>
+                        <motion.div // Wrap div with motion.div
+                            className='md:p-4 rounded px-4'
+                            initial={{ height: 0 }} // Initial height
+                            animate={{ height: 'auto' }} // Animate to auto height
+                            transition={{ duration: 0.5 }} // Transition duration
+                        >
                             <ul className='flex'>
                                 <li className='px-2'>
                                     <Link href=''><i className="fab fa-facebook"></i></Link>
@@ -123,7 +156,7 @@ const Footer = () => {
                                     <Link href=''><i className="fab fa-linkedin"></i></Link>
                                 </li>
                             </ul>
-                        </div>
+                        </motion.div>
                     )}
                 </div>
 
@@ -180,9 +213,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='border-t-2 text-sm py-2 flex justify-between text-center md:text-start md:w-9/12 m-auto'>
+            <div className='border-t-2 text-sm py-2 flex flex-col md:flex-row justify-between text-center md:text-start md:w-9/12 m-auto'>
                 <p>&copy;LegalTech, All rights reserved.</p>
-                <div className='flex flex-end font-semibold'>
+                <div className='flex flex-col md:flex-row md:items-center font-semibold'>
                     <p className='pr-6'>Mentions Legales</p>
                     <p>Condition Générale d&apos;utilisation</p>
                 </div>

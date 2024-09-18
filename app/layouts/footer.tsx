@@ -66,7 +66,7 @@ const Footer = () => {
                                     width={50}
                                     className='mb-4'
                                 />
-                                <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus importante ! Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
+                                <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus <span><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
                             </div>
                         </motion.div>
                     )}
@@ -168,6 +168,8 @@ const Footer = () => {
                             width={50}
                             className='mb-4'
                         />
+                        <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus <span className='text-yellow-500'><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
+
                     </div>
                 </div>
                 <div className='hidden lg:flex lg:mx-2'>
@@ -176,6 +178,8 @@ const Footer = () => {
                         link1='+237 672 442 800' 
                         link2='contact@tribunejustice.com' 
                         link3='Cameroun' 
+                        link4='Lorem'
+                        link5='Lorem'
                     />
                 </div>
                 <div className='hidden md:flex lg:mx-2'>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 const QuickCall = () => {
   return (
     <div className='bg-gray-50 py-8 px-4'>
-      <h2 className='text-center text-lg md:text-2xl py-4 font-semibold '>Des Questions?</h2>
+      <h2 className='text-center text-lg md:text-2xl py-4 font-semibold'>Des Questions ?</h2>
       <div className='w-full md:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div className='flex flex-col items-center md:items-start'>
           <Heads 
@@ -23,14 +23,14 @@ const QuickCall = () => {
         </div>
         <div className='flex flex-col items-center md:items-start'>
           <Heads 
-            title='Contactez un assistant au (237) 679-1568'
-            description='Du lundi au vendredi : de 6 h à 20 h (GMT) Les week-ends : de 7 h à 16 h (GMT)'
+            title='Contactez un assistant au (237) 679-1568'
+            description='Du lundi au vendredi : de 6 h à 20 h (GMT) Week-ends : de 7 h à 16 h (GMT)'
             structure='text-center md:text-left'
             headcust='text-lg md:text-xl'
             cust='py-1 text-sm md:text-lg'
           />
           <div className='text-lg flex justify-center md:justify-start mt-1'>
-            <p className='mr-2'>Suivez-nous:</p>
+            <p className='mr-2'>Suivez-nous :</p>
             <div className='flex space-x-2'>
               <Image
                 src='https://res.cloudinary.com/dedakscgk/image/upload/v1721955329/logos_whatsapp-icon_dncw6x.png'

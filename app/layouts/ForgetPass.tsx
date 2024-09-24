@@ -12,7 +12,7 @@ const ForgetPass = () => {
                 width={300}
                 height={300}
                 className=''
-            ></Image>
+            />
         </div>
         <div>
             <div>
@@ -22,12 +22,12 @@ const ForgetPass = () => {
                     width={100}
                     height={100}
                     className=''
-                ></Image>
-                <h2>Votre adresse mail</h2>
-                <p>Votre adresse mail</p>
+                />
+                <h2>Votre adresse e-mail</h2> {/* Correction de "mail" à "e-mail" */}
+                <p>Votre adresse e-mail</p> {/* Correction de "mail" à "e-mail" */}
             </div>
             <div>
-                <label>Adresse mail / Numéro de téléphone.</label>
+                <label>Adresse e-mail / Numéro de téléphone.</label> {/* Correction de "mail" à "e-mail" */}
                 <input type="email" name="email" id="email" placeholder='login' />
                 <Button title='Confirmer' className='' />
             </div>

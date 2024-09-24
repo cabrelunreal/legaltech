@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-interface whyProps{
+interface WhyProps {
     description?: string;
     title?: string;
     moreDescription?: string;
     custom?: string;
 }
 
-const Why:React.FC<whyProps> = ({description, title, moreDescription, custom}) => {
+const Why: React.FC<WhyProps> = ({ description, title, moreDescription, custom }) => {
   return (
     <div className='py-2'>
         <div className='w-full px-4 m-auto text-center'>
@@ -20,7 +20,7 @@ const Why:React.FC<whyProps> = ({description, title, moreDescription, custom}) =
             </div>
         </div>
     </div>
-  )
+  );
 }
 
-export default Why
+export default Why;

@@ -15,11 +15,11 @@ const RegisterStep3 = () => {
                         width={100}
                         height={100}
                         className=''
-                    ></Image>
+                    />
                 </div>
                 <div>
                     <Heads title='Profils sociaux' 
-                        description='saisir les détails de votre compte pour commencer votre inscription.'
+                        description='Saisissez les détails de votre compte pour commencer votre inscription.'
                         cust='md:text-2lg capitalize'
                         structure='text-center'
                     />
@@ -29,20 +29,20 @@ const RegisterStep3 = () => {
                 <form action="">
                     <div className='py-2'>
                         <label htmlFor="">Page Facebook </label><br />
-                        <input type="text" name="facebook" className='border w-full py-2 px-3 rounded-md' id="facebook" placeholder='page facebook' />
+                        <input type="text" name="facebook" className='border w-full py-2 px-3 rounded-md' id="facebook" placeholder='Page Facebook' />
                     </div>
                     <div className='py-2'>
                         <label htmlFor="">Twitter </label><br />
-                        <input type="text" name="tweet" id="tweet" className='border w-full py-2 px-3 rounded-md' placeholder='twitter' />
+                        <input type="text" name="tweet" id="tweet" className='border w-full py-2 px-3 rounded-md' placeholder='Twitter' />
                     </div>
                     <div className='py-2'>
                         <label htmlFor="">Site web </label><br />
-                        <input type="text" name="site" id="site"  className='border w-full py-2 px-3 rounded-md' placeholder='site web' />
-                        <p>Aucun champs est obligatoire cette partie est optionnelle</p>
+                        <input type="text" name="site" id="site" className='border w-full py-2 px-3 rounded-md' placeholder='Site web' />
+                        <p>Aucun champ n&apos;est obligatoire, cette partie est optionnelle.</p>
                     </div>
                     <div className='flex justify-center py-6'>
-                        <Button title='retour'  structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
-                        <Button title='confirmer'  structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
+                        <Button title='Retour' structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
+                        <Button title='Confirmer' structure='py-2 mx-4 px-4 rounded-sm text-white uppercase bg-green-700' />
                     </div>
                 </form>
             </div>

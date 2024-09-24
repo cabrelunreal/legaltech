@@ -12,7 +12,7 @@ const Register = () => {
                 width={180}
                 height={180}
                 className=''
-            ></Image>
+            />
         </div>
         <div>
             <form action="onsubmit">
@@ -24,21 +24,21 @@ const Register = () => {
                             width={180}
                             height={180}
                             className=''
-                        ></Image>
+                        />
                     </h2>
                     <h4>Détails du compte</h4>
-                    <p>saisir les détails de votre compte pour commencer votre inscription.</p>
+                    <p>Saisissez les détails de votre compte pour commencer votre inscription.</p>
                 </div>
                 <div id='formInit'>
                     <div>
-                        <label>User Name</label>
-                        <input type="text" name="username" id="username" placeholder='veillez entrez votre nom'/>
-                        <label>E-mail Adresse</label>
-                        <input type="email" name="email" id="email" placeholder='veillez entrez votre mail'/>
+                        <label>Nom d&apos;utilisateur</label>
+                        <input type="text" name="username" id="username" placeholder='Veuillez entrer votre nom'/>
+                        <label>Adresse e-mail</label>
+                        <input type="email" name="email" id="email" placeholder='Veuillez entrer votre e-mail'/>
                         <label>Mot de passe</label>
-                        <input type="password" name='password' id='password' placeholder='veillez saisir votre mot de passe' />
+                        <input type="password" name='password' id='password' placeholder='Veuillez saisir votre mot de passe' />
                         <label>Confirmer votre mot de passe</label>
-                        <input type="password" name='confPass' id='confPass' placeholder='confirmez votre mot de pass'/>
+                        <input type="password" name='confPass' id='confPass' placeholder='Confirmez votre mot de passe'/>
                         <div>
                             <div>
                                 <Button title='Annuler' className='' />
@@ -51,87 +51,86 @@ const Register = () => {
                 </div>
 
                 <div id='formSec'>
+                    <div>
+                        <h2>
+                            <Image
+                                src=''
+                                alt='signUp'
+                                width={180}
+                                height={180}
+                                className=''
+                            />
+                        </h2>
+                        <h4>Détails du profil</h4>
+                        <p>Saisissez les détails de votre profil pour continuer votre inscription.</p>
+                    </div>
+                    <div>
+                        <label>Nom du profil à afficher</label>
+                        <input type="text" name='pseudo' id='pseudo' placeholder='Nom du profil à afficher' />
                         <div>
-                            <h2>
-                                <Image
-                                    src=''
-                                    alt='signUp'
-                                    width={180}
-                                    height={180}
-                                    className=''
-                                ></Image>
-                            </h2>
-                            <h4>Détails du profil</h4>
-                            <p>saisir les détails de votre compte pour commencer votre inscription.</p>
+                            <div>
+                                <label>Genre</label>
+                                <select name="genre" id="genre">
+                                    <option value="Masculin">Masculin</option>
+                                    <option value="Féminin">Féminin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Pays/Région</label>
+                                <input type="text" name="country" id="country" placeholder='Entrez votre pays ou région' />
+                            </div>
                         </div>
                         <div>
-                            <label>Nom du profil à afficher</label>
-                            <input type="text" name='pseudo' id='pseudo' placeholder='Nom du profil a afficher' />
                             <div>
-                                <div>
-                                    <label>Genre</label>
-                                    <select name="genre" id="genre">
-                                        <option value="Masculin">Male</option>
-                                        <option value="Feminin">Feminin</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label>Pays/Region</label>
-                                    <input type="text" name="country" id="country" placeholder='entrex votre pays ou region' />
-                                </div>
+                                <input type="file" name="photo" id="photo" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <Button title='Retour' className='' />
                             </div>
                             <div>
-                                <div>
-                                    <input type="file" name="photo" id="photo" placeholder='' />
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <Button title='Retour' className='' />
-                                </div>
-                                <div>
-                                    <Button title='Suivant' className='' />
-                                </div>
+                                <Button title='Suivant' className='' />
                             </div>
                         </div>
                     </div>
+                </div>
 
-
-                    <div id='formTer'>
+                <div id='formTer'>
+                    <div>
+                        <h2>
+                            <Image
+                                src=''
+                                alt='signUp'
+                                width={180}
+                                height={180}
+                                className=''
+                            />
+                        </h2>
+                        <h4>Profils sociaux</h4>
+                        <p>Saisissez les détails de vos profils sociaux pour compléter votre inscription.</p>
+                    </div>
+                    <div>
+                        <label>Page Facebook</label>
+                        <input type="text" name='facebook' id='facebook' placeholder='Votre profil Facebook' />
+                        <label>Twitter</label>
+                        <input type="text" name="twitter" id="twitter" placeholder='Votre profil Twitter' />
+                        <label>Site web</label>
+                        <input type="text" name='siteWeb' id='siteWeb' placeholder='Entrez l’adresse de votre site web'/>
                         <div>
-                            <h2>
-                                <Image
-                                    src=''
-                                    alt='signUp'
-                                    width={180}
-                                    height={180}
-                                    className=''
-                                ></Image>
-                            </h2>
-                            <h4>Profils sociaux</h4>
-                            <p>saisir les détails de votre compte pour commencer votre inscription.</p>
-                        </div>
-                        <div>
-                            <label>Page Facebook</label>
-                            <input type="text" name='pseudo' id='pseudo' placeholder='Nom du profil a afficher' />
-                            <label>Twitter</label>
-                            <input type="text" name="twitter" id="twitter" placeholder='votre profil twitter' />
-                            <label>Site web</label>
-                            <input type="text" name='site web' id='site web' placeholder='entrez l&apos;adresse de votre site web'/>
                             <div>
-                                <div>
-                                    <Button title='Retour' className='' />
-                                </div>
-                                <div>
-                                    <Button title='Confirmer' className='' />
-                                </div>
+                                <Button title='Retour' className='' />
+                            </div>
+                            <div>
+                                <Button title='Confirmer' className='' />
                             </div>
                         </div>
                     </div>
+                </div>
             </form>
         </div>
     </div>
   )
 }
 
-export default Register
+export default Register;

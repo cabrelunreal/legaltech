@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from '../General/Button';
-interface typeprops{
+
+interface TypeProps {
   type1: string;
   type2: string;
 }
 
-const Contacts:React.FC<typeprops> = ({type1, type2}) => {
+const Contacts: React.FC<TypeProps> = ({ type1, type2 }) => {
   return (
     <div className='w-full py-8'>
       <div className='w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 m-auto'>
@@ -13,8 +14,8 @@ const Contacts:React.FC<typeprops> = ({type1, type2}) => {
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
             <div className='w-full'>
               <label className='block font-bold mb-1'>Type * :</label>
-              <select name="Deposant" id="deposant" className='w-full rounded-sm bg-white text-black py-3 px-4 focus:outline-none'>
-                <option value="">Sélectionner le type de votre demande</option>
+              <select name="type" id="type" className='w-full rounded-sm bg-white text-black py-3 px-4 focus:outline-none'>
+                <option value="">Sélectionnez le type de votre demande</option>
                 <option value="">{type1}</option>
                 <option value="">{type2}</option>
               </select>
@@ -23,28 +24,28 @@ const Contacts:React.FC<typeprops> = ({type1, type2}) => {
               <input type="text" className='w-full rounded-sm bg-white py-3 px-4 focus:outline-none' name="nom" id="nom" placeholder='Dénomination(s) sociale(s) / Nom(s) et prénom(s)' />
 
               <label className='block font-bold mt-4 mb-1'>N° de téléphone * :</label>
-              <input type="tel" name="Numero de telephone" className='w-full rounded-sm bg-white py-3 px-4 focus:outline-none' id="tel" placeholder='Numéro de téléphone' />
+              <input type="tel" name="telephone" className='w-full rounded-sm bg-white py-3 px-4 focus:outline-none' id="tel" placeholder='Numéro de téléphone' />
             </div>
 
             <div>
               <label className='block font-bold mb-1'>Déposant * :</label>
-              <select name="Deposant" id="deposant" className='w-full rounded-sm text-black bg-white py-3 px-4 focus:outline-none'>
-                <option value="">Sélectionner votre type de déposant</option>
+              <select name="deposant" id="deposant" className='w-full rounded-sm text-black bg-white py-3 px-4 focus:outline-none'>
+                <option value="">Sélectionnez votre type de déposant</option>
                 <option value="">Personne physique</option>
                 <option value="">Personne morale</option>
-                <option value="">En co-propriete</option>
+                <option value="">En co-propriété</option>
               </select>
 
-              <label className='block font-bold mt-4 mb-1'>Nationalité:</label>
-              <select name="Nationalite" id="nationalite" className='w-full text-black rounded-sm bg-white py-3 px-4 focus:outline-none'>
-                <option value="">Sélectionner votre pays</option>
-                <option value="">Benin</option>
-                <option value="">Cameroon</option>
+              <label className='block font-bold mt-4 mb-1'>Nationalité :</label>
+              <select name="nationalite" id="nationalite" className='w-full text-black rounded-sm bg-white py-3 px-4 focus:outline-none'>
+                <option value="">Sélectionnez votre pays</option>
+                <option value="">Bénin</option>
+                <option value="">Cameroun</option>
                 <option value="">Congo</option>
               </select>
 
-              <label className='block font-bold mt-4 mb-1'>Adresse électronique* :</label>
-              <input type="email" name="email" className='w-full rounded-sm bg-white py-3 px-4 focus:outline-none' id="object" placeholder='Adresse email' />
+              <label className='block font-bold mt-4 mb-1'>Adresse électronique * :</label>
+              <input type="email" name="email" className='w-full rounded-sm bg-white py-3 px-4 focus:outline-none' id="email" placeholder='Adresse email' />
             </div>
           </div>
 

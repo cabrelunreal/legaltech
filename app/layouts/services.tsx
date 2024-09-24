@@ -6,19 +6,19 @@ import Service from '../components/service'
 import Link from 'next/link'
 
 const first_service = "Créer vos documents d'entreprise";
-const snd_service = 'Protection de la propriété intellectuelle'
-const fth_service = 'Traduction des documents'
-const fith_service = 'Contactez nos experts'
+const snd_service = 'Protection de la propriété intellectuelle';
+const fth_service = 'Traduction des documents';
+const fith_service = 'Contactez nos experts';
 
-const description1 = 'Tous vos documents juridiques rédigés & garantis par des professionnels du droit.'
-const description2 = 'Nous vous assurons la robustesse, la progressivité et la sécurité juridique de vos brevets, marques et autres services.'
-const description4 = 'Traduisez en un clic, vos contrats, actes notariés, et autres documents juridiques.'
-const description5 = 'Nos spécialistes sont à votre disposition pour répondre à toutes vos questions et vous guider vers les solutions adaptées à vos besoins.'
+const description1 = 'Tous vos documents juridiques rédigés et garantis par des professionnels du droit.'; // Correction de "et" au lieu de "&"
+const description2 = 'Nous vous assurons la robustesse, la progressivité et la sécurité juridique de vos brevets, marques et autres services.';
+const description4 = 'Traduisez en un clic vos contrats, actes notariés et autres documents juridiques.'; // Suppression de la virgule
+const description5 = 'Nos spécialistes sont à votre disposition pour répondre à toutes vos questions et vous guider vers les solutions adaptées à vos besoins.';
 
-const image1 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/document-juridique_cppmyz.svg'
-const image2 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703632/secure-shield_bdzppt.svg'
-const image4 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703634/translation_hpgjyq.svg'
-const image5 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1723207870/operateur_dkeoxc.svg'
+const image1 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/document-juridique_cppmyz.svg';
+const image2 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703632/secure-shield_bdzppt.svg';
+const image4 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703634/translation_hpgjyq.svg';
+const image5 = 'https://res.cloudinary.com/dedakscgk/image/upload/v1723207870/operateur_dkeoxc.svg';
 
 const Services = () => {
   useEffect(() => {
@@ -74,4 +74,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;

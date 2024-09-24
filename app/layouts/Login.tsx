@@ -12,7 +12,7 @@ const Login = () => {
                 width={300}
                 height={300}
                 className=''
-            ></Image>
+            />
         </div>
         <div>
             <div>
@@ -22,9 +22,9 @@ const Login = () => {
                     width={100}
                     height={100}
                     className=''
-                ></Image>
-                <h2>connectez-vous</h2>
-                <p>Connectez vous pour avoir accès à votre portail</p>
+                />
+                <h2>Connectez-vous</h2> {/* Correction de la capitalisation */}
+                <p>Connectez-vous pour avoir accès à votre portail</p> {/* Ajout du trait d'union */}
             </div>
             <div>
                 <label>Login</label>
@@ -33,13 +33,14 @@ const Login = () => {
                 <input type="password" name="password" id="password" placeholder='password' />
                 <div>
                     <div>
-                        <input type="checkbox" name="reste" id="reste" placeholder='Reste connecté' />
+                        <input type="checkbox" name="reste" id="reste" />
+                        <label htmlFor="reste">Rester connecté</label> {/* Correction de l'orthographe et ajout d'un label */}
                     </div>
                     <div>
-                        <p>Mot de passe oublié</p>
+                        <p>Mot de passe oublié ?</p> {/* Ajout du point d'interrogation */}
                     </div>
                 </div>
-                <Button title='connexion' className='' />
+                <Button title='Connexion' className='' /> {/* Correction de la capitalisation */}
             </div>
         </div>
     </div>

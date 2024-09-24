@@ -6,29 +6,29 @@ import Button from '../../components/proprieteIntellectuelle/General/Button';
 const FormStep1 = () => {
     const [exigences, setExigences] = useState('');
     const [doctype, setDoctype] = useState('');
-    const [pageCount, setPageCount] = useState<number | ''>('');
+    const [pageCount, setPageCount] = useState<number | ''>(''); // aucun changement ici, c'est correct
     const [file, setFile] = useState<File | null>(null);
     const [specialization, setSpecialization] = useState('');
     const [sourceLanguage, setSourceLanguage] = useState<string>('Anglais');
-    const [targetLanguage, setTargetLanguage] = useState<string>('Francais');
+    const [targetLanguage, setTargetLanguage] = useState<string>('Français');
     const [files, setFiles] = useState<File[]>([]); 
     const router = useRouter();
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFiles = Array.from(e.target.files || []); 
         setFiles(prevFiles => [...prevFiles, ...selectedFiles]); 
-        setFile(selectedFiles[0] || null); // Set the first selected file
+        setFile(selectedFiles[0] || null);
     };
 
     const handleFileRemove = (fileToRemove: File) => {
-        setFiles(prevFiles => prevFiles.filter(file => file !== fileToRemove)); 
+        setFiles(prevFiles => prevFiles.filter(file => file !== fileToRemove));
     };
 
     const handleSourceLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedLanguage = e.target.value;
         setSourceLanguage(selectedLanguage);
         if (selectedLanguage === targetLanguage) {
-            setTargetLanguage(selectedLanguage === 'Anglais' ? 'Francais' : 'Anglais');
+            setTargetLanguage(selectedLanguage === 'Anglais' ? 'Français' : 'Anglais');
         }
     };
 
@@ -37,7 +37,7 @@ const FormStep1 = () => {
 
         // Validation
         if (pageCount === '' || !file || !specialization) {
-            alert('Please fill out all required fields and upload a file.');
+            alert('Veuillez remplir tous les champs obligatoires et télécharger un fichier.');
             return;
         }
 
@@ -49,10 +49,8 @@ const FormStep1 = () => {
             targetLanguage
         };
 
-        
         localStorage.setItem('formData1', JSON.stringify(formData));
 
-        
         const fileReader = new FileReader();
         fileReader.onloadend = () => {
             localStorage.setItem('uploadedFile', fileReader.result as string);
@@ -66,19 +64,19 @@ const FormStep1 = () => {
             <form onSubmit={handleSubmit} className='grid w-full md:w-full m-auto py-4'>
                 <div className='grid md:grid-cols-2 gap-2 py-2'>
                     <div>
-                        <label htmlFor="doctype" className='text-sm font-semibold md:text-lg py-4'>Type de document </label><br />
+                        <label htmlFor="doctype" className='text-sm font-semibold md:text-lg py-4'>Type de document</label><br />
                         <input 
                             type="text" 
                             className='py-2 md:py-3 px-2 pt-1 rounded-sm border placeholder:text-sm w-full focus:outline-none focus:border-green-500' 
                             name="doctype" 
                             id="doctype" 
-                            placeholder='(document administratif etc)' 
+                            placeholder='(document administratif, etc.)' 
                             value={doctype} 
                             onChange={(e) => setDoctype(e.target.value)} 
                         />
                     </div>
                     <div>
-                        <label htmlFor="pageCount" className='text-sm font-semibold md:text-lg py-4'>Nombres de pages *</label><br />
+                        <label htmlFor="pageCount" className='text-sm font-semibold md:text-lg py-4'>Nombre de pages *</label><br />
                         <input 
                             type="number" 
                             className='py-2 md:py-3 px-2 pt-1 rounded-sm border w-full placeholder:text-sm focus:outline-none focus:border-green-500' 
@@ -104,7 +102,7 @@ const FormStep1 = () => {
                             onChange={handleSourceLanguageChange} 
                             required
                         >
-                            {['Anglais', 'Francais', 'Deutch', 'Espagnol', 'Mandarin'].map(lang => (
+                            {['Anglais', 'Français', 'Allemand', 'Espagnol', 'Mandarin'].map(lang => (
                                 <option key={lang} value={lang} disabled={lang === targetLanguage}>
                                     {lang}
                                 </option>
@@ -121,7 +119,7 @@ const FormStep1 = () => {
                             onChange={(e) => setTargetLanguage(e.target.value)} 
                             required
                         >
-                            {['Anglais', 'Francais', 'Deutch', 'Espagnol', 'Mandarin'].map(lang => (
+                            {['Anglais', 'Français', 'Allemand', 'Espagnol', 'Mandarin'].map(lang => (
                                 <option key={lang} value={lang} disabled={lang === sourceLanguage}>
                                     {lang}
                                 </option>
@@ -138,12 +136,12 @@ const FormStep1 = () => {
                         id="file" 
                         onChange={handleFileChange} 
                         required 
-                        multiple // Allow multiple file uploads
+                        multiple
                     />
                 </div>
                 {files.length > 0 && (
                     <div className='py-2'>
-                        <h3 className='text-sm font-semibold md:text-lg py-4'>Fichiers téléchargés:</h3>
+                        <h3 className='text-sm font-semibold md:text-lg py-4'>Fichiers téléchargés :</h3>
                         <ul>
                             {files.map((file, index) => (
                                 <li key={index} className='flex justify-between items-center'>
@@ -165,7 +163,7 @@ const FormStep1 = () => {
                         className='py-3 px-2 pt-1 rounded-sm w-full placeholder:text-sm border focus:outline-none focus:border-green-500' 
                         name="specialization" 
                         id="specialization" 
-                        placeholder='Laissez des specifications par rapport a votre besoin' 
+                        placeholder='Laissez des spécifications par rapport à votre besoin' 
                         value={specialization} 
                         onChange={(e) => setSpecialization(e.target.value)} 
                         required 

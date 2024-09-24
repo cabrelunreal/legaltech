@@ -9,7 +9,6 @@ import ChevronUpIcon from '@heroicons/react/24/outline/ChevronUpIcon'
 import Link from 'next/link'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 const Footer = () => {
   // State for each dropdown
   const [isContactsOpen, setIsContactsOpen] = useState(false);
@@ -31,7 +30,7 @@ const Footer = () => {
         </div>
         <div className='relative z-10'> {/* Ensure content is above the background */}
             <div className='py-4 pt-24 px-4 md:px-1 md:w-5/12 m-auto'>
-                <h2 className='text-center text-2lg md:text-xl capitalize py-4'>Souscrivez a notre newsletter pour ne rien manquer.</h2>
+                <h2 className='text-center text-2lg md:text-xl capitalize py-4'>Souscrivez à notre newsletter pour ne rien manquer.</h2>
                 <div className='border-b rounded flex'>
                     <input type="email" placeholder='exemple@gmail.com' className='w-full bg-transparent text-lg px-3 focus:outline-none py-2' />
                     <button className='px-3'><i className="fa-solid fa-paper-plane"></i></button>
@@ -66,7 +65,7 @@ const Footer = () => {
                                     width={50}
                                     className='mb-4'
                                 />
-                                <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus <span><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
+                                <p className='text-start text-sm md:text-lg'>Parce que vos arrangements sont la chose la plus <span><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profitez de vos précieux moments en famille</p>
                             </div>
                         </motion.div>
                     )}
@@ -103,7 +102,7 @@ const Footer = () => {
                         animate={{ opacity: 1 }} // Animate to this state
                         transition={{ duration: 0.5 }} // Transition duration
                     >
-                        <span>Lien Utiles</span>
+                        <span>Liens Utiles</span>
                         {isMenuOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
                     </motion.button>
                     {isMenuOpen && (
@@ -130,7 +129,7 @@ const Footer = () => {
                         animate={{ opacity: 1 }} // Animate to this state
                         transition={{ duration: 0.5 }} // Transition duration
                     >
-                        <span>Nos Reseaux</span>
+                        <span>Nos Réseaux</span>
                         {isNewsletterOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
                     </motion.button>
                     {isNewsletterOpen && (
@@ -168,57 +167,36 @@ const Footer = () => {
                             width={50}
                             className='mb-4'
                         />
-                        <p className='text-start text-sm md:text-lg'>Parce que vos angements est la chose la plus <span className='text-yellow-500'><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profiter de vos précieux moment en famille</p>
-
+                        <p className='text-start text-sm md:text-lg'>Parce que vos arrangements sont la chose la plus <span className='text-yellow-500'><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profitez de vos précieux moments en famille</p>
                     </div>
                 </div>
-                <div className='hidden lg:flex lg:mx-2'>
+                <div className='hidden lg:flex md:mx-2 md:py-3'>
                     <FootComponent 
-                        title='Contacts' 
+                        link1='Accueil' 
+                        link2='Services' 
+                        link3='Pourquoi-nous' 
+                        link4='Blog' 
+                        link5='Se Connecter' 
+                    />
+                </div>
+                <div className='hidden lg:flex md:mx-2 md:py-3'>
+                    <FootComponent 
                         link1='+237 672 442 800' 
                         link2='contact@tribunejustice.com' 
-                        link3='Cameroun' 
-                        link4='Lorem'
-                        link5='Lorem'
+                        link3='Cameroun'
                     />
                 </div>
-                <div className='hidden md:flex lg:mx-2'>
-                    <FootComponent 
-                        title='Navigation' 
-                        link1='Accueil' 
-                        link2='Documents' 
-                        link3='Nos Experts' 
-                        link4='Traduction' 
-                        link5='Qui sommes nous' 
-                    />
-                </div>
-                <div className='hidden md:flex md:flex-col py-4'>
-                    <h2 className='text-lg md:text-xl font-semibold md:mb-1'>Nos Reseaux</h2>
-                    <div className='md:p-4 rounded px-4'>
-                            <ul className='flex'>
-                                <li className='px-2'>
-                                    <Link href=''><i className="fab fa-facebook text-2xl"></i></Link>
-                                </li>
-                                <li className='px-2'>
-                                    <Link href=''><i className="fab fa-twitter text-2xl"></i></Link>
-                                </li>
-                                <li className='px-2'>
-                                    <Link href=''><i className="fab fa-instagram text-2xl"></i></Link>
-                                </li>
-                                <li className='px-2'>
-                                    <Link href=''><i className="fab fa-linkedin text-2xl"></i></Link>
-                                </li>
-                            </ul>
-                        </div>
+                <div className='hidden lg:flex md:mx-2 md:py-3'>
+                    <div className='flex'>
+                        <Link href=''><i className="fab fa-facebook text-2xl mx-1"></i></Link>
+                        <Link href=''><i className="fab fa-twitter text-2xl mx-1"></i></Link>
+                        <Link href=''><i className="fab fa-instagram text-2xl mx-1"></i></Link>
+                        <Link href=''><i className="fab fa-linkedin text-2xl mx-1"></i></Link>
+                    </div>
                 </div>
             </div>
-
-            <div className='border-t-2 text-sm py-2 flex flex-col md:flex-row justify-between text-center md:text-start md:w-9/12 m-auto'>
-                <p>&copy;LegalTech, All rights reserved.</p>
-                <div className='flex flex-col md:flex-row md:items-center font-semibold'>
-                    <p className='pr-6'>Mentions Legales</p>
-                    <p>Condition Générale d&apos;utilisation</p>
-                </div>
+            <div className='bg-black bg-opacity-50 p-4'>
+                <p className='text-center text-sm md:text-base'>© 2024 Tribune Justice. Tous droits réservés.</p>
             </div>
         </div>
     </div>

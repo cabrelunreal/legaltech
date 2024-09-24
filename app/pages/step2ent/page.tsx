@@ -12,17 +12,17 @@ const Step2IE = () => {
         </div>
         <div>
             <WelcomeContainer 
-                title='formulaire de Creation d&apos;entreprise individuelle'
+                title='Formulaire de création d&apos;entreprise individuelle' // Correction: "Creation" -> "création"
                 custom='text-center capitalize'
-                description='Services de création de l&apos;Entreprise individuelle simples, abordables...'
+                description='Services de création de l&apos;entreprise individuelle simples, abordables...' // Correction: "l'Entreprise" -> "l'entreprise"
                 image=''
             />
         </div>
         
         <div className='py-4'>
             <div className='text-center pt-12 pb-4'>
-                <p>Etape 1 - Etape2</p>
-                <h2 className='capitalize text-2xl font-semibold'>renseignements relatifs à l&apos;entrepreneur</h2>
+                <p>Étape 1 - Étape 2</p> 
+                <h2 className='capitalize text-2xl font-semibold'>Renseignements relatifs à l&apos;entrepreneur</h2> 
             </div>
             <Step2 />
         </div>

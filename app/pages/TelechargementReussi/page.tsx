@@ -14,7 +14,7 @@ const DownloadSuccess = () => {
             </div>
             <div className='py-12'>
                 <Heads 
-                    title='téléchargement reussi'
+                    title='Téléchargement réussi' // Correction: "téléchargement reussi" -> "Téléchargement réussi"
                     headcust='uppercase md:text-3xl'
                     cust='uppercase'
                     description='Votre document a été téléchargé avec succès'
@@ -31,7 +31,7 @@ const DownloadSuccess = () => {
                     ></Image>
                 </div>
                 <div className='flex justify-center'>
-                    <Button title='Fichier Recu' structure='bg-green-700 text-white py-3 px-4 rounded-sm uppercase hover:bg-green-800' />
+                    <Button title='Fichier reçu' structure='bg-green-700 text-white py-3 px-4 rounded-sm uppercase hover:bg-green-800' /> {/* Correction: "Recu" -> "reçu" */}
                 </div>
             </div>
         </div>

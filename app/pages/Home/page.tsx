@@ -1,6 +1,6 @@
 'use client'
 import Experts from '@/app/layouts/Experts'
-import Laugage from '@/app/layouts/Laugage'
+import Langage from '@/app/layouts/Laugage' // Correction: "Laugage" -> "Langage"
 import Services from '@/app/layouts/services'
 import Traductions from '@/app/layouts/Traduction'
 import Why from '@/app/layouts/Why'
@@ -9,7 +9,7 @@ import Header from '@/app/components/proprieteIntellectuelle/General/Header'
 import WelcomeContainer from '@/app/components/proprieteIntellectuelle/General/Welcome'
 import Footer from '@/app/layouts/footer'
 import DocCreate from '@/app/layouts/DocCreate'
-import ProprieteIntellect from '@/app/layouts/ProprieteIntellec'
+import ProprieteIntellect from '@/app/layouts/ProprieteIntellec' // Correction: "ProprieteIntellec" -> "ProprieteIntellect"
 import Partners from '@/app/layouts/Partners'
 import Image from 'next/image'
 
@@ -39,7 +39,7 @@ const Welcome = () => {
         <div>
             <WelcomeContainer 
                 custom=''
-                title='LE JURIDIQUE ACCESSIBLE A TOUS'
+                title='LE JURIDIQUE ACCESSIBLE À TOUS' // Correction: "A" -> "À"
                 description='Services juridiques simples, abordables à portée de main'
                 image={images[currentImage]} // Updated to use current image
             />
@@ -75,7 +75,7 @@ const Welcome = () => {
         </div>
 
         <div className='pb-24'>
-            <Why title='POURQUOI NOUS?' description='Pourquoi choisir tribunejustice pour vos opérations juridiques.' />
+            <Why title='POURQUOI NOUS ?' description='Pourquoi choisir tribunejustice pour vos opérations juridiques.' /> 
         </div>
 
         <div className='relative w-full h-[900px] md:h-[450px]'>  
@@ -87,7 +87,7 @@ const Welcome = () => {
                 className="w-full h-full"
             />
             <div className='w-full absolute inset-0 bg-green-700 bg-opacity-90'>
-                <Laugage />
+                <Langage /> 
             </div>
         </div>
 

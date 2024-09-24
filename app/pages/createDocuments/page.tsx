@@ -14,10 +14,10 @@ const CreateDocs = () => {
         </div>
         <div>
             <WelcomeContainer 
-                title='CREATION DE DOCUMENTS'
+                title='CRÉATION DE DOCUMENTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703618/create-document_uuqlos.png'
-                description='Services de création de documents simples, abordables à portée de main'
-                custbutton=''
+                description='Services de création de documents simples et abordables à portée de main'
+                custButton=''
                 custom='justify-center text-center'
             />
         </div>

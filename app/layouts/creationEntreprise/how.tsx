@@ -11,21 +11,21 @@ const DocCreate = () => {
             <div className='flex justify-center items-center'>
                 <DocCreation  
                     title='Télécharger les statuts' 
-                    description='Télécharger les statuts de la SARL dans tribunejustice' 
+                    description='Téléchargez les statuts de la SARL sur Tribune Justice' 
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
                 />
             </div>
             <div className='flex justify-center items-center'>
                 <DocCreation  
                     title='Fournir les informations nécessaires' 
-                    description='Fournir les informations nécessaires aux démarches auprès du Centre de Formalités et de Création d&apos;entreprises (CFCE) et à l&apos;administration fiscale' 
+                    description='Fournissez les informations nécessaires aux démarches auprès du Centre de Formalités et de Création d&apos;Entreprises (CFCE) et à l&apos;Administration fiscale.' 
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703620/fournir-info_kg9qlu.svg'
                 />
             </div>
             <div className='flex justify-center items-center'>
                 <DocCreation  
                     title='Nous contacter' 
-                    description='Nous contacter pour un rendez-vous avec Fréghis, un de nos experts en création d&apos;entreprises.' 
+                    description='Contactez-nous pour un rendez-vous avec Fréghis, un de nos experts en création d&apos;entreprises.' 
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703615/calling-icon_rg1jxe.svg' 
                 />
             </div>

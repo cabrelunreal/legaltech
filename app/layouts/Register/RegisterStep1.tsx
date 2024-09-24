@@ -16,28 +16,28 @@ const RegisterStep1 = () => {
         <div className='border border-gray-100 px-6 py-8 rounded-md'>
             <div>
                 <div className='text-center font-semibold md:text-xl'>
-                    <h2>Details du compte</h2>
+                    <h2>Détails du compte</h2>
                 </div>
             </div>
             <div className=''>
                 <form action="" onSubmit={handleSubmit}>
                     <div className='py-2'>
                         <label htmlFor="">Adresse email *</label><br />
-                        <input type="email" name="email" className='border w-full py-3 px-3 rounded-md' id="email" placeholder='entrez votre adresse email' />
+                        <input type="email" name="email" className='border w-full py-3 px-3 rounded-md' id="email" placeholder='Entrez votre adresse email' />
                     </div>
                     <div className='py-2'>
-                        <label htmlFor="">Mot de Passe *</label><br />
-                        <input type="password" name="password" className='border w-full py-3 px-3 rounded-md' id="password" placeholder='entrez votre mot de passe' />
+                        <label htmlFor="">Mot de passe *</label><br />
+                        <input type="password" name="password" className='border w-full py-3 px-3 rounded-md' id="password" placeholder='Entrez votre mot de passe' />
                     </div>
                     <div className='py-2'>
-                        <label htmlFor="">Confirmee votre mot de passe *</label><br />
-                        <input type="password" name="confirmPass" className='border w-full py-3 px-3 rounded-md' id="confirmPass" placeholder='confirmez votre mot de passe' />
+                        <label htmlFor="">Confirmez votre mot de passe *</label><br />
+                        <input type="password" name="confirmPass" className='border w-full py-3 px-3 rounded-md' id="confirmPass" placeholder='Confirmez votre mot de passe' />
                     </div>
                     <div className='flex justify-center py-6'>
-                        <Button title='creez votre compte tribunejustice' structure='py-3 mx-4 px-8 rounded-sm text-white lowercase bg-green-700' />
+                        <Button title='Créez votre compte Tribune Justice' structure='py-3 mx-4 px-8 rounded-sm text-white lowercase bg-green-700' />
                     </div>
-                    <div className=' text-center'>
-                        <p>Avez-vous deja un compte? <Link href="../../pages/connect" className='text-sky-600'>connectez-vous</Link></p>
+                    <div className='text-center'>
+                        <p>Avez-vous déjà un compte ? <Link href="../../pages/connect" className='text-sky-600'>Connectez-vous</Link></p>
                     </div>
                 </form>
             </div>

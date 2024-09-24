@@ -28,7 +28,7 @@ const Page = () => {
 
         <div>
             <WelcomeContainer 
-                beforeT='Propriété Litteraires et Artistiques'
+                beforeT='Propriété Littéraire et Artistique' // Correction orthographique
                 custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre création'
                 description='Empêchez les autres d’utiliser et de tirer profit de votre livre, article, chanson, photo, œuvre d’art, etc.'
@@ -56,7 +56,7 @@ const Page = () => {
         </div>
 
         <div>
-            <Heads title='Des questions?' structure='font-bold text-center py-8' headcust='text-2xl' />
+            <Heads title='Des questions ?' structure='font-bold text-center py-8' headcust='text-2xl' /> {/* Ajout d'un espace avant le '?' */}
         </div>
 
         <div>

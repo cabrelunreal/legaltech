@@ -17,9 +17,9 @@ import Categories from './Categories'
 const Page = () => {
   const router = useRouter();
   
-   const onclickEnterprise = (path: string) => {
-        router.push(path);
-    };
+  const onclickEnterprise = (path: string) => {
+    router.push(path);
+  };
 
   return (
     <div>
@@ -29,10 +29,10 @@ const Page = () => {
 
         <div>
             <WelcomeContainer 
-                beforeT='Dessins et Modèle Industriels'
+                beforeT='Dessins et Modèles Industriels' // Correction de "Modèle" à "Modèles"
                 custom='justify-start md:pl-56 md:pr-96'
                 title='Protégez votre invention à l’OAPI'
-                description='Les dessins et modèles industriels confèrent à son auteur également le droit exclusif de priver d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer la création protégée...'
+                description='Les dessins et modèles industriels confèrent à leur auteur le droit exclusif de priver d’autres personnes de fabriquer, d’utiliser, de vendre ou d’importer la création protégée...'
                 buttonTitle='Commencer'
                 onclick={() => onclickEnterprise('../../pages/FormDessins')}
                 customButton='bg-green-700'

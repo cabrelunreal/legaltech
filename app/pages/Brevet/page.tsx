@@ -18,7 +18,7 @@ const Brevet = () => {
   
   const onclickEnterprise = (path: string) => {
     router.push(path);
-   };
+  };
 
   return (
     <div>

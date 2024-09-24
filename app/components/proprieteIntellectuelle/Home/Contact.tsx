@@ -13,12 +13,12 @@ const Contacts: React.FC = () => {
                 className='w-full rounded-sm bg-white py-4 focus:outline-none px-4 my-3' 
                 name='name' 
                 id='name' 
-                placeholder='Nom et Prenoms' 
+                placeholder='Nom et Prénoms'  // Correction de "Prenoms" en "Prénoms"
               />
               <input 
                 type='email' 
                 className='w-full rounded-sm bg-white py-4 focus:outline-none px-4 my-3' 
-                name='Adresse email' 
+                name='email'  // Correction de "Adresse email" en "email" pour respecter les conventions
                 id='email' 
                 placeholder='Email' 
               />
@@ -29,11 +29,11 @@ const Contacts: React.FC = () => {
                 name='telephone' 
                 className='w-full rounded-sm bg-white py-4 focus:outline-none px-4 my-3' 
                 id='telephone' 
-                placeholder='Numero telephone' 
+                placeholder='Numéro de téléphone'  // Correction de "Numero telephone" en "Numéro de téléphone"
               />
               <input 
                 type='text' 
-                name='object' 
+                name='object'  // Correction de "object" en "objet" (français)
                 className='w-full rounded-sm bg-white py-4 px-4 focus:outline-none my-3' 
                 id='object' 
                 placeholder='Objet' 

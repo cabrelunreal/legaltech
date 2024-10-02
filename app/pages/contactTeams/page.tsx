@@ -7,8 +7,15 @@ import Footer from '@/app/layouts/footer';
 import React from 'react';
 import FAQ from '@/app/components/Faq';
 import QuickCall from '@/app/components/proprieteIntellectuelle/General/QuickCall';
+import { useRouter } from 'next/navigation';
 
 const ContactTeams = () => {
+
+    const router = useRouter();
+    
+    const onclickEnterprise = (path: string) => {
+      router.push(path);
+     };
     const faqData = [
         {
             question: "Qu'est-ce que la LegalTech et à quoi sert-elle ?",
@@ -71,14 +78,14 @@ const ContactTeams = () => {
                         <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
                         <p className='py-1 md:text-lg'>Lun-Ven : 8h – 19h GMT+1</p>
                         <p className='py-1 md:text-lg'>Weekends : 8h – 13h GMT+1</p>
-                        <Button title='Discuter avec nous' structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
+                        <Button title='Discuter avec nous' onClick={() => onclickEnterprise('https://wa.me/672442800')} structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
                     </div>
                     <div className='md:p-12 p-6 bg-gray-100 rounded-sm'>
                         <h2 className='py-2 md:text-2xl font-semibold'>Ventes</h2>
                         <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
                         <p className='py-1 md:text-lg'>Lun-Ven : 8h – 19h GMT+1</p>
                         <p className='py-1 md:text-lg'>Weekends : 8h – 13h GMT+1</p>
-                        <Button title='Discuter avec nous' structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
+                        <Button title='Discuter avec nous' onClick={() => onclickEnterprise('https://wa.me/672442800')} structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
                     </div>
                 </div>
             </div>

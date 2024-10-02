@@ -162,10 +162,6 @@ const CreatingSarl = () => {
             </div>
 
             <div>
-                <Contact />
-            </div>
-
-            <div>
                 <Footer />
             </div>
         </div>

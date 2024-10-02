@@ -65,7 +65,7 @@ const Footer = () => {
                                     width={50}
                                     className='mb-4'
                                 />
-                                <p className='text-start text-sm md:text-lg'>Parce que vos arrangements sont la chose la plus <span><Link href="https://dashboardtj.vercel.app/">importante !</Link></span> Créez des documents juridiques rapidement et profitez de vos précieux moments en famille</p>
+                                <p className='text-start text-sm md:text-lg'>Parce que votre engagement est la chose la plus <span className='text-yellow-500'><Link href="https://dashboardtj.vercel.app/">importante!</Link></span></p>
                             </div>
                         </motion.div>
                     )}

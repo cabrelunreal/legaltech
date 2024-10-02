@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Heads from './Heads';
 import Button from './Button';
@@ -10,6 +11,7 @@ const QuickCall = () => {
   const onclickEnterprise = (path: string) => {
     router.push(path);
    };
+
   return (
     <div className='bg-gray-50 py-8 px-4'>
       <h2 className='text-center text-lg md:text-2xl py-4 font-semibold'>Des Questions ?</h2>

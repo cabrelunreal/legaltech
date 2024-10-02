@@ -5,7 +5,7 @@ import 'aos/dist/aos.css' // Import AOS styles
 import Service from '../components/service'
 import Link from 'next/link'
 
-const first_service = "Créer vos documents d'entreprise";
+const first_service = "Créez votre entreprise par Tribunejustice";
 const snd_service = 'Protection de la propriété intellectuelle';
 const fth_service = 'Traduction des documents';
 const fith_service = 'Contactez nos experts';

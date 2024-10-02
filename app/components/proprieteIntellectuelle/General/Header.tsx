@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   return (
     <div className='bg-white shadow-sm md:fixed top-0 w-full z-50'>
       <BeforeHeader />
-      <div className='md:w-9/12 w-full px-2 px-8 md:px-8 m-auto flex justify-between py-3'>
+      <div className='md:w-9/12 w-full px-2 md:px-8 m-auto flex justify-between py-3'>
         <div>
           <Link href='../../../pages/Home'>
             <Image
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
               </button>
               {servicesModalOpen && (
                 <Dropdown>
-                  <DropdownItem href='../../../pages/createDocuments'>Créez vos documents d&apos;entreprise</DropdownItem>
+                  <DropdownItem href='../../../pages/createSarl'>Créez votre entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriété Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
                   <DropdownItem href='../../../pages/DocumentTranslate'>Traduction de documents</DropdownItem>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 </button>
                 {servicesModalOpen && (
                 <Dropdown>
-                  <DropdownItem href='../../../pages/createDocuments'>Créez vos documents d&apos;entreprise</DropdownItem>
+                  <DropdownItem href='../../../pages/createSarl'>Créez votre entreprise</DropdownItem>
                   <DropdownItem href='../../../pages/HomePropriete'>Propriété Intellectuelle</DropdownItem>
                   <DropdownItem href='../../../pages/contactTeams'>Consultez nos experts</DropdownItem>
                   <DropdownItem href='../../../pages/DocumentTranslate'>Traduction de documents</DropdownItem>

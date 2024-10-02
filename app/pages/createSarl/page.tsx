@@ -28,62 +28,12 @@ const CreatingSarl = () => {
                 <WelcomeContainer 
                     title='CRÉATION DE LA SARL'
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703625/enterprise-background_xiwedn.png'
-                    description='Services de création de la SARL, simples et abordables...'
+                    description='Dans l&apos;OHADA la SARL est la forme de société la plus courante.'
                     buttonTitle1='Commencer'
                     onClick={() => onclickEnterprise('../../pages/step1Sarl')}
                     custButton='bg-green-700 px-8 py-3 text-lg uppercase hover:bg-green-800 rounded-md'
                     custom='justify-center text-center'
                 />
-            </div>
-            <div>
-                <Why 
-                    title='POURQUOI CRÉER LA SARL ?'
-                    description='Contrairement aux entreprises individuelles ou aux Établissements, 
-                    les associés de la SARL ne sont responsables des dettes qu&apos;à hauteur de leurs apports.
-                    Les biens personnels des associés ne peuvent être saisis. Créer une SARL ouvre la possibilité aux 
-                    entrepreneurs de sortir du secteur informel, d&apos;agrandir leur entreprise, d&apos;ouvrir des comptes 
-                    en banque, de signer des contrats importants et d&apos;avoir des autorisations administratives.'
-                    custom='hidden md:-9/12 m-auto'
-                />
-            </div>
-
-            <div>
-                <Why 
-                    title='LA GÉRANCE DE LA SARL EST-ELLE RÉMUNÉRÉE ?'
-                    description='Le régime fiscal ne dépend pas de la forme de la société, autrement dit, le droit 
-                    n&apos;offrirait pas plus de faveurs en termes d&apos;imposition ou de taxation si la société constituée est 
-                    une Société Anonyme plutôt qu&apos;une Société à responsabilité limitée et inversement. 
-                    Cependant, le système de taxation ou d&apos;imposition dépend largement du chiffre d&apos;affaires réalisé par les sociétés.'
-                    custom='hidden md:-9/12 m-auto'
-                />
-            </div>
-
-            <div>
-                <Why 
-                    title='QUEL EST LE RÉGIME FISCAL DE LA SARL ?'
-                    description='Le régime fiscal ne dépend pas de la forme de la société, autrement dit, 
-                    le droit n&apos;offrirait pas plus de faveurs en termes d&apos;imposition ou de taxation si la société constituée est une 
-                    Société Anonyme plutôt qu&apos;une Société à responsabilité limitée et inversement. Cependant, 
-                    le système de taxation ou d&apos;imposition dépend largement du chiffre d&apos;affaires réalisé par les sociétés.'
-                    custom='hidden md:-9/12 m-auto'
-                />
-            </div>
-
-            <div className='px-4'>
-                <div className='w-full md:w-5/12 m-auto border p-4 rounded-md shadow-sm border-gray-300'>
-                    <h2 className='text-xl font-bold'>Liste d&apos;informations nécessaires pour la rédaction des statuts</h2>
-                    <ul className='list-disc py-3 px-8'>
-                        <li>Dénomination de la société</li>
-                        <li>Situation géographique</li>
-                        <li>Objet social : énumérer les activités</li>
-                        <li>Montant du capital social et valeur de la part (valeur nominale minimale de 5000 F CFA)</li>
-                        <li>NB : Au Cameroun, le capital minimum exigible pour les SARL est de 100.000 F CFA</li>
-                        <li>Nom et adresse des associés</li>
-                        <li>Libération du capital auprès d&apos;une banque ou d&apos;un notaire</li>
-                        <li>Répartition du capital</li>
-                        <li>Nom du gérant</li>
-                    </ul>
-                </div>
             </div>
 
             <div>
@@ -191,6 +141,7 @@ const CreatingSarl = () => {
                     </div>
                 </div>
             </div>
+
 
             <div>
                 <QuickCall />

@@ -29,27 +29,27 @@ const Laugage = () => {
       } else {
         clearInterval(interval1); // Stop counting when limit is reached
       }
-    }, 1);
+    }, 40);
     
     const interval2 = setInterval(() => {
-      if (count2 < 250) {
+      if (count2 < 100) {
         setCount2(prev => prev + 1); // Increment for title2
       } else {
         clearInterval(interval2); // Stop counting when limit is reached
       }
-    }, 40);
+    }, 5);
     
     const interval3 = setInterval(() => {
-      if (count3 < 12000000) {
-        setCount3(prev => prev + 100000); // Increment for title3
+      if (count3 < 1200) {
+        setCount3(prev => prev + 40); // Increment for title3
       } else {
         clearInterval(interval3); // Stop counting when limit is reached
       }
-    }, 1);
+    }, 40);
     
     const interval4 = setInterval(() => {
       if (count4 < 3150) {
-        setCount4(prev => prev + 1); // Increment for title4
+        setCount4(prev => prev + 40); // Increment for title4
       } else {
         clearInterval(interval4); // Stop counting when limit is reached
       }

@@ -25,32 +25,33 @@ const DocCreate = () => {
     <div className='w-full sm:w-11/12 md:w-10/12 lg:w-9/12 mx-auto py-12 md:py-14'>
         <div className='py-3 px-8'>
             <div className='text-center text-black uppercase text-lg md:text-3xl font-semibold py-0 md:py-2'>
-                <h2>COMMENT CREER DES DOCUMENTS</h2>
+                <h2>COMMENT CREER VOTRE ENTREPRISE</h2>
             </div>
             <div className='text-black text-center text-sm md:text-xl py-2 md:py-2'>
                 <p>Nous vous présentons comment créer vos documents juridiques ici.</p>
             </div>
         </div>
+        
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8'>
-            <div className='flex justify-center items-center' data-aos="fade-up"> {/* AOS effect */}
-                <DocCreation 
-                    title={title1} 
-                    description={description1} 
-                    image={image1}
+            <div className='flex justify-center items-center'>
+                <DocCreation  
+                    title='Nous contacter' 
+                    description='Contactez-nous pour un rendez-vous avec Fréghis, un de nos experts en création d&apos;entreprises.' 
+                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703615/calling-icon_rg1jxe.svg' 
                 />
             </div>
-            <div className='flex justify-center items-center' data-aos="fade-up"> {/* AOS effect */}
-                <DocCreation 
-                    title={title2} 
-                    description={description2} 
-                    image={image2}
+            <div className='flex justify-center items-center'>
+                <DocCreation  
+                    title='Fournir les documents nécessaires' 
+                    description='Fournissezz les documents nécessaires auprès du notaire ou du CFCE et à l&apos;Administration fiscale.' 
+                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703620/fournir-info_kg9qlu.svg'
                 />
             </div>
-            <div className='flex justify-center items-center' data-aos="fade-up"> {/* AOS effect */}
-                <DocCreation 
-                    title={title3} 
-                    description={description3} 
-                    image={image3}
+            <div className='flex justify-center items-center'>
+                <DocCreation  
+                    title='Télécharger les statuts' 
+                    description='Téléchargez les statuts de la SARL sur Tribunejustice' 
+                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
                 />
             </div>
         </div>

@@ -35,7 +35,7 @@ const Services = () => {
         <div className='w-full pt-6 px-6 grid md:grid-rows-2 md:gap-8'>
             <div className='grid md:grid-cols-2 gap-2'>
                 <div data-aos="fade-right"> {/* AOS effect */}
-                    <Link href="../pages/createDocuments">
+                    <Link href="../pages/createSarl">
                     <Service title={first_service}
                         image={image1} 
                         description={description1} 

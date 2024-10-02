@@ -60,7 +60,7 @@ const Step1: React.FC<Props> = ({ onclick1, onclick2 }) => {
           </div>
           <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
             <div className="flex flex-col flex-1">
-              <label htmlFor="numberID" className="text-sm font-semibold">Numéro du titre de séjour</label>
+              <label htmlFor="numberID" className="text-sm font-semibold">Numéro du titre de séjour / CNI</label>
               <input
                 type="text"
                 name="numberID"

@@ -47,7 +47,7 @@ const Footer = () => {
                         animate={{ opacity: 1 }} // Animate to this state
                         transition={{ duration: 0.5 }} // Transition duration
                     >
-                        <span>Legaltech</span>
+                        <span>Tribunejustice votre Legaltech</span>
                         {isInfoOpen ? <ChevronUpIcon className='w-6 h-6' /> : <ChevronDownIcon className='w-6 h-6' />}
                     </motion.button>
                     {isInfoOpen && (

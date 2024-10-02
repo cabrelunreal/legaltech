@@ -8,8 +8,8 @@ const Categories: React.FC = () => {
   const Description = "Découvrez d'autres services auxquels vous pouvez souscrire."; // Correction de l'orthographe et de la grammaire
 
   const categories = [
-    { title: 'Enttreprise Individuelle', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg', description: 'logos', link: '../../pages/INdivEnterprise' },
-    { title: 'Crèation des statuts', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg', description: 'industriels', link: '../../../pages/DessinEtModele' }, // Accord du mot "industriels"
+    { title: 'Entreprise Individuelle', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg', description: 'logos', link: '../../pages/INdivEnterprise' },
+    { title: 'Création des statuts', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg', description: 'industriels', link: '' }, // Accord du mot "industriels"
   ];
 
   return (

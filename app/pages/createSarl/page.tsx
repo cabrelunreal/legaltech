@@ -87,9 +87,6 @@ const CreatingSarl = () => {
                                     <p className='p-1'>En plus du numéro d&apos;identification
                                     unique.</p>
                                 </div>
-                                <div>
-                                    <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
-                                </div>
                             </div>
                             <div className='border-4 w-11/12 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
@@ -107,9 +104,6 @@ const CreatingSarl = () => {
                                         L&apos;immatriculation CNPS ou 
                                         L&apos;attestation de non-utilisation
                                         du personnel salarié.</p>
-                                </div>
-                                <div>
-                                    <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
                                 </div>
                             </div>
                         </div>
@@ -130,9 +124,6 @@ const CreatingSarl = () => {
                                     <p className='p-1 font-semibold'>Authentification</p>
                                     <p className='p-1'>Délivrance du document de la société</p>
                                 </div>
-                                <div>
-                                    <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
-                                </div>
                             </div>
                             <div className='border-4 border-green-700 w-11/12 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
@@ -148,9 +139,6 @@ const CreatingSarl = () => {
                                     <p className='p-1'>L&apos;immatriculation CNPS ou 
                                     L&apos;attestation de non-utilisation
                                     du personnel salarié.</p>
-                                </div>
-                                <div>
-                                    <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
                                 </div>
                             </div>
                         </div>

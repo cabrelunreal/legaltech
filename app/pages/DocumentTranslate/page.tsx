@@ -65,7 +65,7 @@ const DocTranslates = () => {
                 title='TRADUCTION DE DOCUMENTS'
                 image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703638/translate-documents_grl9qr.png'
                 description='Traduction de documents juridiques, administratifs et autres documents techniques.'
-                custButton='bg-green-700 text-white px-3 py-2 md:py-3 rounded-md uppercase hover:bg-green-800'
+                custButton='hidden bg-green-700 text-white px-3 py-2 md:py-3 rounded-md uppercase hover:bg-green-800'
                 buttonTitle1='commencer'
                 custom='text-center'
             />

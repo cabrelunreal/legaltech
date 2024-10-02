@@ -10,9 +10,24 @@ import React from 'react'
 import { useRouter } from 'next/navigation';
 import Button from '@/app/components/proprieteIntellectuelle/General/Button'
 import QuickCall from '@/app/components/proprieteIntellectuelle/General/QuickCall'
+import FAQ from '@/app/components/Faq'
 
 
 const CreatingSarl = () => {
+    const faqData = [
+        {
+            question: "POURQUOI CRÉER LA SARL ?",
+            answer: "Contrairement aux entreprises individuelles ou aux Établissements, les associés de la SARL ne sont responsables des dettes qu'à hauteur de leurs apports. Les biens personnels des associés ne peuvent être saisis. Créer une SARL ouvre la possibilité aux entrepreneurs de sortir du secteur informel, d'agrandir leur entreprise, d'ouvrir des comptes en banque, de signer des contrats importants et d'avoir des autorisations administratives.",
+        },
+        {
+            question: "LA GÉRANCE DE LA SARL EST-ELLE RÉMUNÉRÉE ?",
+            answer: "Le régime fiscal ne dépend pas de la forme de la société, autrement dit, le droit n'offrirait pas plus de faveurs en termes d'imposition ou de taxation si la société constituée est une Société Anonyme plutôt qu'une Société à responsabilité limitée et inversement. Cependant, le système de taxation ou d'imposition dépend largement du chiffre d'affaires réalisé par les sociétés.",
+        },
+        {
+            question: "QUEL EST LE RÉGIME FISCAL DE LA SARL ?",
+            answer: "Le régime fiscal ne dépend pas de la forme de la société, autrement dit, le droit n'offrirait pas plus de faveurs en termes d'imposition ou de taxation si la société constituée est une Société Anonyme plutôt q'une Société à responsabilité limitée et inversement. Cependant, le système de taxation ou d'imposition dépend largement du chiffre d'affaires réalisé par les sociétés.",
+        },
+    ];
     const router = useRouter();
     
     const onclickEnterprise = (path: string) => {
@@ -142,6 +157,9 @@ const CreatingSarl = () => {
                 </div>
             </div>
 
+            <div className="flex bg-gray-100">
+                <FAQ questionsAnswers={faqData} />
+            </div>
 
             <div>
                 <QuickCall />

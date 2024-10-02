@@ -5,12 +5,12 @@ import 'aos/dist/aos.css' // Import AOS styles
 import Service from '../components/service'
 import Link from 'next/link'
 
-const first_service = "Créez votre entreprise par Tribunejustice";
+const first_service = "Créez votre SARL par Tribunejustice";
 const snd_service = 'Protection de la propriété intellectuelle';
 const fth_service = 'Traduction des documents';
 const fith_service = 'Contactez nos experts';
 
-const description1 = 'Tous vos documents juridiques rédigés et garantis par des professionnels du droit.'; // Correction de "et" au lieu de "&"
+const description1 = 'Des experts vous aides a creer votre entreprise'; // Correction de "et" au lieu de "&"
 const description2 = 'Nous vous assurons la robustesse, la progressivité et la sécurité juridique de vos brevets, marques et autres services.';
 const description4 = 'Traduisez en un clic vos contrats, actes notariés et autres documents juridiques.'; // Suppression de la virgule
 const description5 = 'Nos spécialistes sont à votre disposition pour répondre à toutes vos questions et vous guider vers les solutions adaptées à vos besoins.';

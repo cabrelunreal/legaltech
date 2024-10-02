@@ -28,7 +28,7 @@ const DocCreate = () => {
                 <h2>COMMENT CREER VOTRE ENTREPRISE</h2>
             </div>
             <div className='text-black text-center text-sm md:text-xl py-2 md:py-2'>
-                <p>Nous vous présentons comment créer vos documents juridiques ici.</p>
+                <p>Nous vous présentons comment créer votre entreprise ici.</p>
             </div>
         </div>
         
@@ -43,7 +43,7 @@ const DocCreate = () => {
             <div className='flex justify-center items-center'>
                 <DocCreation  
                     title='Fournir les documents nécessaires' 
-                    description='Fournissezz les documents nécessaires auprès du notaire ou du CFCE et à l&apos;Administration fiscale.' 
+                    description='Fournissez les documents nécessaires auprès du notaire ou du CFCE et à l&apos;Administration fiscale.' 
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703620/fournir-info_kg9qlu.svg'
                 />
             </div>

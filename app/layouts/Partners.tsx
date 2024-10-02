@@ -30,11 +30,9 @@ const items = [
     },
     {
       src: 'https://res.cloudinary.com/dedakscgk/image/upload/v1727857984/logo_tj_xokqji.jpg',
-      alt: 'Slide 6'
+      alt: 'Slide 7'
     }
 ];
-
-
 
 const Partners = () => {
   return (
@@ -46,9 +44,9 @@ const Partners = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className='transform transition-transform duration-300 hover:scale-110'
+              className='transform transition-transform duration-500 ease-in-out hover:scale-150'
               style={{
-                perspective: '1000px', // Allows the element to have a 3D space for zoom-forward
+                perspective: '1000px', // Adds 3D space for zoom effect
               }}
             >
               <Image
@@ -56,11 +54,12 @@ const Partners = () => {
                 alt={item.alt}
                 width={700}
                 height={700}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className='w-40 h-40 object-contain'
                 style={{
                   transform: 'translateZ(0)', // Resets any existing 3D transform
                 }}
-              ></Image>
+              />
             </div>
           ))}
         </div>

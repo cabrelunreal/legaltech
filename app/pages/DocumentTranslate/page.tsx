@@ -111,9 +111,9 @@ const DocTranslates = () => {
                 structure='px-6 py-3 bg-green-700 rounded-md text-white my-4 uppercase' />
         </div>
 
-        <div className="flex bg-gray-100">
+        {/* <div className="flex bg-gray-100">
             <FAQ questionsAnswers={faqData} />
-        </div>
+        </div> */}
 
         <div>
             <QuickCall />

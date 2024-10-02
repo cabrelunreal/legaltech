@@ -11,6 +11,7 @@ import { useRouter } from 'next/navigation';
 import Button from '@/app/components/proprieteIntellectuelle/General/Button'
 import QuickCall from '@/app/components/proprieteIntellectuelle/General/QuickCall'
 import FAQ from '@/app/components/Faq'
+import Categories from './Categories'
 
 
 const CreatingSarl = () => {
@@ -21,7 +22,7 @@ const CreatingSarl = () => {
         },
         {
             question: "LA GÉRANCE DE LA SARL EST-ELLE RÉMUNÉRÉE ?",
-            answer: "Le régime fiscal ne dépend pas de la forme de la société, autrement dit, le droit n'offrirait pas plus de faveurs en termes d'imposition ou de taxation si la société constituée est une Société Anonyme plutôt qu'une Société à responsabilité limitée et inversement. Cependant, le système de taxation ou d'imposition dépend largement du chiffre d'affaires réalisé par les sociétés.",
+            answer: "Dans l'espace OHADA, les fonctions du gérant d'une SARL sont gratuites ou rémunérées. La rémunération due au titre de la fonction de gérant d'une SARL ne peut être considérée comme un salaire, car le gérant, en cette qualité, n'est pas un salarié au sens du Code du travail.",
         },
         {
             question: "QUEL EST LE RÉGIME FISCAL DE LA SARL ?",
@@ -71,8 +72,8 @@ const CreatingSarl = () => {
                         <div className='text-center text-2xl font-semibold py-4'>
                             <p>Avec un capital {'>'}100 000 et {'≤'}1 000 000</p>
                         </div>
-                        <div className='grid md:grid-cols-2 md:w-5/12 gap-4 m-auto'>
-                            <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                        <div className='grid md:grid-cols-2 md:w-7/12 gap-4 m-auto'>
+                            <div className='border-4 w-11/12 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
                                     <p className='p-1 font-semibold'>Phase 1</p>
                                     <p className='p-1 font-semibold'>Formalités sans le notaire</p>
@@ -90,7 +91,7 @@ const CreatingSarl = () => {
                                     <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
                                 </div>
                             </div>
-                            <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                            <div className='border-4 w-11/12 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
                                     <p className='p-1 font-semibold'>Phase 2</p>
                                     <p className='p-1 font-semibold'>Formalités auprès du
@@ -117,8 +118,8 @@ const CreatingSarl = () => {
                         <div className='text-center text-2xl font-semibold py-8'>
                             <p>Avec un capital {'>'}1 000 000</p>
                         </div>
-                        <div className='grid md:grid-cols-2 md:w-5/12 gap-4 m-auto'>
-                            <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                        <div className='grid md:grid-cols-2 md:w-7/12 gap-4 m-auto'>
+                            <div className='border-4 border-green-700 w-11/12 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
                                     <p className='p-1 font-semibold'>Phase 1</p>
                                     <p className='p-1 font-semibold'>Formalités auprès du notaire</p>
@@ -133,7 +134,7 @@ const CreatingSarl = () => {
                                     <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
                                 </div>
                             </div>
-                            <div className='border-4 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
+                            <div className='border-4 border-green-700 w-11/12 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                                 <div>
                                     <p className='p-1 font-semibold'>Phase 2</p>
                                     <p className='p-1 font-semibold'>Formalités auprès du centre d&apos;impôt</p>
@@ -161,13 +162,24 @@ const CreatingSarl = () => {
                 <FAQ questionsAnswers={faqData} />
             </div>
 
+            
+            <div>
+                <div>
+                    <Categories />
+                </div>
+            </div>
+
             <div>
                 <QuickCall />
             </div>
+
             <div>
                 <Contact />
             </div>
-            <Footer />
+
+            <div>
+                <Footer />
+            </div>
         </div>
     )
 }

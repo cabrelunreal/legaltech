@@ -86,9 +86,6 @@ const CreatePersonal = () => {
                                 <p className='p-1'>en plus du numero d&apos;identification
                                 unique.</p>
                             </div>
-                            <div>
-                                <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
-                            </div>
                         </div>
                         <div className='border-4 w-10/12 border-green-700 text-center p-6 flex rounded-[60px] flex-col justify-between'>
                             <div>
@@ -106,9 +103,6 @@ const CreatePersonal = () => {
                                     l&apos;immatriculation CNPS ou 
                                     l&apos;Attestation de Non Utilisation
                                     du Personnel Salarié.</p>
-                            </div>
-                            <div>
-                                <Button title='Commencer' structure='rounded-md bg-green-700 text-white py-3 px-4 mt-3' />
                             </div>
                         </div>
                     </div>

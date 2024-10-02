@@ -37,22 +37,6 @@ const ContactTeams = () => {
             question: "Quels sont les risques liés à l'utilisation de la LegalTech ?",
             answer: "Les principaux risques associés à la LegalTech sont : \n* La dépendance aux outils numériques. \n* Les problèmes de sécurité des données. \n* La perte d'emploi pour certaines tâches automatisables.",
         },
-        {
-            question: "Comment former mes collaborateurs à la LegalTech ?",
-            answer: "Pour former vos collaborateurs à la LegalTech, vous pouvez : \n* Organiser des formations internes. \n* Encourager la participation à des événements professionnels. \n* Soutenir la certification de vos collaborateurs.",
-        },
-        {
-            question: "Pourquoi les entreprises devraient-elles s'intéresser à la LegalTech ?",
-            answer: "La LegalTech permet aux entreprises de : \n* Réduire leurs coûts juridiques. \n* Améliorer la gestion de leurs contrats. \n* Mieux se conformer à la réglementation. \n* Accélérer leur processus de prise de décision.",
-        },
-        {
-            question: "Comment intégrer la LegalTech dans ma stratégie juridique ?",
-            answer: "Pour intégrer la LegalTech dans votre stratégie juridique, vous pouvez : \n* Réaliser un audit de vos besoins. \n* Mettre en place une politique d'achat de logiciels juridiques. \n* Former vos équipes juridiques. \n* Collaborer avec des fournisseurs de solutions LegalTech.",
-        },
-        {
-            question: "Quels sont les défis liés à l'implémentation de la LegalTech ?",
-            answer: "Les principaux défis liés à l'implémentation de la LegalTech sont : \n* La résistance au changement. \n* Les coûts d'investissement. \n* La nécessité d'adapter les processus existants.",
-        },
     ];
 
     return (

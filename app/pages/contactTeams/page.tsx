@@ -75,14 +75,14 @@ const ContactTeams = () => {
                 <div className='grid md:grid-cols-2 gap-4'>
                     <div className='md:p-12 p-6 bg-gray-100 rounded-sm'>
                         <h2 className='py-2 md:text-2xl font-semibold'>Service Client</h2>
-                        <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
+                        <p className='py-2 md:text-lg font-semibold'>(237) 621 619 417</p>
                         <p className='py-1 md:text-lg'>Lun-Ven : 8h – 19h GMT+1</p>
                         <p className='py-1 md:text-lg'>Weekends : 8h – 13h GMT+1</p>
                         <Button title='Discuter avec nous' onClick={() => onclickEnterprise('https://wa.me/672442800')} structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />
                     </div>
                     <div className='md:p-12 p-6 bg-gray-100 rounded-sm'>
                         <h2 className='py-2 md:text-2xl font-semibold'>Ventes</h2>
-                        <p className='py-2 md:text-lg font-semibold'>(XXX) XXX XXX XXX</p>
+                        <p className='py-2 md:text-lg font-semibold'>(237) 672 442 800</p>
                         <p className='py-1 md:text-lg'>Lun-Ven : 8h – 19h GMT+1</p>
                         <p className='py-1 md:text-lg'>Weekends : 8h – 13h GMT+1</p>
                         <Button title='Discuter avec nous' onClick={() => onclickEnterprise('https://wa.me/672442800')} structure='bg-green-700 text-white px-8 text-lg font-semibold hover:bg-green-800 rounded-md my-4 py-3' />

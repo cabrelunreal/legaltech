@@ -9,7 +9,7 @@ const Categories: React.FC = () => {
 
   const categories = [
     { title: 'Entreprise Individuelle', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703614/contract_2_r4qk1m.svg', description: 'logos', link: '../../pages/INdivEnterprise' },
-    { title: 'Création des statuts', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg', description: 'industriels', link: '' }, // Accord du mot "industriels"
+    { title: 'Création des statuts', image: 'https://res.cloudinary.com/dedakscgk/image/upload/v1719703613/attestation_zbnud8.svg', description: 'industriels', link: '../../pages/step1Sarl' }, // Accord du mot "industriels"
   ];
 
   return (

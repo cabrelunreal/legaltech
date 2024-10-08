@@ -37,7 +37,7 @@ const Step1Sarl = () => {
                     <DocCreation  
                         title='Choisir le model' 
                         description='Choissisez le model fourni par tribunejustice' 
-                        image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703615/calling-icon_rg1jxe.svg' 
+                        image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/choisir_model_qxnvsl.svg' 
                     />
                 </div>
                 <div className='flex justify-center items-center'>
@@ -51,8 +51,8 @@ const Step1Sarl = () => {
                     <DocCreation  
                         title='Avocat en Option' 
                         description='Choississez un avocat pour vous assister' 
-                        image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
-                    />
+                        image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703612/advocats_en_option_gkeapb.svg'
+                    /> 
                 </div>
             </div>
             </div>

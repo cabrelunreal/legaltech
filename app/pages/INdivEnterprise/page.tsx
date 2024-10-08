@@ -62,10 +62,6 @@ const CreatePersonal = () => {
             <div className='text-center'>
                 <div>
                     <h2 className='font-semibold text-xl'>Nos Tarifs </h2>
-                    <p className='py-1 text-2lg'>Les tarifs varient en fonction du capital social</p>
-                </div>
-
-                <div>
                     <p className='text-2lg py-1'>Suivez notre processus simple en deux phases</p>
                 </div>
             </div>

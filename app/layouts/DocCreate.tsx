@@ -49,8 +49,8 @@ const DocCreate = () => {
             </div>
             <div className='flex justify-center items-center'>
                 <DocCreation  
-                    title='Télécharger les statuts' 
-                    description='Téléchargez les statuts de la SARL sur Tribunejustice' 
+                    title='Remplir le formulaire' 
+                    description='Remplir le formulaire fourni par Tribunejustice.' 
                     image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
                 />
             </div>

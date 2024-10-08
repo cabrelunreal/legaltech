@@ -10,9 +10,9 @@ const DocCreate = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8'>
             <div className='flex justify-center items-center'>
                 <DocCreation  
-                    title='Télécharger les statuts' 
-                    description='Téléchargez les statuts de la SARL sur Tribune Justice' 
-                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
+                    title='Nous contacter' 
+                    description='Contactez-nous pour un rendez-vous avec Fréghis, un de nos experts en création d&apos;entreprises.' 
+                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703615/calling-icon_rg1jxe.svg' 
                 />
             </div>
             <div className='flex justify-center items-center'>
@@ -24,9 +24,9 @@ const DocCreate = () => {
             </div>
             <div className='flex justify-center items-center'>
                 <DocCreation  
-                    title='Nous contacter' 
-                    description='Contactez-nous pour un rendez-vous avec Fréghis, un de nos experts en création d&apos;entreprises.' 
-                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703615/calling-icon_rg1jxe.svg' 
+                    title='Télécharger les statuts' 
+                    description='Téléchargez les statuts de la SARL sur Tribune Justice' 
+                    image='https://res.cloudinary.com/dedakscgk/image/upload/v1719703617/download-icon_q9qo6e.svg'
                 />
             </div>
         </div>

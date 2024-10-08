@@ -78,7 +78,7 @@ const CreatingSarl = () => {
                                     <p className='p-1 font-semibold'>Phase 1</p>
                                     <p className='p-1 font-semibold'>Formalités sans le notaire</p>
                                     <p className='p-1'>À partir de</p>
-                                    <p className='p-1 font-semibold text-xl'>93 $ | 55000 FCFA</p>
+                                    <p className='p-1 font-semibold'>$600 | 350 000 FCFA</p>
                                     <p className='p-1 font-semibold'>+ frais professionnels</p>
                                     <p className='p-1 font-semibold'>Vous obtenez :</p>
                                     <p className='p-1 font-semibold'>RCCM + NUI</p>
@@ -118,7 +118,7 @@ const CreatingSarl = () => {
                                     <p className='p-1 font-semibold'>Phase 1</p>
                                     <p className='p-1 font-semibold'>Formalités auprès du notaire</p>
                                     <p>À partir de</p>
-                                    <p className='p-1 font-semibold text-xl'>93 $ | 55000 FCFA</p>
+                                    <p className='p-1 font-semibold text-xl'>À définir</p>
                                     <p className='p-1'>+ frais professionnels</p>
                                     <p className='p-1 font-semibold'>Vous obtenez :</p>
                                     <p className='p-1 font-semibold'>Authentification</p>
